@@ -36,3 +36,4 @@ error_log
 access_log
 dandelion.yml
 dploy.yaml
+.gitignore
