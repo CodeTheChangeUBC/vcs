@@ -2,7 +2,7 @@
 /**
  * The main template file.
  *
- * @package Dummy_Theme_Name_Caps_Theme
+ * @package VCS_Theme
  */
 
 get_header(); ?>

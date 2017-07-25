@@ -23,10 +23,10 @@ Be sure to update your `gulpfile.js` with the appropriate URL for the Browsersyn
 ### 5. Replace placeholders with your theme name
 
 Do a Search and Replace for:
-- `Dummy Theme Name` *first letter capital* eg. My Theme
-- `Dummy_Theme_Name_Caps` *first letter capital. underscores* eg. My_Theme
-- `dummy_theme_name` *all lower case. underscores* eg. my_theme
-- `dummy-theme-name` *all lower case. hyphens* eg. my-theme
+- `VCS` *first letter capital* eg. My Theme
+- `VCS` *first letter capital. underscores* eg. My_Theme
+- `vcs` *all lower case. underscores* eg. my_theme
+- `vcs` *all lower case. hyphens* eg. my-theme
 
 ### 6. Update Information
 

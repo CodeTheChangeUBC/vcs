@@ -1,17 +1,17 @@
 <?php
 /**
- * Dummy Theme Name functions and definitions.
+ * VCS functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Dummy_Theme_Name_Caps_Theme
+ * @package VCS_Theme
  */
 
-if ( ! function_exists( 'dummy_theme_name_setup' ) ) :
+if ( ! function_exists( 'vcs_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  */
-function dummy_theme_name_setup() {
+function vcs_setup() {
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
@@ -36,25 +36,25 @@ function dummy_theme_name_setup() {
 	) );
 
 }
-endif; // dummy_theme_name_setup
-add_action( 'after_setup_theme', 'dummy_theme_name_setup' );
+endif; // vcs_setup
+add_action( 'after_setup_theme', 'vcs_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
  * @global int $content_width
  */
-function dummy_theme_name_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'dummy_theme_name_content_width', 640 );
+function vcs_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'vcs_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'dummy_theme_name_content_width', 0 );
+add_action( 'after_setup_theme', 'vcs_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function dummy_theme_name_widgets_init() {
+function vcs_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html( 'Sidebar' ),
 		'id'            => 'sidebar-1',
@@ -65,28 +65,28 @@ function dummy_theme_name_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 }
-add_action( 'widgets_init', 'dummy_theme_name_widgets_init' );
+add_action( 'widgets_init', 'vcs_widgets_init' );
 
 /**
  * Filter the stylesheet_uri to output the minified CSS file.
  */
-function dummy_theme_name_minified_css( $stylesheet_uri, $stylesheet_dir_uri ) {
+function vcs_minified_css( $stylesheet_uri, $stylesheet_dir_uri ) {
 	if ( file_exists( get_template_directory() . '/build/css/style.min.css' ) ) {
 		$stylesheet_uri = $stylesheet_dir_uri . '/build/css/style.min.css';
 	}
 
 	return $stylesheet_uri;
 }
-add_filter( 'stylesheet_uri', 'dummy_theme_name_minified_css', 10, 2 );
+add_filter( 'stylesheet_uri', 'vcs_minified_css', 10, 2 );
 
 /**
  * Enqueue scripts and styles.
  */
-function dummy_theme_name_scripts() {
-	wp_enqueue_style( 'dummy-theme-name-style', get_stylesheet_uri() );
+function vcs_scripts() {
+	wp_enqueue_style( 'vcs-style', get_stylesheet_uri() );
 
-	wp_enqueue_script('dummy-theme-name-main', get_template_directory_uri() . '/build/js/main.min.js', array( 'jquery' ), '1.0.0', true );
-	wp_enqueue_script( 'dummy-theme-name-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
+	wp_enqueue_script('vcs-main', get_template_directory_uri() . '/build/js/main.min.js', array( 'jquery' ), '1.0.0', true );
+	wp_enqueue_script( 'vcs-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
 	wp_enqueue_style( 'fontAwesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.4.0');
 	
@@ -94,7 +94,7 @@ function dummy_theme_name_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'dummy_theme_name_scripts' );
+add_action( 'wp_enqueue_scripts', 'vcs_scripts' );
 
 /**
  * Custom template tags for this theme.

@@ -2,7 +2,7 @@
 /**
  * Template part for displaying posts.
  *
- * @package Dummy_Theme_Name_Caps_Theme
+ * @package VCS_Theme
  */
 
 ?>
@@ -17,7 +17,7 @@
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php dummy_theme_name_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php dummy_theme_name_posted_by(); ?>
+			<?php vcs_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php vcs_posted_by(); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->

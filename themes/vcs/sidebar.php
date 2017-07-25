@@ -2,7 +2,7 @@
 /**
  * The sidebar containing the main widget area.s
  *
- * @package Dummy_Theme_Name_Caps_Theme
+ * @package VCS_Theme
  */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {

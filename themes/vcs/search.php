@@ -2,7 +2,7 @@
 /**
  * The template for displaying search results pages.
  *
- * @package Dummy_Theme_Name_Caps_Theme
+ * @package VCS_Theme
  */
 
 get_header(); ?>
@@ -23,7 +23,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php dummy_theme_name_numbered_pagination(); ?>
+			<?php vcs_numbered_pagination(); ?>
 
 		<?php else : ?>
 

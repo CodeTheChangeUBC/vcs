@@ -2,7 +2,7 @@
 /**
  * The template for displaying the footer.
  *
- * @package Dummy_Theme_Name_Caps_Theme
+ * @package VCS_Theme
  */
 
 ?>

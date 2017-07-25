@@ -2,7 +2,7 @@
 /**
  * The header for our theme.
  *
- * @package Dummy_Theme_Name_Caps_Theme
+ * @package VCS_Theme
  */
 
 ?><!DOCTYPE html>

@@ -2,7 +2,7 @@
 /**
  * The template for displaying comments.
  *
- * @package Dummy_Theme_Name_Caps_Theme
+ * @package VCS_Theme
  */
 
 /*
@@ -39,7 +39,7 @@ if ( post_password_required() ) {
 		<ol class="comment-list">
 			<?php
 				wp_list_comments( array(
-					'callback' => 'dummy_theme_name_comment_list'
+					'callback' => 'vcs_comment_list'
 				) );
 			?>
 		</ol><!-- .comment-list -->
