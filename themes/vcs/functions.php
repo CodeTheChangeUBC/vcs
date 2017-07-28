@@ -71,7 +71,7 @@ add_action( 'widgets_init', 'vcs_widgets_init' );
  * Filter the stylesheet_uri to output the minified CSS file.
  */
 function vcs_minified_css( $stylesheet_uri, $stylesheet_dir_uri ) {
-	if ( file_exists( get_template_directory() . '/build/css/style.min.css' ) ) {
+	if ( file_exists( get_stylesheet_directory() . '/build/css/style.min.css' ) ) {
 		$stylesheet_uri = $stylesheet_dir_uri . '/build/css/style.min.css';
 	}
 
@@ -85,8 +85,8 @@ add_filter( 'stylesheet_uri', 'vcs_minified_css', 10, 2 );
 function vcs_scripts() {
 	wp_enqueue_style( 'vcs-style', get_stylesheet_uri() );
 
-	wp_enqueue_script('vcs-main', get_template_directory_uri() . '/build/js/main.min.js', array( 'jquery' ), '1.0.0', true );
-	wp_enqueue_script( 'vcs-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
+	wp_enqueue_script('vcs-main', get_stylesheet_directory_uri() . '/build/js/main.min.js', array( 'jquery' ), '1.0.0', true );
+	wp_enqueue_script( 'vcs-skip-link-focus-fix', get_stylesheet_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
 	wp_enqueue_style( 'fontAwesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.4.0');
 	
@@ -99,9 +99,9 @@ add_action( 'wp_enqueue_scripts', 'vcs_scripts' );
 /**
  * Custom template tags for this theme.
  */
-require get_template_directory() . '/inc/template-tags.php';
+require get_stylesheet_directory() . '/inc/template-tags.php';
 
 /**
  * Custom functions that act independently of the theme templates.
  */
-require get_template_directory() . '/inc/extras.php';
+require get_stylesheet_directory() . '/inc/extras.php';
