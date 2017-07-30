@@ -32,8 +32,10 @@ a {
 	float: left;
 	width: 100%;
 
-	ul {
+	#primary-menu {
 		display: none;
+	}
+	ul {
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
@@ -105,8 +107,11 @@ a {
 	.menu-toggle {
 		display: none;
 	}
-	.main-navigation ul {
+	.main-navigation #primary-menu {
 		display: block;
+	}
+	.main-navigation #mobile-menu {
+		display: none;
 	}
 }
 
