@@ -83,7 +83,6 @@ add_filter( 'stylesheet_uri', 'vcs_minified_css', 10, 2 );
  * Enqueue scripts and styles.
  */
 function vcs_scripts() {
-	wp_enqueue_style( 'parent-style', get_template_directory_uri().'/style.css' );
 	wp_enqueue_style( 'vcs-style', get_stylesheet_uri() );
 
 	wp_enqueue_script('vcs-main', get_stylesheet_directory_uri() . '/build/js/main.min.js', array( 'jquery' ), '1.0.0', true );
