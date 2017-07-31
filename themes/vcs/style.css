@@ -671,7 +671,8 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 #masthead {
-  height: 50px; }
+  height: 50px;
+  background-color: white; }
   #masthead #site-navigation {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -739,6 +740,11 @@ object {
 
 .home #content {
   height: 100vh; }
+
+.page-id-9 {
+  background-color: lightsalmon; }
+  .page-id-9 section h2 {
+    text-align: center; }
 
 #colophon {
   background-color: lightblue; }
