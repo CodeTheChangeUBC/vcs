@@ -738,9 +738,6 @@ object {
     -ms-flex-pack: distribute;
         justify-content: space-around; }
 
-.home #content {
-  height: 100vh; }
-
 .page-id-9 {
   background-color: lightsalmon; }
   .page-id-9 section h2 {
