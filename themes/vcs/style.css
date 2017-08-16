@@ -740,6 +740,29 @@ h2 {
     -ms-flex-pack: distribute;
         justify-content: space-around; }
 
+.home #concert-carousel {
+  margin-top: 2rem; }
+  .home #concert-carousel .owl-dots {
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    right: 0; }
+  .home #concert-carousel .owl-nav {
+    position: absolute;
+    top: -3.3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%; }
+  .home #concert-carousel .owl-prev,
+  .home #concert-carousel .owl-next {
+    background: none;
+    color: #000;
+    opacity: 1; }
+
 .page-id-9 {
   background-color: lightsalmon; }
   .page-id-9 section h2 {

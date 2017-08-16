@@ -7,10 +7,10 @@
         $('.mobile-menu-container').css('display', 'none');
     })
     $(document).ready(function(){
-        $('.concert-carousel').owlCarousel({
+        $('#concert-carousel').owlCarousel({
             items : 1,
             nav: true,
-            
+            navText: ['<','>']
         });
     });
 
