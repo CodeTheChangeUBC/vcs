@@ -19,7 +19,7 @@ get_header(); ?>
 <?php print_r(get_template_directory()); ?>
 <section class="concert">
     <h2>Concerts</h2>
-    <div class="concert-carousel">
+    <div class="concert-carousel owl-carousel owl-theme">
         <?php $args = array (
             'post_type' => 'concerts',
             'order' => 'DCS',

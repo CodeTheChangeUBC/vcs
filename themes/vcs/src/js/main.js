@@ -7,7 +7,11 @@
         $('.mobile-menu-container').css('display', 'none');
     })
     $(document).ready(function(){
-        $('.concert-carousel').flickity();
+        $('.concert-carousel').owlCarousel({
+            items : 1,
+            nav: true,
+            
+        });
     });
 
 
