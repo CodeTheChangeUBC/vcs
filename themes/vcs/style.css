@@ -764,19 +764,21 @@ h2 {
     opacity: 1; }
   .home #concert-carousel .concert-post-head {
     position: relative;
-    height: 250px;
+    height: 200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     overflow: hidden; }
     .home #concert-carousel .concert-post-head img {
       position: absolute;
-      height: 250px;
-      max-width: none;
-      width: auto; }
+      width: 100%;
+      max-width: none; }
     .home #concert-carousel .concert-post-head .concert-title {
       position: absolute;
       color: #fff;

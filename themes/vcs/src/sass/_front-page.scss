@@ -22,15 +22,15 @@
         }
         .concert-post-head {
             position: relative;
-            height: 250px;
+            height: 200px;
             display: flex;
             justify-content: center;
+            align-items: center;
             overflow: hidden;
             img {
                 position: absolute;
-                height: 250px;
+                width: 100%;
                 max-width: none;
-                width: auto;
             }
             .concert-title {
                 position: absolute;

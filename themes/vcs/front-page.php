@@ -30,7 +30,7 @@ get_header(); ?>
         foreach( $concerts_list as $post) :?>
             <div class="concert-post">
                 <div class="concert-post-head">
-                    <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+                    <img src="<?php echo get_the_post_thumbnail_url(null,'large'); ?>" alt="">
                     <p class="concert-title"><?php the_title(); ?></p>
                     <p class="concert-date"><?php the_field('concert_date'); ?></p>
                 </div>
