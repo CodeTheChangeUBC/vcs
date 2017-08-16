@@ -762,6 +762,31 @@ h2 {
     background: none;
     color: #000;
     opacity: 1; }
+  .home #concert-carousel .concert-post-head {
+    position: relative;
+    height: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden; }
+    .home #concert-carousel .concert-post-head img {
+      position: absolute;
+      height: 250px;
+      max-width: none;
+      width: auto; }
+    .home #concert-carousel .concert-post-head .concert-title {
+      position: absolute;
+      color: #fff;
+      top: 0;
+      left: 0; }
+    .home #concert-carousel .concert-post-head .concert-date {
+      position: absolute;
+      color: #fff;
+      bottom: 0;
+      left: 0; }
 
 .page-id-9 {
   background-color: lightsalmon; }

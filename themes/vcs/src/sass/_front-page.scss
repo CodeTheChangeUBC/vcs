@@ -20,5 +20,30 @@
             color: #000;
             opacity: 1;
         }
+        .concert-post-head {
+            position: relative;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            img {
+                position: absolute;
+                height: 250px;
+                max-width: none;
+                width: auto;
+            }
+            .concert-title {
+                position: absolute;
+                color: #fff;
+                top: 0;
+                left: 0;
+            }
+            .concert-date {
+                position: absolute;
+                color: #fff;
+                bottom: 0;
+                left: 0;
+            }
+        }
     }
 }
