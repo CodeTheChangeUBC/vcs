@@ -6,4 +6,9 @@
     $('.nav-icon-close').on('click', function(){
         $('.mobile-menu-container').css('display', 'none');
     })
+    $(document).ready(function(){
+        $('.concert-carousel').flickity();
+    });
+
+
 })(jQuery);

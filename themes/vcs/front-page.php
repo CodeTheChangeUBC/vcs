@@ -16,6 +16,7 @@ get_header(); ?>
     </div>
     <a class="season-button button" href="#">Buy Season Pass</a>
 </section>
+<?php print_r(get_template_directory()); ?>
 <section class="concert">
     <h2>Concerts</h2>
     <div class="concert-carousel">

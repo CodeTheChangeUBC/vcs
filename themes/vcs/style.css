@@ -4,7 +4,6 @@ Theme URI: http://underscores.me/
 Author: Kevin Hashimoto
 Author URI: http://www.kevinhashimoto.com
 Description: A barebones Wordpress boilerplate.
-Template: twentyseventeen
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -737,6 +736,27 @@ object {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
+
+.home .concert-carousel {
+  margin-top: 3rem; }
+
+.home .flickity-page-dots {
+  top: -2rem;
+  bottom: unset; }
+
+.home .flickity-prev-next-button {
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  top: -1.5rem;
+  height: 30px;
+  width: 30px;
+  z-index: 1; }
+
+.home .concert-post {
+  width: 100%; }
+  .home .concert-post img {
+    width: 100%; }
 
 .page-id-9 {
   background-color: lightsalmon; }
