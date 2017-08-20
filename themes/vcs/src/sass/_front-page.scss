@@ -19,6 +19,7 @@
             background: none;
             color: #000;
             opacity: 1;
+            z-index: 1;
         }
         .concert-post-head {
             position: relative;
@@ -44,6 +45,34 @@
                 bottom: 0;
                 left: 0;
             }
+        }
+    }
+    .blog {
+        .blog-image-container {
+            height: 90vw;
+            width: 90%;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+    }
+    .buy-donate {
+        display: flex;
+        justify-content: space-around;
+        margin: 3rem 0;
+        .button {
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            width: 40%;
+            text-align: center;
+            padding: 0.5rem;
+        }
+        .buy-tickets {
+            background-color: lightcyan
+        }
+        .donate {
+            background-color: orange;
         }
     }
 }

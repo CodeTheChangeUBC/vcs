@@ -53,7 +53,7 @@
 						</div>
 					</div>
 					<div class="nav-logo">
-						<img src="http://staging.vancouvercantatasingers.com/wp-content/uploads/2017/07/dummy-logo.png" alt="">
+						<?php show_easylogo(); ?>
 					</div>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
