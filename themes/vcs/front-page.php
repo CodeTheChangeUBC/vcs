@@ -38,7 +38,7 @@ get_header(); ?>
             </div>
         <?php endforeach; wp_reset_postdata(); ?>
     </div>
-    <a class="concert-view-more button" href="">View More</a>
+    <a class="concert-view-more button" href="<?php echo home_url('concerts'); ?>">View More</a>
     <!-- view more buttons -->
 </section>
 <section class="blog">
@@ -58,6 +58,7 @@ get_header(); ?>
         <h3><?php echo $latest_blog[0]->post_title; ?></h3>
         <p><?php echo $latest_blog[0]->post_excerpt; ?></p>
     </div>
+    <a class="concert-view-more button" href="<?php echo home_url('blog'); ?>">View More</a>
 </section>
 <section class="buy-donate">
     <a class="buy-tickets button" href="">Buy Tickets</a>
