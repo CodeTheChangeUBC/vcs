@@ -60,8 +60,8 @@ get_header(); ?>
     </div>
     <a class="concert-view-more button" href="<?php echo home_url('blog'); ?>">View More</a>
 </section>
-<section class="buy-donate">
+<div class="buy-donate">
     <a class="buy-tickets button" href="">Buy Tickets</a>
     <a class="donate button" href="">Donate</a>
-</section>
+</div>
 <?php get_footer(); ?>

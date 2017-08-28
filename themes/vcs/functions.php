@@ -102,6 +102,13 @@ function vcs_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'vcs_scripts' );
 
+function my_acf_init() {
+	
+	acf_update_setting('google_api_key', 'AIzaSyAp5N7aQOYPPaZO2IIvT8k8jjm-TMGtywg');
+}
+
+add_action('acf/init', 'my_acf_init');
+
 
 /**
  * Custom template tags for this theme.

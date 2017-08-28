@@ -1,8 +1,6 @@
-.page-id-9 {
-    background-color: lightsalmon;
-    section {
-        h2 {
-            text-align: center;
-        }
+.post-type-archive-concerts {
+    .concerts-modal,
+    .community-modal {
+        display: none;
     }
 }

@@ -820,10 +820,9 @@ h2 {
   .home .buy-donate .donate {
     background-color: orange; }
 
-.page-id-9 {
-  background-color: lightsalmon; }
-  .page-id-9 section h2 {
-    text-align: center; }
+.post-type-archive-concerts .concerts-modal,
+.post-type-archive-concerts .community-modal {
+  display: none; }
 
 #colophon {
   background-color: lightblue; }
