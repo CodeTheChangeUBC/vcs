@@ -234,7 +234,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Work Sans";
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -669,7 +669,28 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 h2 {
-  text-align: center; }
+  text-align: center;
+  font-family: "Libre Baskerville";
+  font-size: 2rem; }
+
+.button-container {
+  text-align: center;
+  display: block;
+  margin: 1rem 0; }
+
+.button {
+  width: 65%;
+  text-decoration: none;
+  color: #fff;
+  padding: .4rem .7rem;
+  display: inline-block;
+  border-radius: 5px; }
+
+.button:visited {
+  color: #fff; }
+
+.button-green {
+  background-color: #5DADAF; }
 
 #masthead {
   height: 100%;
@@ -743,14 +764,33 @@ h2 {
     -ms-flex-pack: distribute;
         justify-content: space-around; }
 
-.home #concert-carousel {
+.home section {
+  margin-bottom: 3rem; }
+
+.home .season-pass .season-copy {
+  text-align: center; }
+  .home .season-pass .season-copy p, .home .season-pass .season-copy h2 {
+    margin: 0; }
+  .home .season-pass .season-copy p {
+    font-size: 1.5rem;
+    font-weight: 300; }
+
+.home .concert .concert-copy {
+  padding: 0 1rem; }
+  .home .concert .concert-copy p {
+    margin-bottom: .5rem; }
+  .home .concert .concert-copy .concert-excerpt {
+    font-weight: 300;
+    margin: 0; }
+
+.home .concert #concert-carousel {
   margin-top: 2rem; }
-  .home #concert-carousel .owl-dots {
+  .home .concert #concert-carousel .owl-dots {
     position: absolute;
     top: -2rem;
     left: 0;
     right: 0; }
-  .home #concert-carousel .owl-nav {
+  .home .concert #concert-carousel .owl-nav {
     position: absolute;
     top: -3.3rem;
     display: -webkit-box;
@@ -760,13 +800,13 @@ h2 {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 100%; }
-  .home #concert-carousel .owl-prev,
-  .home #concert-carousel .owl-next {
+  .home .concert #concert-carousel .owl-prev,
+  .home .concert #concert-carousel .owl-next {
     background: none;
     color: #000;
     opacity: 1;
     z-index: 1; }
-  .home #concert-carousel .concert-post-head {
+  .home .concert #concert-carousel .concert-post-head {
     position: relative;
     height: 200px;
     display: -webkit-box;
@@ -779,20 +819,26 @@ h2 {
         -ms-flex-align: center;
             align-items: center;
     overflow: hidden; }
-    .home #concert-carousel .concert-post-head img {
+    .home .concert #concert-carousel .concert-post-head img {
       position: absolute;
       width: 100%;
       max-width: none; }
-    .home #concert-carousel .concert-post-head .concert-title {
+    .home .concert #concert-carousel .concert-post-head .concert-title {
       position: absolute;
       color: #fff;
       top: 0;
-      left: 0; }
-    .home #concert-carousel .concert-post-head .concert-date {
+      left: 0;
+      font-size: 2rem;
+      margin: 1rem;
+      line-height: 1; }
+    .home .concert #concert-carousel .concert-post-head .concert-date {
       position: absolute;
       color: #fff;
       bottom: 0;
-      left: 0; }
+      left: 0;
+      font-size: 1.2rem;
+      font-weight: 300;
+      margin: 1rem; }
 
 .home .blog .blog-image-container {
   margin: 0 auto;

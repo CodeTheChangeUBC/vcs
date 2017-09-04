@@ -14,7 +14,10 @@ get_header(); ?>
         <h2><?php the_field('hp_season_header'); ?></h2>
         <p><?php the_field('hp_season_copy'); ?></p>
     </div>
-    <a class="season-button button" href="#">Buy Season Pass</a>
+    <div class="button-container">
+        <a class="season-button button-green button" href="#">Buy Season Pass</a>
+    </div>
+    
 </section>
 <section class="concert">
     <h2>Concerts</h2>
@@ -33,12 +36,16 @@ get_header(); ?>
                     <p class="concert-title"><?php the_title(); ?></p>
                     <p class="concert-date"><?php the_field('concert_date'); ?></p>
                 </div>
-                <p><?php the_field('concert_location'); ?></p>
-                <p><?php the_excerpt(); ?></p>
+                <div class="concert-copy">
+                    <p class="concert-location"><?php the_field('concert_location'); ?></p>
+                    <p class="concert-excerpt"><?php echo $post->post_excerpt; ?></p>
+                </div>
             </div>
         <?php endforeach; wp_reset_postdata(); ?>
     </div>
-    <a class="concert-view-more button" href="<?php echo home_url('concerts'); ?>">View More</a>
+    <div class="button-container">
+        <a class="concert-view-more button-green button" href="<?php echo home_url('concerts'); ?>">View More</a>
+    </div>
     <!-- view more buttons -->
 </section>
 <section class="blog">

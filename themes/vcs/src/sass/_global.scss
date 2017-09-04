@@ -1,3 +1,24 @@
 h2 {
     text-align: center;
+    font-family: $font__headings;
+    font-size: 2rem;
+}
+.button-container {
+    text-align: center;
+    display: block;
+    margin: 1rem 0;
+}
+.button {
+    width: 65%;
+    text-decoration: none;
+    color: #fff;
+    padding: .4rem .7rem;
+    display: inline-block;
+    border-radius: 5px;
+}
+.button:visited {
+    color: #fff;
+}
+.button-green {
+    background-color: #5DADAF;
 }

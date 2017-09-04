@@ -90,6 +90,9 @@ function vcs_scripts() {
 	wp_enqueue_script( 'vcs-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 	
 	wp_enqueue_style( 'fontAwesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.4.0');
+	wp_enqueue_style( 'gfonts-libreBaskerville', 'https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700');
+	wp_enqueue_style( 'gfonts-workSans', 'https://fonts.googleapis.com/css?family=Work+Sans:300,400,700');
+	
 
 
 	wp_enqueue_style('vcs-owl', get_template_directory_uri() . '/lib/owlcarousel/owl.carousel.min.css');

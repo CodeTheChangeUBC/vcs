@@ -1,52 +1,86 @@
 .home {
-    #concert-carousel {
-        margin-top: 2rem;
-        .owl-dots {
-            position: absolute;
-            top: -2rem;
-            left: 0;
-            right: 0;
-        }
-        .owl-nav {
-            position: absolute;
-            top: -3.3rem;
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-        }
-        .owl-prev,
-        .owl-next {
-            background: none;
-            color: #000;
-            opacity: 1;
-            z-index: 1;
-        }
-        .concert-post-head {
-            position: relative;
-            height: 200px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-            img {
-                position: absolute;
-                width: 100%;
-                max-width: none;
+    section {
+        margin-bottom: 3rem;
+    }
+    .season-pass {
+        .season-copy {
+            text-align: center;
+            p, h2 {
+                margin: 0;
             }
-            .concert-title {
-                position: absolute;
-                color: #fff;
-                top: 0;
-                left: 0;
-            }
-            .concert-date {
-                position: absolute;
-                color: #fff;
-                bottom: 0;
-                left: 0;
+            p {
+                font-size: 1.5rem;
+                font-weight: 300;
             }
         }
     }
+    .concert {
+        .concert-copy {
+            padding: 0 1rem;
+            p {
+                margin-bottom: .5rem;
+            }
+            .concert-excerpt {
+                font-weight: 300;
+                margin: 0;
+            }
+        }
+        #concert-carousel {
+            margin-top: 2rem;
+            .owl-dots {
+                position: absolute;
+                top: -2rem;
+                left: 0;
+                right: 0;
+            }
+            .owl-nav {
+                position: absolute;
+                top: -3.3rem;
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+            .owl-prev,
+            .owl-next {
+                background: none;
+                color: #000;
+                opacity: 1;
+                z-index: 1;
+            }
+            .concert-post-head {
+                position: relative;
+                height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                img {
+                    position: absolute;
+                    width: 100%;
+                    max-width: none;
+                }
+                .concert-title {
+                    position: absolute;
+                    color: #fff;
+                    top: 0;
+                    left: 0;
+                    font-size: 2rem;
+                    margin: 1rem;
+                    line-height: 1;
+                }
+                .concert-date {
+                    position: absolute;
+                    color: #fff;
+                    bottom: 0;
+                    left: 0;
+                    font-size: 1.2rem;
+                    font-weight: 300;
+                    margin: 1rem;
+                }
+            }
+        }
+    }
+    
     .blog {
         .blog-image-container {
             // height: 90vw;
