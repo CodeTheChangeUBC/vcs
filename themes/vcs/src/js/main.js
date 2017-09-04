@@ -29,6 +29,20 @@
             autoHeight: true
         });
     });
+    ////////////our choir 
+    ///////members
+    $('.member-carousel').flickity({
+
+    });
+    $('.member-carousel-modal').flickity({
+        
+    });
+    ///////photos
+    $('#our-choir-photo-carousel').flickity({
+        setGallerySize: false,
+        wrapAround: true,
+        pageDots: false
+    });
 
 
 })(jQuery);

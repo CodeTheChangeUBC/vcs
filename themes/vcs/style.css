@@ -795,11 +795,18 @@ h2 {
       left: 0; }
 
 .home .blog .blog-image-container {
-  height: 90vw;
-  width: 90%;
   margin: 0 auto;
   overflow: hidden;
-  border-radius: 50%; }
+  max-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .home .buy-donate {
   display: -webkit-box;
@@ -820,9 +827,47 @@ h2 {
   .home .buy-donate .donate {
     background-color: orange; }
 
+.blog .blog-image-container {
+  margin: 0 auto;
+  overflow: hidden;
+  max-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 .post-type-archive-concerts .concerts-modal,
 .post-type-archive-concerts .community-modal {
   display: none; }
+
+.page-id-14 .choir .member {
+  width: 100%; }
+
+.page-id-14 .choir .member-carousel-modal {
+  display: none; }
+
+.page-id-14 #our-choir-photo-carousel {
+  height: 200px; }
+
+.page-id-14 .photo {
+  width: 75%;
+  margin-right: 5px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden; }
 
 #colophon {
   background-color: lightblue; }

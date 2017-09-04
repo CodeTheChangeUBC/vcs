@@ -1,0 +1,25 @@
+.page-id-14 {
+    .choir {
+        .member {
+            width: 100%;
+        }
+        .member-carousel-modal {
+            display: none;
+        }
+    }
+    #our-choir-photo-carousel {
+        height: 200px;
+    }
+    .flickity-slider {
+
+    }
+    .photo {
+        width: 75%;
+        margin-right: 5px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+}
