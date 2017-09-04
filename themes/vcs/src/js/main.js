@@ -12,6 +12,9 @@
         $('.mobile-menu-container').css('display', 'none');
         $('.body-gradient').css('display', 'none');
     })
+
+
+
     $(document).ready(function(){
         $('#concert-carousel').owlCarousel({
             items : 1,
@@ -52,10 +55,15 @@
     });
 
 
+    $(document).ready(function(){
+        var $bodyWidth = parseFloat($('body').css('width')),
+            $blogPaddingLeft = parseFloat($('.blog-post').css('padding-left')),
+            $blogPaddingRight = parseFloat($('.blog-post').css('padding-right')),
+            $blogImageWidth = $bodyWidth - $blogPaddingLeft - $blogPaddingRight;
 
-    var $blogImageWidth = $('.blog-image-container').width();
-    $('.blog-image-container').css('height', $blogImageWidth);
-
+        $('.blog-image-container').css('height', $blogImageWidth);
+        $('.blog-image-container').css('width', $blogImageWidth);
+    });
 
 
 })(jQuery);

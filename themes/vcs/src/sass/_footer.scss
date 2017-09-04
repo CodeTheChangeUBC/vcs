@@ -1,7 +1,7 @@
 #colophon {
     background-color: lightblue;
     .footer-newsletter-container {
-        background-color: grey;
+        background-color: #DDDDDD;
         padding: 0.75rem 1rem;
     }
     .footer-links-container {
@@ -26,10 +26,15 @@
         text-align: center;
         input {
             background: none;
-            background-color: lightblue;
+            background-color: #5DADAF;
+            color: #fff;
             box-shadow: none;
             border: none;
-            padding: .75rem 5rem;
+            width: 65%;
+            padding: .4rem .7rem;
+            text-shadow: none;
+            font-size: 1rem;
+            border-radius: 5px;
         }
     }
 }
