@@ -29,6 +29,7 @@
             autoHeight: true
         });
     });
+
     ////////////our choir 
     ///////members
     $('.member-carousel').flickity({
@@ -43,6 +44,12 @@
         wrapAround: true,
         pageDots: false
     });
+
+
+
+    var $blogImageWidth = $('.blog-image-container').width();
+    $('.blog-image-container').css('height', $blogImageWidth);
+
 
 
 })(jQuery);

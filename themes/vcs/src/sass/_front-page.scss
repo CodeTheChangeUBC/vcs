@@ -80,37 +80,36 @@
             }
         }
     }
-    
     .blog {
+        .blog-post {
+            padding: 0 1rem;
+        }
         .blog-image-container {
-            // height: 90vw;
-            // width: 90%;
+            width: 100%;
             margin: 0 auto;
             overflow: hidden;
-            // border-radius: 50%;
-            max-height: 300px;
+            border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
         }
+    }
+    .blog-title {
+        margin-bottom: 0.5rem;
+    }
+    .blog-excerpt {
+        font-weight: 300;
+        margin: 0;
+
     }
     .buy-donate {
         display: flex;
         justify-content: space-around;
         margin: 3rem 0;
         .button {
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
             width: 40%;
             text-align: center;
-            padding: 0.5rem;
-        }
-        .buy-tickets {
-            background-color: lightcyan
-        }
-        .donate {
-            background-color: orange;
+            padding: .4rem .7rem;
         }
     }
 }

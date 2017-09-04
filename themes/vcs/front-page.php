@@ -50,25 +50,29 @@ get_header(); ?>
 </section>
 <section class="blog">
     <h2>From The Blog</h2>
-    <div class="blog-image-container">
-        <?php $args = array (
-            'post_status' => 'publish',
-            'posts_per_page' => 1,
-            'orderby' => 'date'
-        );
-        $latest_blog = get_posts( $args ); 
-        if( get_the_post_thumbnail_url( $latest_blog[0]->ID ) ) : ?>
-            <img src="<?php echo get_the_post_thumbnail_url( $latest_blog[0]->ID); ?>" alt="">
-        <?php endif; ?>
+    <div class="blog-post">
+        <div class="blog-image-container">
+            <?php $args = array (
+                'post_status' => 'publish',
+                'posts_per_page' => 1,
+                'orderby' => 'date'
+            );
+            $latest_blog = get_posts( $args ); 
+            if( get_the_post_thumbnail_url( $latest_blog[0]->ID ) ) : ?>
+                <img src="<?php echo get_the_post_thumbnail_url( $latest_blog[0]->ID); ?>" alt="">
+            <?php endif; ?>
+        </div>
+        <div class="blog-content">
+            <p class="blog-title"><?php echo $latest_blog[0]->post_title; ?></p>
+            <p class="blog-excerpt"><?php echo $latest_blog[0]->post_excerpt; ?></p>
+        </div>
+        <div class="button-container">
+            <a class="concert-view-more button-green button" href="<?php echo home_url('blog'); ?>">View More</a>
+        </div>
     </div>
-    <div class="blog-content">
-        <h3><?php echo $latest_blog[0]->post_title; ?></h3>
-        <p><?php echo $latest_blog[0]->post_excerpt; ?></p>
-    </div>
-    <a class="concert-view-more button" href="<?php echo home_url('blog'); ?>">View More</a>
 </section>
 <div class="buy-donate">
-    <a class="buy-tickets button" href="">Buy Tickets</a>
-    <a class="donate button" href="">Donate</a>
+    <a class="buy-tickets button-green button" href="">Buy Tickets</a>
+    <a class="donate button-red button" href="">Donate</a>
 </div>
 <?php get_footer(); ?>
