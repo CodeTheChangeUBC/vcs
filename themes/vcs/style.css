@@ -671,7 +671,8 @@ object {
 h2 {
   text-align: center;
   font-family: "Libre Baskerville";
-  font-size: 2rem; }
+  font-size: 2rem;
+  font-weight: 300; }
 
 .button-container {
   text-align: center;
@@ -726,7 +727,6 @@ h2 {
     width: 85%;
     height: 100vh;
     text-align: left;
-    background-color: purple;
     display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -734,10 +734,13 @@ h2 {
             flex-direction: column;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    z-index: 1;
+    background-color: #fff; }
   #masthead .menu-open-nav {
     position: relative;
-    height: 50px; }
+    height: 50px;
+    background-color: #5DADAF; }
   #masthead .nav-icon-close {
     position: absolute;
     margin-left: .75rem;
@@ -757,15 +760,24 @@ h2 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
     #masthead #mobile-menu ul li {
-      width: 100%; }
+      width: 100%;
+      padding: .5rem 1rem; }
     #masthead #mobile-menu ul a {
-      color: #000; }
+      color: #000;
+      font-weight: 300;
+      font-size: 1.5rem; }
   #masthead .mobile-links {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
+  #masthead .body-gradient {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute; }
 
 .home section {
   margin-bottom: 3rem; }

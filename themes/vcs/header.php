@@ -56,6 +56,7 @@
 						<?php show_easylogo(); ?>
 					</div>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					<div class="body-gradient"></div>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 

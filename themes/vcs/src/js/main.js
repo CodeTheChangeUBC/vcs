@@ -2,9 +2,15 @@
     //mobile nav menu open/close
     $('.nav-icon').on('click', function(){
         $('.mobile-menu-container').css('display', 'flex');
+        $('.body-gradient').css('display', 'block');
     })
     $('.nav-icon-close').on('click', function(){
         $('.mobile-menu-container').css('display', 'none');
+        $('.body-gradient').css('display', 'none');
+    })
+    $('.body-gradient').on('click', function(){
+        $('.mobile-menu-container').css('display', 'none');
+        $('.body-gradient').css('display', 'none');
     })
     $(document).ready(function(){
         $('#concert-carousel').owlCarousel({

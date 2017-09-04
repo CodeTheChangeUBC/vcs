@@ -27,15 +27,17 @@
         width: 85%;
         height: 100vh;
         text-align: left;
-        background-color: purple;
         display: none;
         flex-direction: column;
         justify-content: space-between;
-//         display: none;
+        z-index: 1;
+        background-color: #fff;
+        
     }
     .menu-open-nav {
         position: relative;
         height: 50px;
+        background-color: #5DADAF;
     }
     .nav-icon-close {
         position: absolute;
@@ -52,13 +54,23 @@
         flex-wrap: wrap;
         li {
             width: 100%;
+            padding: .5rem 1rem;
         }
         a {
             color: #000;
+            font-weight: 300;
+            font-size: 1.5rem;
         }
     }
     .mobile-links {
         display: flex;
         justify-content: space-around;
+    }
+    .body-gradient {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
     }
 }
