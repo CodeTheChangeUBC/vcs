@@ -1,10 +1,22 @@
 #colophon {
+    @include media( $desktop-width ) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .footer-newsletter-container {
         background-color: #DDDDDD;
         padding: 0.75rem 1rem;
+        @include media($desktop-width) {
+            width: 50%;
+            padding: 2rem 1rem;
+        }
     }
     .footer-links-container {
         padding: 1rem 0;
+        @include media ($desktop-width) {
+            width: 50%;
+        }
     }
     .footer-links {
         margin: 1rem 0;
@@ -29,6 +41,10 @@
             width: 100%;
             padding: 0.75rem;
         }
+        @include media( $desktop-width ) {
+            width: 50%;
+            margin: 1.5rem auto;
+        }
     }
     .newsletter-submit-input {
         margin: 0;
@@ -44,6 +60,11 @@
             text-shadow: none;
             font-size: 1rem;
             border-radius: 5px;
+        }
+    }
+    .mc4wp-form-fields {
+        @include media( $desktop-width ) {
+            text-align: center;
         }
     }
 }

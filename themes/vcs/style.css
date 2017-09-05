@@ -461,7 +461,8 @@ a {
     position: relative; }
   .main-navigation a {
     display: block;
-    text-decoration: none; }
+    text-decoration: none;
+    color: #000; }
 
 /* Small menu. */
 .menu-toggle,
@@ -472,9 +473,7 @@ a {
   .menu-toggle {
     display: none; }
   .main-navigation #primary-menu {
-    display: block; }
-  .main-navigation #mobile-menu {
-    display: none; } }
+    display: block; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -681,6 +680,7 @@ h2 {
 
 .button {
   width: 65%;
+  min-width: 115px;
   text-decoration: none;
   color: #fff;
   padding: .4rem .7rem;
@@ -719,9 +719,18 @@ h2 {
             align-items: center;
     height: 100%;
     margin-left: .75rem; }
+    @media all and (min-width: 820px) {
+      #masthead .nav-icon {
+        display: none; } }
   #masthead .nav-logo {
     width: 60%;
     margin: 1rem auto 0; }
+    @media all and (min-width: 820px) {
+      #masthead .nav-logo {
+        min-width: 125px;
+        width: 20%;
+        max-width: 250px;
+        margin: .5rem; } }
   #masthead .nav-logo h2 {
     margin: 0; }
   #masthead .mobile-menu-container {
@@ -757,6 +766,9 @@ h2 {
     height: 13%; }
   #masthead #mobile-menu {
     height: 75%; }
+    @media all and (min-width: 820px) {
+      #masthead #mobile-menu {
+        display: none; } }
   #masthead #mobile-menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -782,9 +794,65 @@ h2 {
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute; }
+  #masthead #primary-menu {
+    display: none; }
+    @media all and (min-width: 820px) {
+      #masthead #primary-menu {
+        width: 80%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+        margin: .5rem 2rem; } }
+    @media all and (min-width: 1260px) {
+      #masthead #primary-menu {
+        width: 50%; } }
+    @media all and (min-width: 820px) {
+      #masthead #primary-menu .page_item {
+        margin: 0 2%;
+        font-size: 1.3rem;
+        font-weight: 300; } }
+    @media all and (min-width: 820px) {
+      #masthead #primary-menu a {
+        color: #000; } }
+    @media all and (min-width: 820px) {
+      #masthead #primary-menu ul {
+        width: 100%; } }
+  #masthead .buy-donate-container {
+    display: none; }
+    @media all and (min-width: 1260px) {
+      #masthead .buy-donate-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 30%; } }
+    #masthead .buy-donate-container .button-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 100%; }
+    #masthead .buy-donate-container .button {
+      margin: 0 1rem; }
 
 .home section {
   margin-bottom: 3rem; }
+  @media all and (min-width: 760px) {
+    .home section {
+      display: none; } }
+
+.home .season-pass .season-image-container img {
+  width: 100%; }
 
 .home .season-pass .season-copy {
   text-align: center;
@@ -896,6 +964,9 @@ h2 {
     width: 40%;
     text-align: center;
     padding: .4rem .7rem; }
+  @media all and (min-width: 760px) {
+    .home .buy-donate {
+      display: none; } }
 
 .blog .blog .blog-image-container {
   margin: 0 auto;
@@ -939,12 +1010,31 @@ h2 {
           align-items: center;
   overflow: hidden; }
 
+@media all and (min-width: 760px) {
+  #colophon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; } }
+
 #colophon .footer-newsletter-container {
   background-color: #DDDDDD;
   padding: 0.75rem 1rem; }
+  @media all and (min-width: 760px) {
+    #colophon .footer-newsletter-container {
+      width: 50%;
+      padding: 2rem 1rem; } }
 
 #colophon .footer-links-container {
   padding: 1rem 0; }
+  @media all and (min-width: 760px) {
+    #colophon .footer-links-container {
+      width: 50%; } }
 
 #colophon .footer-links {
   margin: 1rem 0;
@@ -969,6 +1059,11 @@ h2 {
   width: 100%;
   padding: 0.75rem; }
 
+@media all and (min-width: 760px) {
+  #colophon .newsletter-email-input {
+    width: 50%;
+    margin: 1.5rem auto; } }
+
 #colophon .newsletter-submit-input {
   margin: 0;
   text-align: center; }
@@ -984,3 +1079,7 @@ h2 {
     text-shadow: none;
     font-size: 1rem;
     border-radius: 5px; }
+
+@media all and (min-width: 760px) {
+  #colophon .mc4wp-form-fields {
+    text-align: center; } }

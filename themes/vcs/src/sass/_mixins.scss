@@ -10,3 +10,10 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+// Media Queries
+@mixin media($width) {
+	@media all and (min-width: $width) {
+		@content;
+	}
+}

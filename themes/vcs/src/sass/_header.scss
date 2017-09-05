@@ -17,10 +17,19 @@
         align-items: center;
         height: 100%; 
         margin-left: .75rem;
+        @include media( $header-nav2 ) {
+            display: none;
+        }
     }
     .nav-logo {
         width: 60%;
         margin: 1rem auto 0;
+        @include media( $header-nav2 ){
+            min-width: 125px;
+            width: 20%;
+            max-width: 250px;
+            margin: .5rem;
+        }
     }
     .nav-logo h2 {
         margin: 0;
@@ -54,6 +63,9 @@
     }
     #mobile-menu {  
         height: 75%;
+        @include media( $header-nav2 ){
+            display: none;
+        }
     }
     #mobile-menu ul {
         display: flex;
@@ -78,5 +90,51 @@
         height: 100vh;
         background-color: rgba(0, 0, 0, 0.5);
         position: absolute;
+    }
+    #primary-menu {
+        display: none;
+        @include media( $header-nav2 ) {
+            width: 80%;
+            display: flex;
+            align-items: flex-end;
+            margin: .5rem 2rem;
+        }
+        @include media( $header-nav1 ){
+            width: 50%;
+        }
+        .page_item {
+            @include media( $header-nav2 ){
+                margin: 0 2%;
+                font-size: 1.3rem;
+                font-weight: 300;
+            }
+        }
+        a {
+            @include media( $header-nav2 ){
+                color: #000;
+            }
+        }
+        ul {
+            @include media( $header-nav2 ){
+                width: 100%;
+            }
+        }
+    }
+    .buy-donate-container {
+        display: none;
+        @include media( $header-nav1 ){
+            display: flex;
+            align-items: center;
+            width: 30%;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .button {
+            margin: 0 1rem;
+        }
     }
 }

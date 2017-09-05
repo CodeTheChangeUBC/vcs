@@ -71,8 +71,8 @@ get_header(); ?>
         </div>
     </div>
 </section>
-<div class="buy-donate">
+<section class="buy-donate">
     <a class="buy-tickets button-green button" href="">Buy Tickets</a>
     <a class="donate button-red button" href="">Donate</a>
-</div>
+</section>
 <?php get_footer(); ?>
