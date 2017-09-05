@@ -5,6 +5,7 @@
     .season-pass {
         .season-copy {
             text-align: center;
+            margin: 1rem 0;
             p, h2 {
                 margin: 0;
             }
@@ -58,6 +59,7 @@
                     position: absolute;
                     width: 100%;
                     max-width: none;
+                    left: 0;
                 }
                 .concert-title {
                     position: absolute;

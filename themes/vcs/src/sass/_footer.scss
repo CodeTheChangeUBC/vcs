@@ -1,5 +1,4 @@
 #colophon {
-    background-color: lightblue;
     .footer-newsletter-container {
         background-color: #DDDDDD;
         padding: 0.75rem 1rem;
@@ -11,9 +10,19 @@
         margin: 1rem 0;
         display:flex;
         justify-content: space-around;
+        .fa {
+            color: #000;
+        }
+        a {
+            color: #000;
+            text-decoration: none;
+            font-weight: 300;
+        }
     }
     .newsletter-label {
         margin: 0;
+        font-size: 1.3rem;
+        font-weight: 300;
     }
     .newsletter-email-input {
         input {
@@ -31,7 +40,7 @@
             box-shadow: none;
             border: none;
             width: 65%;
-            padding: .4rem .7rem;
+            padding: .6rem .7rem;
             text-shadow: none;
             font-size: 1rem;
             border-radius: 5px;
