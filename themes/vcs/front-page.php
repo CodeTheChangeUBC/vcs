@@ -75,4 +75,24 @@ get_header(); ?>
     <a class="buy-tickets button-green button" href="">Buy Tickets</a>
     <a class="donate button-red button" href="">Donate</a>
 </section>
+<section class="desktop">
+    <div class="home-carousel">
+        <?php $slides = get_field('slides'); 
+        foreach($slides as $slide) : ?>
+            <div class="slide">
+                <div class="carousel-img-container left-column">
+                    <div class="circle-overlay">
+                        <img src="<?php echo $slide['slide_image']; ?>" alt="">
+                    </div>
+                </div>
+                <div class="content-container right-column">
+                    <div class="slide-content">
+                        <h2><?php echo $slide['slide_heading']; ?></h2>
+                        <p><?php echo $slide['slide_copy']; ?></p>
+                    </div>
+                </div>
+            </div>
+        <?php endforeach; ?>
+    </div>
+</section>
 <?php get_footer(); ?>
