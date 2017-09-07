@@ -1053,6 +1053,37 @@ h2 {
       -ms-flex-align: center;
           align-items: center; }
 
+.post-type-archive-concerts h2 {
+  text-transform: capitalize; }
+
+.post-type-archive-concerts .concert {
+  margin-bottom: 4rem; }
+
+.post-type-archive-concerts .concert-content {
+  padding: 0 1.5rem; }
+
+.post-type-archive-concerts .concert-title {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0;
+  line-height: 1; }
+
+.post-type-archive-concerts .price-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .post-type-archive-concerts .price-date p {
+    margin: 0; }
+
+.post-type-archive-concerts .concert-price {
+  font-weight: 300; }
+
+.post-type-archive-concerts .concert-location {
+  font-weight: 300; }
+
 .post-type-archive-concerts .concerts-modal,
 .post-type-archive-concerts .community-modal {
   display: none; }

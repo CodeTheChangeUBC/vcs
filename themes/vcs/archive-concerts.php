@@ -29,13 +29,18 @@ get_header(); ?>
             </div>
             <div class="concert-content">
                 <p class="concert-title"><?php the_title(); ?></p>
-                <p class="concert-date"><?php the_field('concert_date'); ?></p>
-                <p class="concert-price"><?php the_field('concert_price'); ?></p>
+                <div class="price-date">
+                    <p class="concert-date"><?php the_field('concert_date'); ?></p>
+                    <p class="concert-price"><?php the_field('concert_price'); ?></p>
+                </div>
                 <p class="concert-location"><?php the_field('concert_location'); ?></p>
             </div>
         </div>
     <?php endforeach; wp_reset_postdata()?>
 </section>
+<div class="button-container">
+    <a class="season-button button-green button" href="#">Buy Season Pass</a>
+</div>
 <section class="community">
     <h2>community</h2>
     <?php 
@@ -59,8 +64,10 @@ get_header(); ?>
             </div>
             <div class="concert-content">
                 <p class="concert-title"><?php the_title(); ?></p>
-                <p class="concert-date"><?php the_field('concert_date'); ?></p>
-                <p class="concert-price"><?php the_field('concert_price'); ?></p>
+                <div class="price-date">
+                    <p class="concert-date"><?php the_field('concert_date'); ?></p>
+                    <p class="concert-price"><?php the_field('concert_price'); ?></p>
+                </div>
                 <p class="concert-location"><?php the_field('concert_location'); ?></p>
             </div>
             <div class="concert-popout">
