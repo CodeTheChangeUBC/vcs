@@ -696,6 +696,9 @@ h2 {
 .button-red {
   background-color: #C4443D; }
 
+.no-scroll {
+  overflow: hidden; }
+
 #masthead {
   height: 100%;
   background-color: white; }
@@ -1084,9 +1087,29 @@ h2 {
 .post-type-archive-concerts .concert-location {
   font-weight: 300; }
 
-.post-type-archive-concerts .concerts-modal,
+.post-type-archive-concerts .modal-container {
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.post-type-archive-concerts .concert-modal,
 .post-type-archive-concerts .community-modal {
-  display: none; }
+  display: none;
+  position: fixed;
+  top: 50px;
+  overflow: scroll;
+  background-color: red;
+  height: 90%;
+  width: 90%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%); }
 
 .page-id-14 .choir .member {
   width: 100%; }

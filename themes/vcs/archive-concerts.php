@@ -35,63 +35,8 @@ get_header(); ?>
                 </div>
                 <p class="concert-location"><?php the_field('concert_location'); ?></p>
             </div>
-        </div>
-    <?php endforeach; wp_reset_postdata()?>
-</section>
-<div class="button-container">
-    <a class="season-button button-green button" href="#">Buy Season Pass</a>
-</div>
-<section class="community">
-    <h2>community</h2>
-    <?php 
-    $community_concerts = get_posts(array(
-        'post_type' => 'concerts',
-        'numberposts' => -1,
-        'order' => 'ASC',
-        'tax_query' => array(
-            array(
-                'taxonomy' => 'concert_type',
-                'field' => 'slug',
-                'terms' => 'community'
-            )
-        )
-    )); 
-    foreach ( $community_concerts as $post ) : ?>
-        <div class="concert">
-            <div class="concert-img">
-                <?php 
-                the_post_thumbnail(); ?>
-            </div>
-            <div class="concert-content">
-                <p class="concert-title"><?php the_title(); ?></p>
-                <div class="price-date">
-                    <p class="concert-date"><?php the_field('concert_date'); ?></p>
-                    <p class="concert-price"><?php the_field('concert_price'); ?></p>
-                </div>
-                <p class="concert-location"><?php the_field('concert_location'); ?></p>
-            </div>
-            <div class="concert-popout">
-            </div>
-        </div>
-    <?php endforeach; wp_reset_postdata()?>
-</section>
-<section class="concerts-modal">
-    <div class="modal-container">
-        <div id="concerts-modal-carousel" class="concerts-modal-container owl-carousel owl-theme owl-loaded owl-drag owl-height">
-            <?php $concerts = get_posts(array(
-                'post_type' => 'concerts',
-                'numberposts' => -1,
-                'order' => 'ASC',
-                'tax_query' => array(
-                    array(
-                        'taxonomy' => 'concert_type',
-                        'field' => 'slug',
-                        'terms' => 'concert'
-                    )
-                )
-            )); 
-            foreach ( $concerts as $post ) : ?>
-                <div class="concert">
+            <div class="modal-container">
+                <div class="concert-modal">
                     <p class="concert-title"><?php the_title(); ?></p>
                     <div class="concert-img">
                         <?php the_post_thumbnail(); ?>
@@ -131,27 +76,46 @@ get_header(); ?>
                         <a class="donate button" href="">Donate</a>
                     </div>
                 </div>
-            <?php endforeach; wp_reset_postdata()?>
+            </div>
         </div>
-    </div>
+    <?php endforeach; wp_reset_postdata()?>
 </section>
-<section class="community-modal">
-    <div class="modal-container">
-        <div id="community-modal-carousel" class="concerts-modal-container owl-carousel owl-theme owl-loaded owl-drag owl-height">
-            <?php $concerts = get_posts(array(
-                'post_type' => 'concerts',
-                'numberposts' => -1,
-                'order' => 'ASC',
-                'tax_query' => array(
-                    array(
-                        'taxonomy' => 'concert_type',
-                        'field' => 'slug',
-                        'terms' => 'community'
-                    )
-                )
-            )); 
-            foreach ( $community_concerts as $post ) : ?>
-                <div class="concert">
+<div class="button-container">
+    <a class="season-button button-green button" href="#">Buy Season Pass</a>
+</div>
+<section class="community">
+    <h2>community</h2>
+    <?php 
+    $community_concerts = get_posts(array(
+        'post_type' => 'concerts',
+        'numberposts' => -1,
+        'order' => 'ASC',
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'concert_type',
+                'field' => 'slug',
+                'terms' => 'community'
+            )
+        )
+    )); 
+    foreach ( $community_concerts as $post ) : ?>
+        <div class="concert">
+            <div class="concert-img">
+                <?php 
+                the_post_thumbnail(); ?>
+            </div>
+            <div class="concert-content">
+                <p class="concert-title"><?php the_title(); ?></p>
+                <div class="price-date">
+                    <p class="concert-date"><?php the_field('concert_date'); ?></p>
+                    <p class="concert-price"><?php the_field('concert_price'); ?></p>
+                </div>
+                <p class="concert-location"><?php the_field('concert_location'); ?></p>
+            </div>
+            <div class="concert-popout">
+            </div>
+            <div class="modal-container">
+                <div class="concert-modal">
                     <p class="concert-title"><?php the_title(); ?></p>
                     <div class="concert-img">
                         <?php the_post_thumbnail(); ?>
@@ -191,8 +155,8 @@ get_header(); ?>
                         <a class="donate button" href="">Donate</a>
                     </div>
                 </div>
-            <?php endforeach; wp_reset_postdata()?>
+            </div>
         </div>
-    </div>
+    <?php endforeach; wp_reset_postdata()?>
 </section>
 <?php get_footer(); ?>

@@ -15,29 +15,29 @@
 
 
 
-    $(document).ready(function(){
-        $('#concert-carousel').owlCarousel({
-            items : 1,
-            nav: true,
-            navText: ['<','>']
-        });
-    });
-    $(document).ready(function(){
-        $('#concerts-modal-carousel').owlCarousel({
-            items : 1,
-            nav: true,
-            navText: ['<','>'],
-            autoHeight: true
-        });
-    });
-    $(document).ready(function(){
-        $('#community-modal-carousel').owlCarousel({
-            items : 1,
-            nav: true,
-            navText: ['<','>'],
-            autoHeight: true
-        });
-    });
+    // $(document).ready(function(){
+    //     $('#concert-carousel').owlCarousel({
+    //         items : 1,
+    //         nav: true,
+    //         navText: ['<','>']
+    //     });
+    // });
+    // $(document).ready(function(){
+    //     $('#concerts-modal-carousel').owlCarousel({
+    //         items : 1,
+    //         nav: true,
+    //         navText: ['<','>'],
+    //         autoHeight: true
+    //     });
+    // });
+    // $(document).ready(function(){
+    //     $('#community-modal-carousel').owlCarousel({
+    //         items : 1,
+    //         nav: true,
+    //         navText: ['<','>'],
+    //         autoHeight: true
+    //     });
+    // });
 
     ////////////our choir 
     ///////members
@@ -76,5 +76,17 @@
         $slideHeight = $bodyHeight - $navHeight - $footerHeight;
 
         $('.flickity-viewport').css('min-height', $slideHeight);
+
+
+
+
+    //concert
+    $('.concert-img').on('click', function(){
+        $(this).siblings('.modal-container').css('display','block')
+        $(this).siblings('.modal-container').children('.concert-modal').css('display','block')
+
+        $('body').addClass('no-scroll')
+
+    });
 
 })(jQuery);
