@@ -81,12 +81,19 @@
 
 
     //concert
+    
     $('.concert-img').on('click', function(){
-        $(this).siblings('.modal-container').css('display','block')
-        $(this).siblings('.modal-container').children('.concert-modal').css('display','block')
-
+        var $modalContainer = $(this).siblings('.modal-container');
+        $modalContainer.css('display','block')
+        $modalContainer.children('.concert-modal').css('display','block')
         $('body').addClass('no-scroll')
-
     });
+    $('.modal-close').on('click', function(){
+        console.log('hope')
+        var $modalContainer = $(this).parents('.modal-container');
+        $modalContainer.css('display', 'none')
+        $modalContainer.children('.concert-modal').css('display', 'none')
+        $('body').removeClass('no-scroll')
+    })
 
 })(jQuery);

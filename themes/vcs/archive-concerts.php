@@ -36,6 +36,9 @@ get_header(); ?>
                 <p class="concert-location"><?php the_field('concert_location'); ?></p>
             </div>
             <div class="modal-container">
+                <div class="modal-close">
+                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                </div>
                 <div class="concert-modal">
                     <p class="concert-title"><?php the_title(); ?></p>
                     <div class="concert-img">
@@ -112,9 +115,10 @@ get_header(); ?>
                 </div>
                 <p class="concert-location"><?php the_field('concert_location'); ?></p>
             </div>
-            <div class="concert-popout">
-            </div>
             <div class="modal-container">
+                <div class="modal-close">
+                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                </div>
                 <div class="concert-modal">
                     <p class="concert-title"><?php the_title(); ?></p>
                     <div class="concert-img">

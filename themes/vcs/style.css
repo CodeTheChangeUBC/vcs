@@ -1096,7 +1096,7 @@ h2 {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: rgba(0, 0, 0, 0.75); }
 
 .post-type-archive-concerts .concert-modal,
 .post-type-archive-concerts .community-modal {
@@ -1104,12 +1104,19 @@ h2 {
   position: fixed;
   top: 50px;
   overflow: scroll;
-  background-color: red;
+  background-color: #fff;
   height: 90%;
-  width: 90%;
+  width: 95%;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%); }
+
+.post-type-archive-concerts .modal-close {
+  position: fixed;
+  top: 15px;
+  right: 15px; }
+  .post-type-archive-concerts .modal-close i {
+    color: #fff; }
 
 .page-id-14 .choir .member {
   width: 100%; }
