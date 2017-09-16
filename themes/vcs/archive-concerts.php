@@ -57,10 +57,8 @@ get_header(); ?>
                                 <p class="concert-location"><?php the_field('concert_location'); ?></p>
                             </div>
                             <div class="buy-tickets">
-                                <div class="button-container">
-                                    <a target="_blank" class="buy-tickets button button-green" href="https://www.eventbrite.com/e/test-concert-tickets-<?php the_field('eventbrite_code'); ?>">Buy Tickets</a>
-                                    <a target="_blank" class="season button button-green" href="<?php echo home_url('/season'); ?>">Buy Season Pass</a>
-                                </div>
+                                <a target="_blank" class="buy-tickets button button-green" href="https://www.eventbrite.com/e/test-concert-tickets-<?php the_field('eventbrite_code'); ?>">Buy Tickets</a>
+                                <a target="_blank" class="season button button-green" href="<?php echo home_url('/season'); ?>">Buy Season Pass</a>
                             </div>
                             <div class="performance">
                                 <p class="perf">Performed by:</p>
@@ -87,10 +85,8 @@ get_header(); ?>
                             <p class="concert-location"><?php the_field('concert_location'); ?></p>
                         </div>
                         <div class="buy-tickets2">
-                            <div class="button-container">
-                                <a target="_blank" class="buy-tickets button button-green" href="https://www.eventbrite.com/e/test-concert-tickets-<?php the_field('eventbrite_code'); ?>">Buy Tickets</a>
-                                <a target="_blank" class="season button button-green" href="<?php echo home_url('/season'); ?>">Buy Season Pass</a>
-                            </div>
+                            <a target="_blank" class="buy-tickets button button-green" href="https://www.eventbrite.com/e/test-concert-tickets-<?php the_field('eventbrite_code'); ?>">Buy Tickets</a>
+                            <a target="_blank" class="season button button-green" href="<?php echo home_url('/season'); ?>">Buy Season Pass</a>
                         </div>
                     </div>
                 </div>
@@ -159,10 +155,8 @@ get_header(); ?>
                             <p class="concert-location"><?php the_field('concert_location'); ?></p>
                         </div>
                         <div class="buy-tickets">
-                            <div class="button-container">
-                                <a target="_blank" class="buy-tickets button button-green" href="https://www.eventbrite.com/e/test-concert-tickets-<?php the_field('eventbrite_code'); ?>">Buy Tickets</a>
-                                <a target="_blank" class="season button button-green" href="<?php echo home_url('/season'); ?>">Buy Season Pass</a>
-                            </div>
+                            <a target="_blank" class="buy-tickets button button-green" href="https://www.eventbrite.com/e/test-concert-tickets-<?php the_field('eventbrite_code'); ?>">Buy Tickets</a>
+                            <a target="_blank" class="season button button-green" href="<?php echo home_url('/season'); ?>">Buy Season Pass</a>
                         </div>
                         <div class="performance">
                             <p class="perf">Performed by:</p>
@@ -188,10 +182,8 @@ get_header(); ?>
                             <p class="concert-location"><?php the_field('concert_location'); ?></p>
                         </div>
                         <div class="buy-tickets">
-                            <div class="button-container">
-                                <a target="_blank" class="buy-tickets button button-green" href="https://www.eventbrite.com/e/test-concert-tickets-<?php the_field('eventbrite_code'); ?>">Buy Tickets</a>
-                                <a target="_blank" class="season button button-green" href="<?php echo home_url('/season'); ?>">Buy Season Pass</a>
-                            </div>
+                            <a target="_blank" class="buy-tickets button button-green" href="https://www.eventbrite.com/e/test-concert-tickets-<?php the_field('eventbrite_code'); ?>">Buy Tickets</a>
+                            <a target="_blank" class="season button button-green" href="<?php echo home_url('/season'); ?>">Buy Season Pass</a>
                         </div>
                     </div>
                 </div>
