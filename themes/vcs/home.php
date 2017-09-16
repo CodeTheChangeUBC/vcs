@@ -6,7 +6,10 @@
  */
 
 get_header(); ?>
-<h2>Blog</h2>
+<div class="blog-header-container">
+    <hr>
+    <h2>Blog</h2>
+</div>
 <?php
     $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
     $args = array(
