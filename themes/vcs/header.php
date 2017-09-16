@@ -58,13 +58,8 @@
 					<div class="main-menu-container">
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					</div>
-					<div class="buy-donate-container">
-						<div class="button-container">
-							<a class="buy-tickets button-green button" href="<?php echo esc_url( home_url( '/concerts	' ) ); ?>">Buy Tickets</a>
-    						<a class="donate button-red button" href="＃">Donate</a>
-						</div>
-					</div>
 
+					<div class="body-gradient"></div>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
