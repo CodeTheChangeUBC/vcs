@@ -53,7 +53,7 @@
 						</div>
 					</div>
 					<div class="nav-logo">
-						
+						<?php show_easylogo(); ?>
 					</div>
 					<div class="main-menu-container">
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
