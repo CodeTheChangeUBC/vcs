@@ -27,34 +27,6 @@
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<div class="nav-icon">
-						<i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-					</div>
-					<div class="mobile-menu-container">
-						<div class="menu-open-nav">
-							<div class="nav-icon-close">
-								<i class="fa fa-times fa-2x" aria-hidden="true"></i>
-							</div>
-						</div>
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'mobile-menu' ) ); ?>
-						<div class="mobile-menu-footer">
-							<div class="mobile-links">
-								<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-								<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
-								<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-								<i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i>
-								<i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i>
-							</div>
-							<div class="mobile-links ">
-								<a href="#">Auditions</a>
-								<a href="#">FAQ</a>
-								<a href="#">Contact</a>
-							</div>
-						</div>
-					</div>
-					<div class="nav-logo">
-						<?php show_easylogo(); ?>
-					</div>
 
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
