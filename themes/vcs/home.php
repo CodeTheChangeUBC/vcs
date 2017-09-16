@@ -19,24 +19,28 @@ get_header(); ?>
 ?>
 <?php if ( $blog_query->have_posts() ) :
     while ( $blog_query->have_posts() ) : $blog_query->the_post(); ?>
-        <p><?php echo get_the_date('F j Y'); ?></p>
-        <div class="blog-image-container">
-            <?php if( get_the_post_thumbnail_url() ) : ?>
-                <a href="<?php echo get_permalink(); ?>">
-                    <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
-                </a>
-            <?php endif; ?>
+        <div class="blog-post">
+            <p class="blog-date"><?php echo get_the_date('F j Y'); ?></p>
+            <div class="blog-image-container">
+                <?php if( get_the_post_thumbnail_url() ) : ?>
+                    <a href="<?php echo get_permalink(); ?>">
+                        <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+                    </a>
+                <?php endif; ?>
+            </div>
+            <div class="blog-content">
+                <p class="desktop-date"><?php echo get_the_date('F j Y'); ?></p>
+                <a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a>
+                <p class="blog-excerpt"><?php echo get_the_excerpt(); ?></p>
+                <hr>
+            </div>
         </div>
-        <div class="blog-content">
-            <a href="<?php echo get_permalink(); ?>">
-                <h3><?php echo get_the_title(); ?></h3>
-            </a>
-            <p><?php echo get_the_excerpt(); ?></p>
-        </div>
-    <?php endwhile;
-    previous_posts_link( '< Newer Posts' );
-    next_posts_link( 'Older Posts >', $blog_query->max_num_pages );
-else : ?>
+    <?php endwhile; ?>
+    <div class="next-prev">
+        <?php previous_posts_link( '< Newer Posts' );
+        next_posts_link( 'Older Posts >', $blog_query->max_num_pages ); ?>
+    </div>
+<?php else : ?>
     <h3>No Blog Posts</h3>
 
 <?php endif; ?>

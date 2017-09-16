@@ -1058,9 +1058,24 @@ h2 {
     bottom: 55px;
     right: 16.5%; } }
 
-.blog .blog .blog-image-container {
+@media all and (min-width: 760px) {
+  .blog .blog-post {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1200px;
+    margin: 0.5rem auto; } }
+
+.blog .blog-date {
+  padding: 0 1rem; }
+  @media all and (min-width: 760px) {
+    .blog .blog-date {
+      display: none; } }
+
+.blog .blog-image-container {
   margin: 0 auto;
   overflow: hidden;
+  width: 100%;
   max-height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1071,6 +1086,46 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media all and (min-width: 760px) {
+    .blog .blog-image-container {
+      width: 250px;
+      height: 250px;
+      border: 1px solid #adadad; } }
+
+.blog .blog-content {
+  padding: 0 1rem;
+  text-align: center; }
+  @media all and (min-width: 760px) {
+    .blog .blog-content {
+      width: 950px;
+      text-align: left; } }
+  .blog .blog-content a {
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Libre Baskerville'; }
+  .blog .blog-content .desktop-date {
+    display: none; }
+    @media all and (min-width: 760px) {
+      .blog .blog-content .desktop-date {
+        display: block;
+        margin-top: 0; } }
+  @media all and (min-width: 760px) {
+    .blog .blog-content hr {
+      display: none; } }
+
+.blog .next-prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem; }
+  .blog .next-prev a {
+    color: #000;
+    text-decoration: none; }
 
 .post-type-archive-concerts .concert-header-container {
   width: 100%;

@@ -69,22 +69,22 @@
     $('.home-carousel').flickity({
         setGallerySize: false
     });
-    $(document).ready(function(){
-        var $bodyWidth = parseFloat($('body').css('width')),
-            $blogPaddingLeft = parseFloat($('.blog-post').css('padding-left')),
-            $blogPaddingRight = parseFloat($('.blog-post').css('padding-right')),
-            $blogImageWidth = $bodyWidth - $blogPaddingLeft - $blogPaddingRight;
+    // $(document).ready(function(){
+    //     var $bodyWidth = parseFloat($('body').css('width')),
+    //         $blogPaddingLeft = parseFloat($('.blog-post').css('padding-left')),
+    //         $blogPaddingRight = parseFloat($('.blog-post').css('padding-right')),
+    //         $blogImageWidth = $bodyWidth - $blogPaddingLeft - $blogPaddingRight;
 
-        $('.blog-image-container').css('height', $blogImageWidth);
-        $('.blog-image-container').css('width', $blogImageWidth);
-    });
+    //     $('.blog-image-container').css('height', $blogImageWidth);
+    //     $('.blog-image-container').css('width', $blogImageWidth);
+    // });
 
     var $bodyHeight = parseFloat($(document).height()),
         $navHeight = parseFloat($('#masthead').height()),
         $footerHeight = parseFloat($('#colophon').height()),
         $slideHeight = $bodyHeight - $navHeight - $footerHeight;
 
-        $('.flickity-viewport').css('min-height', $slideHeight);
+        $('.home .flickity-viewport').css('min-height', $slideHeight);
 
 
 
