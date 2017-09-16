@@ -90,14 +90,6 @@ get_header(); ?>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="eventbrite-modal">
-                    <div class="eventbrite" style="width:100%; text-align:left;">
-                        <iframe class="ieventbrite" src="//eventbrite.com/tickets-external?eid=<?php the_field('eventbrite_code'); ?>&ref=etckt" frameborder="0" height="275" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
-                        <div style="font-family:Helvetica, Arial; font-size:12px; padding:10px 0 5px; margin:2px; width:100%; text-align:left;" >
-                            <a class="powered-by-eb" style="color: #ADB0B6; text-decoration: none;" target="_blank" href="http://www.eventbrite.com/">Powered by Eventbrite</a>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
     <?php endforeach; wp_reset_postdata()?>
@@ -147,23 +139,25 @@ get_header(); ?>
                         <div class="concert-img">
                             <?php the_post_thumbnail(); ?>
                         </div>
-                        <div class="concert-content">
-                            <div class="price-date">
-                                <p class="concert-date"><?php the_field('concert_date'); ?></p>
-                                <p class="concert-price"><?php the_field('concert_price'); ?></p>
+                        <div class="concert-content-container">
+                            <div class="concert-content">
+                                <div class="price-date">
+                                    <p class="concert-date"><?php the_field('concert_date'); ?></p>
+                                    <p class="concert-price"><?php the_field('concert_price'); ?></p>
+                                </div>
+                                <p class="concert-location"><?php the_field('concert_location'); ?></p>
                             </div>
-                            <p class="concert-location"><?php the_field('concert_location'); ?></p>
-                        </div>
-                        <div class="buy-tickets">
-                            <a target="_blank" class="buy-tickets button button-green" href="https://www.eventbrite.com/e/test-concert-tickets-<?php the_field('eventbrite_code'); ?>">Buy Tickets</a>
-                            <a target="_blank" class="season button button-green" href="<?php echo home_url('/season'); ?>">Buy Season Pass</a>
-                        </div>
-                        <div class="performance">
-                            <p class="perf">Performed by:</p>
-                            <p class="performed-by"><?php the_field('performed_by'); ?></p>
-                        </div>
-                        <div class="concert-details">
-                            <p><?php the_field('concert_details'); ?></p>
+                            <div class="buy-tickets">
+                                <a target="_blank" class="buy-tickets button button-green" href="https://www.eventbrite.com/e/test-concert-tickets-<?php the_field('eventbrite_code'); ?>">Buy Tickets</a>
+                                <a target="_blank" class="season button button-green" href="<?php echo home_url('/season'); ?>">Buy Season Pass</a>
+                            </div>
+                            <div class="performance">
+                                <p class="perf">Performed by:</p>
+                                <p class="performed-by"><?php the_field('performed_by'); ?></p>
+                            </div>
+                            <div class="concert-details">
+                                <p><?php the_field('concert_details'); ?></p>
+                            </div>
                         </div>
                         <div class="concert-map">
                             <?php $location = get_field('concert_map');
@@ -174,14 +168,14 @@ get_header(); ?>
                                 </iframe>   
                             <?php endif; ?>
                         </div>
-                        <div class="concert-content">
+                        <div class="concert-content2">
                             <div class="price-date">
                                 <p class="concert-date"><?php the_field('concert_date'); ?></p>
                                 <p class="concert-price"><?php the_field('concert_price'); ?></p>
                             </div>
                             <p class="concert-location"><?php the_field('concert_location'); ?></p>
                         </div>
-                        <div class="buy-tickets">
+                        <div class="buy-tickets2">
                             <a target="_blank" class="buy-tickets button button-green" href="https://www.eventbrite.com/e/test-concert-tickets-<?php the_field('eventbrite_code'); ?>">Buy Tickets</a>
                             <a target="_blank" class="season button button-green" href="<?php echo home_url('/season'); ?>">Buy Season Pass</a>
                         </div>

@@ -1234,7 +1234,7 @@ h2 {
   @media all and (min-width: 760px) {
     .post-type-archive-concerts .concert-modal-container,
     .post-type-archive-concerts .community-modal {
-      height: 75%;
+      height: 85%;
       width: 90%;
       top: 50%;
       left: 50%;
@@ -1255,6 +1255,10 @@ h2 {
   position: fixed;
   top: 7px;
   right: 15px; }
+  @media all and (min-width: 760px) {
+    .post-type-archive-concerts .modal-close {
+      top: 20px;
+      right: 100px; } }
   .post-type-archive-concerts .modal-close i {
     color: #fff; }
 
@@ -1350,10 +1354,18 @@ h2 {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: distribute;
-          justify-content: space-around; } }
+          justify-content: space-around;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse; } }
   .post-type-archive-concerts .concert-modal-container .buy-tickets .button,
   .post-type-archive-concerts .concert-modal-container .buy-tickets2 .button {
-    margin: .5rem 0; }
+    margin: .5rem 0;
+    border-radius: 5px;
+    padding: .4rem .7rem;
+    text-decoration: none;
+    color: #fff; }
     @media all and (min-width: 760px) {
       .post-type-archive-concerts .concert-modal-container .buy-tickets .button,
       .post-type-archive-concerts .concert-modal-container .buy-tickets2 .button {
