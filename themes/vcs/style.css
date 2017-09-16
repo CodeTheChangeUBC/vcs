@@ -865,7 +865,8 @@ h2 {
               align-items: center;
       width: 100%; }
     #masthead .buy-donate-container .button {
-      margin: 0 1rem; }
+      margin: 0 1rem;
+      color: #fff; }
 
 .home section {
   margin-bottom: 3rem; }
