@@ -152,10 +152,9 @@
             align-items: center;
         }
         .circle-overlay {
-            border-radius: 50%;
             overflow: hidden;
-            height: 400px;
-            width: 400px;
+            height: 100%;
+            width: 100%;
             position: relative;
             display: flex;
             justify-content: center;
@@ -163,11 +162,9 @@
         }
         .carousel-img-container img {
             position: absolute;
-            height: 400px;
-            max-width: none;
         }
         .slide-content {
-            padding: 0 2rem;
+            padding: 0 4rem 0 2rem;
             h2 {
                 text-align: left;
             }

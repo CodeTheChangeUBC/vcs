@@ -680,6 +680,7 @@ h2 {
 
 .button {
   width: 65%;
+  max-width: 350px;
   min-width: 115px;
   text-decoration: none;
   color: #fff;
@@ -767,21 +768,21 @@ h2 {
             align-items: center; }
   #masthead .mobile-menu-footer {
     height: 13%; }
-  #masthead #mobile-menu {
+  #masthead .mobile-menu-container .menu-menu-1-container {
     height: 75%; }
     @media all and (min-width: 820px) {
-      #masthead #mobile-menu {
+      #masthead .mobile-menu-container .menu-menu-1-container {
         display: none; } }
-  #masthead #mobile-menu ul {
+  #masthead #mobile-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-    #masthead #mobile-menu ul li {
+    #masthead #mobile-menu li {
       width: 100%;
       padding: .5rem 1rem; }
-    #masthead #mobile-menu ul a {
+    #masthead #mobile-menu a {
       color: #000;
       font-weight: 300;
       font-size: 1.5rem; }
@@ -797,32 +798,50 @@ h2 {
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute; }
-  #masthead #primary-menu {
+  #masthead .main-menu-container {
     display: none; }
     @media all and (min-width: 820px) {
-      #masthead #primary-menu {
-        width: 80%;
+      #masthead .main-menu-container {
+        width: 100%;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-align: end;
-            -ms-flex-align: end;
-                align-items: flex-end;
-        margin: .5rem 2rem; } }
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
     @media all and (min-width: 1260px) {
-      #masthead #primary-menu {
+      #masthead .main-menu-container {
         width: 50%; } }
-    @media all and (min-width: 820px) {
-      #masthead #primary-menu .page_item {
-        margin: 0 2%;
-        font-size: 1.3rem;
-        font-weight: 300; } }
-    @media all and (min-width: 820px) {
-      #masthead #primary-menu a {
-        color: #000; } }
-    @media all and (min-width: 820px) {
-      #masthead #primary-menu ul {
-        width: 100%; } }
+    #masthead .main-menu-container .menu-menu-1-container {
+      display: none; }
+      @media all and (min-width: 820px) {
+        #masthead .main-menu-container .menu-menu-1-container {
+          width: 80%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: end;
+              -ms-flex-align: end;
+                  align-items: flex-end;
+          margin: .5rem 2rem; } }
+      @media all and (min-width: 1260px) {
+        #masthead .main-menu-container .menu-menu-1-container {
+          width: 100%;
+          margin: 0; } }
+      @media all and (min-width: 820px) {
+        #masthead .main-menu-container .menu-menu-1-container .menu-item {
+          margin: 0 2%;
+          font-size: 1.3rem;
+          font-weight: 300; } }
+      @media all and (min-width: 820px) {
+        #masthead .main-menu-container .menu-menu-1-container a {
+          color: #000; } }
+      @media all and (min-width: 820px) {
+        #masthead .main-menu-container .menu-menu-1-container ul {
+          width: 100%; } }
   #masthead .buy-donate-container {
     display: none; }
     @media all and (min-width: 1260px) {
@@ -1015,10 +1034,9 @@ h2 {
         -ms-flex-align: center;
             align-items: center; }
   .home .circle-overlay {
-    border-radius: 50%;
     overflow: hidden;
-    height: 400px;
-    width: 400px;
+    height: 100%;
+    width: 100%;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1030,11 +1048,9 @@ h2 {
         -ms-flex-align: center;
             align-items: center; }
   .home .carousel-img-container img {
-    position: absolute;
-    height: 400px;
-    max-width: none; }
+    position: absolute; }
   .home .slide-content {
-    padding: 0 2rem; }
+    padding: 0 4rem 0 2rem; }
     .home .slide-content h2 {
       text-align: left; }
   .home .flickity-page-dots {
@@ -1056,13 +1072,59 @@ h2 {
       -ms-flex-align: center;
           align-items: center; }
 
-.post-type-archive-concerts h2 {
-  text-transform: capitalize; }
+.post-type-archive-concerts .concert-header-container {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .post-type-archive-concerts .concert-header-container hr {
+    display: none; }
+    @media all and (min-width: 760px) {
+      .post-type-archive-concerts .concert-header-container hr {
+        display: block;
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        width: 100%;
+        margin: 0;
+        height: 5px;
+        background-color: #000;
+        z-index: -1; } }
+  .post-type-archive-concerts .concert-header-container h2 {
+    text-transform: capitalize;
+    margin: 0.5rem 0; }
+    @media all and (min-width: 760px) {
+      .post-type-archive-concerts .concert-header-container h2 {
+        margin: 1rem 0;
+        display: inline-block;
+        background-color: #fff;
+        padding: 0 5rem; } }
+
+@media all and (min-width: 760px) {
+  .post-type-archive-concerts .concerts,
+  .post-type-archive-concerts .community {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
 
 .post-type-archive-concerts .concert {
   margin-bottom: 4rem; }
+  @media all and (min-width: 760px) {
+    .post-type-archive-concerts .concert {
+      width: 33%; } }
 
-.post-type-archive-concerts .concert-content {
+@media all and (min-width: 760px) {
+  .post-type-archive-concerts .concert-img {
+    text-align: center; } }
+
+.post-type-archive-concerts .concert-content,
+.post-type-archive-concerts .concert-content2 {
   padding: 0 1.5rem; }
 
 .post-type-archive-concerts .concert-title {
@@ -1078,6 +1140,9 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media all and (min-width: 760px) {
+    .post-type-archive-concerts .price-date {
+      font-size: 2rem; } }
   .post-type-archive-concerts .price-date p {
     margin: 0; }
 
@@ -1098,11 +1163,11 @@ h2 {
   right: 0;
   background-color: rgba(0, 0, 0, 0.75); }
 
-.post-type-archive-concerts .concert-modal,
+.post-type-archive-concerts .concert-modal-container,
 .post-type-archive-concerts .community-modal {
   display: none;
   position: fixed;
-  top: 50px;
+  top: 40px;
   overflow: scroll;
   background-color: #fff;
   height: 90%;
@@ -1110,13 +1175,138 @@ h2 {
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%); }
+  @media all and (min-width: 760px) {
+    .post-type-archive-concerts .concert-modal-container,
+    .post-type-archive-concerts .community-modal {
+      height: 75%;
+      width: 90%;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); } }
+
+@media all and (min-width: 760px) {
+  .post-type-archive-concerts .concert-modal {
+    width: 75%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
 
 .post-type-archive-concerts .modal-close {
   position: fixed;
-  top: 15px;
+  top: 7px;
   right: 15px; }
   .post-type-archive-concerts .modal-close i {
     color: #fff; }
+
+.post-type-archive-concerts .concert-modal-container .concert-title {
+  text-align: center;
+  margin: 0.5rem 0; }
+  @media all and (min-width: 760px) {
+    .post-type-archive-concerts .concert-modal-container .concert-title {
+      text-align: left;
+      width: 100%;
+      margin-top: 3rem; } }
+
+@media all and (min-width: 760px) {
+  .post-type-archive-concerts .concert-modal-container .concert-img {
+    width: 40%; } }
+
+@media all and (min-width: 760px) {
+  .post-type-archive-concerts .concert-modal-container .concert-content-container {
+    width: 60%;
+    padding-left: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
+.post-type-archive-concerts .concert-modal-container .concert-content {
+  padding: 0 1rem; }
+  @media all and (min-width: 760px) {
+    .post-type-archive-concerts .concert-modal-container .concert-content {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; } }
+
+.post-type-archive-concerts .concert-modal-container .concert-content2 {
+  padding: 0 1rem; }
+  @media all and (min-width: 760px) {
+    .post-type-archive-concerts .concert-modal-container .concert-content2 {
+      display: none; } }
+
+.post-type-archive-concerts .concert-modal-container .concert-location {
+  margin: 0; }
+  @media all and (min-width: 760px) {
+    .post-type-archive-concerts .concert-modal-container .concert-location {
+      font-size: 1.4rem; } }
+
+.post-type-archive-concerts .concert-modal-container .concert-details {
+  padding: 0 1rem; }
+  @media all and (min-width: 760px) {
+    .post-type-archive-concerts .concert-modal-container .concert-details {
+      -webkit-box-ordinal-group: 4;
+          -ms-flex-order: 3;
+              order: 3; } }
+  .post-type-archive-concerts .concert-modal-container .concert-details p {
+    font-weight: 300; }
+
+@media all and (min-width: 760px) {
+  .post-type-archive-concerts .concert-modal-container .concert-map {
+    width: 100%; } }
+
+.post-type-archive-concerts .concert-modal-container .concert-map iframe {
+  width: 100%; }
+  @media all and (min-width: 760px) {
+    .post-type-archive-concerts .concert-modal-container .concert-map iframe {
+      height: 400px; } }
+
+.post-type-archive-concerts .concert-modal-container .performance {
+  padding: 1rem;
+  background-color: #DDDDDD; }
+  @media all and (min-width: 760px) {
+    .post-type-archive-concerts .concert-modal-container .performance {
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2; } }
+  .post-type-archive-concerts .concert-modal-container .performance p {
+    margin: 0; }
+  .post-type-archive-concerts .concert-modal-container .performance .perf {
+    font-size: 1.1rem; }
+
+.post-type-archive-concerts .concert-modal-container .buy-tickets,
+.post-type-archive-concerts .concert-modal-container .buy-tickets2 {
+  text-align: center;
+  margin: 1rem 0; }
+  @media all and (min-width: 760px) {
+    .post-type-archive-concerts .concert-modal-container .buy-tickets,
+    .post-type-archive-concerts .concert-modal-container .buy-tickets2 {
+      -webkit-box-ordinal-group: 5;
+          -ms-flex-order: 4;
+              order: 4;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; } }
+  .post-type-archive-concerts .concert-modal-container .buy-tickets .button,
+  .post-type-archive-concerts .concert-modal-container .buy-tickets2 .button {
+    margin: .5rem 0; }
+    @media all and (min-width: 760px) {
+      .post-type-archive-concerts .concert-modal-container .buy-tickets .button,
+      .post-type-archive-concerts .concert-modal-container .buy-tickets2 .button {
+        width: 45%; } }
+
+@media all and (min-width: 760px) {
+  .post-type-archive-concerts .concert-modal-container .buy-tickets2 {
+    width: 50%;
+    margin: 1rem auto; } }
 
 .page-id-14 .choir .member {
   width: 100%; }
@@ -1142,6 +1332,281 @@ h2 {
           align-items: center;
   overflow: hidden; }
 
+.page-id-170 .season-header-container {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .page-id-170 .season-header-container hr {
+    display: none; }
+    @media all and (min-width: 760px) {
+      .page-id-170 .season-header-container hr {
+        display: block;
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        width: 100%;
+        margin: 0;
+        height: 5px;
+        background-color: #000;
+        z-index: -1; } }
+  .page-id-170 .season-header-container h2 {
+    text-transform: capitalize;
+    margin: 0.5rem 0; }
+    @media all and (min-width: 760px) {
+      .page-id-170 .season-header-container h2 {
+        margin: 1rem 0;
+        display: inline-block;
+        background-color: #fff;
+        padding: 0 5rem; } }
+
+.page-id-170 p {
+  font-weight: 300; }
+
+.page-id-170 .season-copy-container {
+  padding: 0 1rem; }
+  @media all and (min-width: 760px) {
+    .page-id-170 .season-copy-container {
+      max-width: 1200px;
+      margin: 0 auto; } }
+  @media all and (min-width: 760px) {
+    .page-id-170 .season-copy-container .season-copy {
+      font-size: 2rem;
+      text-align: center; } }
+  .page-id-170 .season-copy-container .benefits-heading {
+    text-align: center;
+    font-size: 1.4rem; }
+    @media all and (min-width: 760px) {
+      .page-id-170 .season-copy-container .benefits-heading {
+        text-align: left;
+        font-size: 1.75rem;
+        font-weight: 500; } }
+  .page-id-170 .season-copy-container .benefits ul {
+    margin: 0;
+    padding-left: 1rem;
+    list-style: circle; }
+    @media all and (min-width: 760px) {
+      .page-id-170 .season-copy-container .benefits ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
+  .page-id-170 .season-copy-container .benefits li {
+    font-weight: 300;
+    margin: 0.5rem 0; }
+    @media all and (min-width: 760px) {
+      .page-id-170 .season-copy-container .benefits li {
+        width: 50%;
+        font-size: 1.2rem; } }
+
+.page-id-170 .packs {
+  padding: 0 0.5rem; }
+  @media all and (min-width: 760px) {
+    .page-id-170 .packs {
+      margin-top: 1.5rem; } }
+  .page-id-170 .packs .pack-tabs-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center; }
+    @media all and (min-width: 760px) {
+      .page-id-170 .packs .pack-tabs-container {
+        display: none; } }
+    .page-id-170 .packs .pack-tabs-container .pack-tab {
+      background-color: grey;
+      color: #fff;
+      padding: 1.25rem .75rem .75rem .75rem;
+      border-bottom: 1px solid #fff;
+      width: 33%; }
+      .page-id-170 .packs .pack-tabs-container .pack-tab p {
+        margin: 0; }
+    .page-id-170 .packs .pack-tabs-container .pack-selected {
+      background-color: #000;
+      border-bottom: none; }
+    .page-id-170 .packs .pack-tabs-container .pack-number {
+      font-size: 2rem;
+      line-height: 1;
+      font-family: 'Libre Baskerville'; }
+    .page-id-170 .packs .pack-tabs-container .pack-pack {
+      font-family: 'Libre Baskerville'; }
+  .page-id-170 .packs .pack-tabs-desktop-container {
+    display: none; }
+    @media all and (min-width: 760px) {
+      .page-id-170 .packs .pack-tabs-desktop-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        text-align: center; } }
+    .page-id-170 .packs .pack-tabs-desktop-container .desktop-tabs {
+      width: 33%;
+      background-color: #000;
+      padding: 2rem 3rem 1rem; }
+    .page-id-170 .packs .pack-tabs-desktop-container .desktop-tabs-content {
+      background-color: #fff;
+      border-radius: 50px;
+      padding: 1rem 0; }
+      .page-id-170 .packs .pack-tabs-desktop-container .desktop-tabs-content p {
+        margin: 0;
+        line-height: 1; }
+      .page-id-170 .packs .pack-tabs-desktop-container .desktop-tabs-content .pack-number {
+        font-size: 1.75rem;
+        font-weight: 500; }
+      .page-id-170 .packs .pack-tabs-desktop-container .desktop-tabs-content .pack-discount {
+        font-size: 1.25rem; }
+  .page-id-170 .packs .pack-info-container {
+    position: relative; }
+    @media all and (min-width: 760px) {
+      .page-id-170 .packs .pack-info-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; } }
+  .page-id-170 .packs .pack-info {
+    padding: 0 1rem;
+    display: none;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    width: 100%; }
+    @media all and (min-width: 760px) {
+      .page-id-170 .packs .pack-info {
+        position: unset;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 33%;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+        padding: 0 3rem; } }
+  .page-id-170 .packs .pack-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .page-id-170 .packs .pack3-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .page-id-170 .packs .pack-rows-container {
+    width: 100%; }
+  .page-id-170 .packs .pack-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .page-id-170 .packs .pack-row p {
+      margin: 0.5rem 0; }
+    .page-id-170 .packs .pack-row .concert-name {
+      width: 60%; }
+    .page-id-170 .packs .pack-row .concert-date {
+      width: 40%;
+      text-align: right; }
+  .page-id-170 .packs .pack-copy {
+    width: 100%;
+    text-align: center; }
+    @media all and (min-width: 760px) {
+      .page-id-170 .packs .pack-copy {
+        border-top: 1px solid #fff;
+        padding-top: 1rem; } }
+  .page-id-170 .packs .zone-pricing-container {
+    width: 100%;
+    margin-bottom: 1rem; }
+    @media all and (min-width: 760px) {
+      .page-id-170 .packs .zone-pricing-container {
+        margin-bottom: 0; } }
+  .page-id-170 .packs .zone,
+  .page-id-170 .packs .zone-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  .page-id-170 .packs .zone p {
+    margin: 0; }
+  .page-id-170 .packs .zone-price {
+    background-color: #fff;
+    border-radius: 5px; }
+  .page-id-170 .packs .zone-price p {
+    text-align: center;
+    border-radius: 5px;
+    color: #000;
+    font-size: 1.25rem;
+    padding: 0.25rem 0;
+    margin: 0; }
+  .page-id-170 .packs .surcharge {
+    display: none; }
+    @media all and (min-width: 760px) {
+      .page-id-170 .packs .surcharge {
+        display: block;
+        text-align: center; } }
+    .page-id-170 .packs .surcharge p {
+      margin-bottom: 0; }
+  .page-id-170 .packs .button-container {
+    width: 100%; }
+    @media all and (min-width: 760px) {
+      .page-id-170 .packs .button-container {
+        padding-top: 1rem;
+        border-top: 1px solid #fff; } }
+
+.page-id-170 .zone-seating {
+  padding: 0 1rem;
+  margin-bottom: 3rem; }
+  @media all and (min-width: 760px) {
+    .page-id-170 .zone-seating {
+      max-width: 1200px;
+      margin: 0 auto 3rem; } }
+  .page-id-170 .zone-seating .zone-seat {
+    width: 100%; }
+    .page-id-170 .zone-seating .zone-seat .image-container {
+      text-align: center; }
+  .page-id-170 .zone-seating .zone-seating-text {
+    text-align: center;
+    font-weight: 500; }
+    @media all and (min-width: 760px) {
+      .page-id-170 .zone-seating .zone-seating-text {
+        font-size: 2rem; } }
+  @media all and (min-width: 760px) {
+    .page-id-170 .zone-seating .zone-copy {
+      text-align: center; } }
+  .page-id-170 .zone-seating .zone-copy p {
+    margin: 0; }
+  .page-id-170 .zone-seating .flickity-page-dots {
+    z-index: 99;
+    width: 65%;
+    margin: 0 auto;
+    right: 0;
+    left: 0; }
+  .page-id-170 .zone-seating .flickity-prev-next-button {
+    bottom: -45px;
+    top: initial;
+    width: 30px;
+    height: 30px; }
+  @media all and (min-width: 760px) {
+    .page-id-170 .zone-seating .flickity-prev-next-button.next {
+      right: 200px; } }
+  @media all and (min-width: 760px) {
+    .page-id-170 .zone-seating .flickity-prev-next-button.previous {
+      left: 200px; } }
+
 @media all and (min-width: 760px) {
   #colophon {
     display: -webkit-box;
@@ -1152,7 +1617,9 @@ h2 {
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; } }
+            align-items: center;
+    background-color: #ddd;
+    border-top: 1px solid #fff; } }
 
 #colophon .footer-newsletter-container {
   background-color: #DDDDDD;
@@ -1162,7 +1629,8 @@ h2 {
       -webkit-box-flex: 1.5;
           -ms-flex: 1.5;
               flex: 1.5;
-      padding: 2rem 0; } }
+      padding: 2rem 0;
+      border-right: 1px solid #fff; } }
 
 #colophon .footer-links-container {
   padding: 1rem 0; }
@@ -1180,7 +1648,7 @@ h2 {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
   #colophon .footer-links .fa {
-    color: #000; }
+    color: #303030; }
   #colophon .footer-links a {
     color: #000;
     text-decoration: none;

@@ -15,7 +15,7 @@ get_header(); ?>
         <p><?php the_field('hp_season_copy'); ?></p>
     </div>
     <div class="button-container">
-        <a class="season-button button-green button" href="#">Buy Season Pass</a>
+        <a class="season-button button-green button" href="<?php echo home_url('/season'); ?>">Buy Season Pass</a>
     </div>
     
 </section>

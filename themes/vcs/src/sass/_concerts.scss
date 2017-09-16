@@ -1,11 +1,54 @@
 .post-type-archive-concerts {
-    h2 {
-        text-transform: capitalize;
+    .concert-header-container {
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        hr {
+            display: none;
+            @include media( $desktop-width ){
+                display: block;
+                position: absolute;
+                top: 50%;
+                bottom: 50%;
+                width: 100%;
+                margin: 0;
+                height: 5px;
+                background-color: #000;
+                z-index: -1;
+            }
+        }
+        h2 {
+            text-transform: capitalize;
+            margin: 0.5rem 0;
+            @include media( $desktop-width ){
+                margin: 1rem 0;
+                display: inline-block;
+                background-color: #fff;
+                padding: 0 5rem;
+            }
+        }
+    }
+    .concerts,
+    .community {
+        @include media( $desktop-width ){
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
     .concert {
         margin-bottom: 4rem;
+        @include media( $desktop-width ){
+            width: 33%;
+        }
     }
-    .concert-content {
+    .concert-img {
+        @include media($desktop-width){
+            text-align: center;
+        }
+    }
+    .concert-content,
+    .concert-content2 {
         padding: 0 1.5rem;
     }
     .concert-title {
@@ -17,6 +60,9 @@
     .price-date {
         display: flex;
         justify-content: space-between;
+        @include media( $desktop-width ){
+            font-size: 2rem;
+        }
         p {
             margin: 0;
         }
@@ -38,24 +84,151 @@
         right: 0;
         background-color: rgba(0, 0, 0, 0.75);
     }
-    .concert-modal,
+    .concert-modal-container,
     .community-modal {
         display: none;
         position: fixed;
-        top: 50px;
+        top: 40px;
         overflow: scroll;
         background-color: #fff;
         height: 90%;
         width: 95%;
         left: 50%;
         transform: translate(-50%);
+        @include media( $desktop-width ){
+            height: 75%;
+            width: 90%;
+            top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+    }
+    .concert-modal {
+        @include media( $desktop-width ){
+            width: 75%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
     .modal-close {
         position: fixed;
-        top: 15px;
+        top: 7px;
         right: 15px;
         i {
             color: #fff;
         }
     }
+    .concert-modal-container {
+        .concert-title {
+            text-align: center;
+            margin: 0.5rem 0;
+            @include media( $desktop-width ){
+                text-align: left;
+                width: 100%;
+                margin-top: 3rem;
+            }
+        }
+        .concert-img {
+            @include media( $desktop-width ){
+                width: 40%;
+            }
+        }
+        .concert-content-container {
+            @include media( $desktop-width ){
+                width: 60%;
+                padding-left: 2rem;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .concert-content {
+            padding: 0 1rem;
+            @include media( $desktop-width ){
+                order: 1;
+            }
+        }
+        .concert-content2 {
+            padding: 0 1rem;
+            @include media ( $desktop-width ){
+                display: none;
+            }
+        }
+        .concert-location {
+            margin: 0;
+            @include media( $desktop-width ){
+                font-size: 1.4rem;
+            }
+        }
+        .concert-details {
+            padding: 0 1rem;
+            @include media( $desktop-width ){
+                order: 3;
+            }
+            p {
+                font-weight: 300;
+            }
+        }
+        .concert-map {
+            @include media( $desktop-width ){
+                width: 100%;
+            }
+        }
+        .concert-map iframe {
+            width: 100%;
+            @include media( $desktop-width ){
+                height: 400px;
+            }
+        }
+        .performance {
+            padding: 1rem;
+            background-color: #DDDDDD;
+            @include media( $desktop-width ){
+                order: 2;
+            }
+            p {
+                margin: 0;
+            }
+            .perf {
+                font-size: 1.1rem;
+            }
+        }
+        .buy-tickets,
+        .buy-tickets2 {
+            text-align: center;
+            margin: 1rem 0;
+            @include media( $desktop-width ){
+                order: 4;
+                display: flex;
+                justify-content: space-around;
+            }
+            .button {
+                margin: .5rem 0;
+                @include media( $desktop-width ){
+                    width: 45%;
+                }
+            }
+        }
+        .buy-tickets2 {
+            @include media( $desktop-width ){
+                width: 50%;
+                margin: 1rem auto;
+            }
+        }
+    }
+    // .eventbrite-modal {
+    //     display: none;
+    //     position: fixed;
+    //     top: 40px;
+    //     left: 50%;
+    //     transform: translate(-50%);
+    //     width: 95%;
+    //     height: 90%;
+    //     .eventbrite {
+    //         height: 100%;
+    //     }
+    //     iframe {
+    //         height: 100%;
+    //     }
+    // }
 }

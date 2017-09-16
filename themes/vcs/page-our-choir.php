@@ -19,7 +19,7 @@ get_header(); ?>
     </div>
     <div class="choir">
         <h2>The Choir</h2>
-        <div class="member-carousel">
+        <div id="member-carousel">
             <?php $args = array (
                 'post_type' => 'members',
                 'post_status' => 'publish',

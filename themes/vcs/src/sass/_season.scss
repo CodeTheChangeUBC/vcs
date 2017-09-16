@@ -1,0 +1,297 @@
+.page-id-170 {
+    .season-header-container {
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        hr {
+            display: none;
+            @include media( $desktop-width ){
+                display: block;
+                position: absolute;
+                top: 50%;
+                bottom: 50%;
+                width: 100%;
+                margin: 0;
+                height: 5px;
+                background-color: #000;
+                z-index: -1;
+            }
+        }
+        h2 {
+            text-transform: capitalize;
+            margin: 0.5rem 0;
+            @include media( $desktop-width ){
+                margin: 1rem 0;
+                display: inline-block;
+                background-color: #fff;
+                padding: 0 5rem;
+            }
+        }
+    }
+    p {
+        font-weight: 300;
+    }
+    .season-copy-container {
+        padding: 0 1rem;
+        @include media( $desktop-width ){
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .season-copy {
+            @include media( $desktop-width ){
+                font-size: 2rem;
+                text-align: center;
+            }
+        }
+        .benefits-heading {
+            text-align: center;
+            font-size: 1.4rem;
+            @include media( $desktop-width ){
+                text-align: left;
+                font-size: 1.75rem;
+                font-weight: 500;
+            }
+        }
+        .benefits {
+            ul {
+                margin: 0;
+                padding-left: 1rem;
+                list-style: circle;
+                @include media( $desktop-width ){
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            }
+            li {
+                font-weight: 300;
+                margin: 0.5rem 0;
+                @include media( $desktop-width ){
+                    width: 50%;
+                    font-size: 1.2rem;
+                }
+            }
+
+        }
+    }
+
+    .packs {
+        padding: 0 0.5rem;
+        @include media( $desktop-width ){
+            margin-top: 1.5rem;
+        }
+        .pack-tabs-container {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            @include media( $desktop-width ){
+                display: none;
+            }
+            .pack-tab {
+                background-color: grey;
+                color: #fff;
+                padding: 1.25rem .75rem .75rem .75rem;
+                border-bottom: 1px solid #fff;
+                width: 33%;
+                p {
+                    margin: 0;
+                }
+            }
+            .pack-selected {
+                background-color: #000;
+                border-bottom: none;
+            }
+            .pack-number {
+                font-size: 2rem;
+                line-height: 1;
+                font-family: 'Libre Baskerville';
+            }
+            .pack-pack {
+                font-family: 'Libre Baskerville';
+            }
+        }
+        .pack-tabs-desktop-container {
+            display: none;
+            @include media( $desktop-width ){
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+            }
+            .desktop-tabs {
+                width: 33%;
+                background-color: #000;
+                padding: 2rem 3rem 1rem;
+            }
+            .desktop-tabs-content {
+                background-color: #fff;
+                border-radius: 50px;
+                padding: 1rem 0;
+                p {
+                    margin: 0;
+                    line-height: 1;
+                }
+                .pack-number {
+                    font-size: 1.75rem;
+                    font-weight: 500;
+                }
+                .pack-discount {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+
+        .pack-info-container {
+            position: relative;
+            @include media( $desktop-width ){
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        .pack-info {
+            padding: 0 1rem;
+            display: none;
+            flex-wrap: wrap;
+            background-color: #000;
+            color: #fff;
+            position: absolute;
+            width: 100%;
+            @include media( $desktop-width ){
+                position: unset;
+                display: flex;
+                width: 33%;
+                align-items: flex-end;
+                padding: 0 3rem;
+            }
+        }
+        .pack-content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .pack3-info {
+            display: flex;
+        }
+        .pack-rows-container {
+            width: 100%;
+        }
+        .pack-row {
+            display: flex;
+            justify-content: space-between;
+            p {
+                margin: 0.5rem 0;
+            }
+            .concert-name {
+                width: 60%;
+            }
+            .concert-date {
+                width: 40%;
+                text-align: right;
+            }
+        }
+        .pack-copy {
+            width: 100%;
+            text-align: center;
+            @include media( $desktop-width ){
+                border-top: 1px solid #fff;
+                padding-top: 1rem;
+            }
+        }
+        .zone-pricing-container {
+            width: 100%;
+            margin-bottom: 1rem;
+            @include media( $desktop-width ){
+                margin-bottom: 0;
+            }
+        }
+        .zone,
+        .zone-price {
+            display: flex;
+            justify-content: space-around;
+        }
+        .zone p {
+            margin: 0;
+        }
+        .zone-price {
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        .zone-price p {
+            text-align: center;
+            border-radius: 5px;
+            color: #000;
+            font-size: 1.25rem;
+            padding: 0.25rem 0;
+            margin: 0;
+        }
+        .surcharge {
+            display: none;
+            @include media( $desktop-width ){
+                display: block;
+                text-align: center;
+            }
+            p {
+                margin-bottom: 0;
+            }
+        }
+        .button-container {
+            width: 100%;
+            @include media( $desktop-width ){
+                padding-top: 1rem;
+                border-top: 1px solid #fff;
+            }
+        }
+    }
+    .zone-seating {
+        padding: 0 1rem;
+        margin-bottom: 3rem;
+        @include media( $desktop-width ){
+            max-width: 1200px;
+            margin: 0 auto 3rem;
+        }
+        .zone-seat {
+            width: 100%;
+            .image-container {
+                text-align: center;
+            }
+        }
+
+        .zone-seating-text {
+            text-align: center;
+            font-weight: 500;
+            @include media( $desktop-width ){
+                font-size: 2rem;
+            }
+        }
+        .zone-copy {
+            @include media( $desktop-width ){
+                text-align: center;
+            }
+            p {
+                margin: 0;
+            }
+        }
+        .flickity-page-dots {
+            z-index: 99;
+            width: 65%;
+            margin: 0 auto;
+            right: 0;
+            left: 0;
+        }
+        .flickity-prev-next-button {
+            bottom: -45px;
+            top: initial;
+            width: 30px;
+            height: 30px;
+        }
+        .flickity-prev-next-button.next {
+            @include media( $desktop-width ){
+                right: 200px;
+            }
+        }
+        .flickity-prev-next-button.previous {
+            @include media( $desktop-width ){
+                left: 200px;
+            }
+        }
+    }
+  
+}
