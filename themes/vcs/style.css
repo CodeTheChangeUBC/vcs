@@ -678,7 +678,7 @@ h2 {
   display: block;
   margin: 1rem 0; }
 
-.button {
+.button-container .button {
   width: 65%;
   max-width: 350px;
   min-width: 115px;
