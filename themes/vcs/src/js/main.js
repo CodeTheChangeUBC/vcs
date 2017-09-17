@@ -44,13 +44,7 @@
     ////////////our choir 
     ///////members
     $(document).ready(function(){
-        $('#member-carousel').flickity({
-            imagesLoaded: true
-        });
 
-        $('.member-carousel-modal').flickity({
-            imagesLoaded: true
-        });
         ///////photos
         $('#our-choir-photo-carousel').flickity({
             setGallerySize: false,
@@ -191,5 +185,22 @@ $('#choir .member-carousel-container .modal-close').on('click', function(){
     $('#choir .member-carousel-container').addClass('hide')
     $('body').removeClass('no-scroll')
 })
+$(document).ready(function(){
+    if($(window).width() < 760) {
+        $('#choir #member-carousel').flickity({
+            imagesLoaded: true
+        })
+        $('.member-carousel-modal').flickity({
+            imagesLoaded: true
+        });
+    }
+    if($(window).width() > 760) {
+        $('.member-carousel-modal').flickity({
+            imagesLoaded: true,
+            adaptiveHeight: true
+        });
+    }
+})
+
 
 })(jQuery);

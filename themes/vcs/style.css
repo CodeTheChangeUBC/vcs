@@ -1464,6 +1464,15 @@ h2 {
     width: 50%;
     margin: 1rem auto; } }
 
+.page-id-14 .site-content {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+@media all and (min-width: 760px) {
+  .page-id-14 section {
+    min-height: 100vh;
+    margin: 2rem 0; } }
+
 .page-id-14 h3 {
   text-align: center;
   font-family: 'Libre Baskerville';
@@ -1476,8 +1485,45 @@ h2 {
 .page-id-14 p {
   font-weight: 300; }
 
+.page-id-14 .next-slide-container {
+  display: none; }
+  @media all and (min-width: 760px) {
+    .page-id-14 .next-slide-container {
+      display: block;
+      text-align: center; } }
+
+@media all and (min-width: 760px) {
+  .page-id-14 .circle-img-container {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden; } }
+
 .page-id-14 .about-text-container {
   padding: 0 1rem; }
+  @media all and (min-width: 760px) {
+    .page-id-14 .about-text-container {
+      text-align: center; } }
+
+@media all and (min-width: 760px) {
+  .page-id-14 .about .mobile-about {
+    display: none; } }
+
+.page-id-14 .about .desktop-about {
+  display: none; }
+  @media all and (min-width: 760px) {
+    .page-id-14 .about .desktop-about {
+      display: block; } }
 
 .page-id-14 .choir .member {
   width: 100%; }
@@ -1497,9 +1543,18 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media all and (min-width: 760px) {
+    .page-id-14 .choir .choir-img-container {
+      width: 15vw;
+      height: 15vw; } }
 
 .page-id-14 .choir #member-carousel {
   margin-bottom: 2rem; }
+  @media all and (min-width: 760px) {
+    .page-id-14 .choir #member-carousel {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
 
 .page-id-14 .choir .flickity-page-dots {
   bottom: -10px; }
@@ -1524,11 +1579,7 @@ h2 {
   background-color: rgba(0, 0, 0, 0.75);
   z-index: 999; }
   .page-id-14 .choir .member-carousel-container .modal-close {
-    position: fixed;
-    top: 0;
-    right: 10px; }
-    .page-id-14 .choir .member-carousel-container .modal-close .fa {
-      color: #fff; }
+    text-align: right; }
 
 .page-id-14 .choir .member-modal {
   position: fixed;
@@ -1540,15 +1591,49 @@ h2 {
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%); }
+  @media all and (min-width: 760px) {
+    .page-id-14 .choir .member-modal {
+      width: 75%;
+      max-height: 100%;
+      height: unset;
+      padding-bottom: 5rem; } }
   .page-id-14 .choir .member-modal .member-name {
     text-align: center;
     margin: 0.5rem 0;
     font-weight: 500; }
+    @media all and (min-width: 760px) {
+      .page-id-14 .choir .member-modal .member-name {
+        width: 100%;
+        text-align: left;
+        font-size: 2rem;
+        margin: 0;
+        padding-top: 1rem; } }
+  @media all and (min-width: 760px) {
+    .page-id-14 .choir .member-modal .modal-img {
+      width: 30%; } }
   .page-id-14 .choir .member-modal .member-content {
     padding: 0 1rem; }
+    @media all and (min-width: 760px) {
+      .page-id-14 .choir .member-modal .member-content {
+        width: 70%; } }
 
 .page-id-14 .choir .member-carousel-modal {
   margin-top: 3rem; }
+  @media all and (min-width: 760px) {
+    .page-id-14 .choir .member-carousel-modal .member {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 0 5rem; } }
   .page-id-14 .choir .member-carousel-modal .previous,
   .page-id-14 .choir .member-carousel-modal .next {
     top: -20px;
@@ -1556,11 +1641,25 @@ h2 {
     -webkit-box-shadow: none;
             box-shadow: none;
     z-index: 999; }
+    @media all and (min-width: 760px) {
+      .page-id-14 .choir .member-carousel-modal .previous,
+      .page-id-14 .choir .member-carousel-modal .next {
+        top: initial;
+        background: initial;
+        -webkit-box-shadow: initial;
+                box-shadow: initial; } }
   .page-id-14 .choir .member-carousel-modal .flickity-page-dots {
     top: -25px; }
+    @media all and (min-width: 760px) {
+      .page-id-14 .choir .member-carousel-modal .flickity-page-dots {
+        top: unset;
+        bottom: unset; } }
 
 .page-id-14 #our-choir-photo-carousel {
   height: 75vw; }
+  @media all and (min-width: 760px) {
+    .page-id-14 #our-choir-photo-carousel {
+      height: 300px; } }
 
 .page-id-14 .awards {
   background-color: #5DADAF;

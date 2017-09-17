@@ -1,4 +1,14 @@
 .page-id-14 {
+    .site-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    section {
+        @include media( $desktop-width ){
+            min-height: 100vh;
+            margin: 2rem 0;
+        }
+    }
     h3 {
         text-align: center;
         font-family: 'Libre Baskerville';
@@ -11,8 +21,43 @@
     p {
         font-weight: 300;
     }
+    .next-slide-container {
+        display: none;
+        @include media( $desktop-width ){
+            display: block;
+            text-align: center;
+        }
+    }
+    .circle-img-container {
+        @include media( $desktop-width ){
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+    }
     .about-text-container {
         padding: 0 1rem;
+        @include media( $desktop-width ){
+            text-align: center;
+        }
+    }
+    .about {
+        .mobile-about {
+            @include media( $desktop-width ){
+                display: none;
+            } 
+        }
+        .desktop-about {
+            display: none;
+            @include media( $desktop-width ){
+                display: block;
+            }
+        }
     }
     .choir {
         .member {
@@ -27,9 +72,16 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            @include media( $desktop-width ){
+                width: 15vw;
+                height: 15vw;
+            }
         }
         #member-carousel {
             margin-bottom: 2rem;
+            @include media( $desktop-width ){
+                display: flex;
+            }
         }
         .flickity-page-dots {
             bottom: -10px;
@@ -55,12 +107,7 @@
             background-color: rgba(0,0,0,.75);
             z-index: 999;
             .modal-close {
-                position: fixed;
-                top: 0;
-                right: 10px;
-                .fa {
-                    color: #fff;
-                }
+                text-align: right;
             }
         }
         .member-modal {
@@ -72,31 +119,75 @@
             width: 95%;
             left: 50%;
             transform: translate(-50%);
+            @include media( $desktop-width ){
+                width: 75%;
+                max-height: 100%;
+                height: unset;
+                padding-bottom: 5rem;
+            }
             .member-name {
                 text-align: center;
                 margin: 0.5rem 0;
                 font-weight: 500;
+                @include media( $desktop-width ){
+                    width: 100%;
+                    text-align: left;
+                    font-size: 2rem;
+                    margin: 0;
+                    padding-top: 1rem;
+                }
+            }
+            .modal-img {
+                @include media( $desktop-width ){
+                    width: 30%;
+                }
             }
             .member-content {
                 padding: 0 1rem;
+                @include media( $desktop-width ){
+                    width: 70%;
+                } 
             }
         }
         .member-carousel-modal {
             margin-top: 3rem;
+            .member {
+                @include media( $desktop-width ) {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0 5rem;
+                }
+            }
             .previous,
             .next {
                 top: -20px;
                 background: none;
                 box-shadow: none;
                 z-index: 999;
+                @include media( $desktop-width ){
+                    top: initial;
+                    background: initial;
+                    box-shadow: initial;
+                    
+                }
             }
             .flickity-page-dots {
                 top: -25px;
+                @include media( $desktop-width ){
+                    top: unset;
+                    bottom: unset;
+                }
             }
         }
     }
     #our-choir-photo-carousel {
         height: 75vw;
+        @include media( $desktop-width ){
+            height: 300px;
+        }
     }
     .awards {
         background-color: #5DADAF;
