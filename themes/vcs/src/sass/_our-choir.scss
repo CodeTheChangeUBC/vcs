@@ -1,22 +1,143 @@
 .page-id-14 {
+    h3 {
+        text-align: center;
+        font-family: 'Libre Baskerville';
+        font-size: 1.5rem;
+        margin: 1rem 0;
+    }
+    h2 {
+        margin: 1rem 0;
+    }
+    p {
+        font-weight: 300;
+    }
+    .about-text-container {
+        padding: 0 1rem;
+    }
     .choir {
         .member {
             width: 100%;
         }
-        .member-carousel-modal {
+        .choir-img-container {
+            height: 75vw;
+            width: 75vw;
+            overflow: hidden;
+            margin: 0 auto;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #member-carousel {
+            margin-bottom: 2rem;
+        }
+        .flickity-page-dots {
+            bottom: -10px;
+        }
+        .about-text-container {
+            text-align: center;
+            p {
+                font-weight: 500;
+                font-size: 1.25rem;
+            }
+        }
+        .hide {
             display: none;
+        }
+        .member-carousel-container {
+            position: fixed;
+            height: 100vh;
+            width: 100vw;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0,0,0,.75);
+            z-index: 999;
+            .modal-close {
+                position: fixed;
+                top: 0;
+                right: 10px;
+                .fa {
+                    color: #fff;
+                }
+            }
+        }
+        .member-modal {
+            position: fixed;
+            top: 40px;
+            overflow: scroll;
+            background-color: #fff;
+            height: 90%;
+            width: 95%;
+            left: 50%;
+            transform: translate(-50%);
+            .member-name {
+                text-align: center;
+                margin: 0.5rem 0;
+                font-weight: 500;
+            }
+            .member-content {
+                padding: 0 1rem;
+            }
+        }
+        .member-carousel-modal {
+            margin-top: 3rem;
+            .previous,
+            .next {
+                top: -20px;
+                background: none;
+                box-shadow: none;
+                z-index: 999;
+            }
+            .flickity-page-dots {
+                top: -25px;
+            }
         }
     }
     #our-choir-photo-carousel {
-        height: 200px;
+        height: 75vw;
     }
-    .photo {
-        width: 75%;
-        margin-right: 5px;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
+    .awards {
+        background-color: #5DADAF;
+        padding: 1rem 0;
+        text-align: center;
+        h2,
+        p {
+            margin: 0;
+        }
+        .awards-post {
+            margin: 0.5rem 0;
+        }
+        .award-year {
+            font-size: 1.5rem;
+        }
+    }
+    .press {
+        .press-post {
+            margin: 1rem 0;
+            text-align: center;
+        }
+        .press-post p {
+            margin: 0;
+        }
+        .press-source {
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+    }
+    .photos {
+        margin-bottom: 1rem;
+        .photo {
+            width: 75%;
+            margin-right: 5px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 75vw;
+            width: 75vw;
+            overflow: hidden;
+        }
     }
 }

@@ -10,7 +10,9 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
-				<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+				<div class="img-container">
+					<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+				</div>
 				<div class="post-head">
 					<p><?php echo get_the_date('F j Y'); ?></p>
 					<h3><?php echo get_the_title(); ?></h3>

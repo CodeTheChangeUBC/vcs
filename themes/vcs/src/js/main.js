@@ -49,7 +49,7 @@
         });
 
         $('.member-carousel-modal').flickity({
-            
+            imagesLoaded: true
         });
         ///////photos
         $('#our-choir-photo-carousel').flickity({
@@ -97,7 +97,7 @@
         $modalContainer.children('.concert-modal-container').css('display','block')
         $('body').addClass('no-scroll')
     });
-    $('.modal-close').on('click', function(){
+    $('.concert-modal-container .modal-close').on('click', function(){
         var $modalContainer = $(this).parents('.modal-container');
         $modalContainer.css('display', 'none')
         $modalContainer.children('.concert-modal-container').css('display', 'none')
@@ -122,6 +122,21 @@ $(window).load(function(){
         if($calcWidth < $calcHeight){
             $(this).css({'min-height': '100%', 'max-width': 'none',})
         }     
+    })
+    $('#photos .photo img').each(function(){
+        var $width = $(this).width(),
+            $height = $(this).height(),
+            $containerWidth = $('#photos .photo').width(),
+            $containerHeight = $('#photos .photo').height(),
+            $calcWidth = $containerWidth - $width,
+            $calcHeight = $containerHeight - $height
+
+            if($calcWidth > $calcHeight){
+                $(this).css({'min-width': '100%'})
+            } 
+            if($calcWidth < $calcHeight){
+                $(this).css({'height': '100%', 'min-height': '100%', 'max-width': 'none',})
+            }   
     })
 })
 
@@ -158,6 +173,23 @@ $('.pack5-tab').on('click', function(){
 
     var $infoHeight = $('.pack5-info').height()
     $('.pack-info-container').css('height', $infoHeight)
+})
+
+
+
+
+$('#choir .member').on('click', function(){
+    var $carousel = $('.member-carousel-modal').flickity()
+    var $memberIndex = $(this).index()
+    console.log($memberIndex)
+    $('#choir .member-carousel-container').removeClass('hide')
+    $carousel.flickity('resize')
+    $carousel.flickity( 'select', $memberIndex )
+    $('body').addClass('no-scroll');
+})
+$('#choir .member-carousel-container .modal-close').on('click', function(){
+    $('#choir .member-carousel-container').addClass('hide')
+    $('body').removeClass('no-scroll')
 })
 
 })(jQuery);

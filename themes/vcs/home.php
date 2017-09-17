@@ -24,13 +24,13 @@ get_header(); ?>
     while ( $blog_query->have_posts() ) : $blog_query->the_post(); ?>
         <div class="blog-post">
             <p class="blog-date"><?php echo get_the_date('F j Y'); ?></p>
-            <div class="blog-image-container">
-                <?php if( get_the_post_thumbnail_url() ) : ?>
-                    <a href="<?php echo get_permalink(); ?>">
+            <a href="<?php echo get_permalink(); ?>" class="blog-image-container">
+                <div>
+                    <?php if( get_the_post_thumbnail_url() ) : ?>
                         <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
-                    </a>
-                <?php endif; ?>
-            </div>
+                    <?php endif; ?>
+                </div>
+            </a>
             <div class="blog-content">
                 <p class="desktop-date"><?php echo get_the_date('F j Y'); ?></p>
                 <a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a>
@@ -40,8 +40,8 @@ get_header(); ?>
         </div>
     <?php endwhile; ?>
     <div class="next-prev">
-        <?php previous_posts_link( '< Newer Posts' );
-        next_posts_link( 'Older Posts >', $blog_query->max_num_pages ); ?>
+        <div class="newer"><?php previous_posts_link( '< Newer Posts' ); ?></div>
+        <div class="prev"><?php next_posts_link( 'Older Posts >', $blog_query->max_num_pages ); ?></div>
     </div>
 <?php else : ?>
     <h3>No Blog Posts</h3>
