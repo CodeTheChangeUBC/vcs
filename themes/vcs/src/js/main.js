@@ -204,6 +204,7 @@ $(document).ready(function(){
             adaptiveHeight: true
         });
         $('#our-choir-photo-carousel').flickity({
+            setGallerySize: false,
             wrapAround: true,
             pageDots: false
         });

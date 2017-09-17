@@ -194,7 +194,7 @@
     #our-choir-photo-carousel {
         height: 75vw;
         @include media( $desktop-width ){
-            height: unset;
+            height: 500px;
         }
     }
     .awards {
@@ -242,6 +242,7 @@
             overflow: hidden;
             @include media( $desktop-width ){
                 width: 33%;
+                height: unset;
             }
         }
     }

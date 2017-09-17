@@ -1665,7 +1665,7 @@ h2 {
   height: 75vw; }
   @media all and (min-width: 760px) {
     .page-id-14 #our-choir-photo-carousel {
-      height: unset; } }
+      height: 500px; } }
 
 .page-id-14 .awards {
   background-color: #5DADAF;
@@ -1713,7 +1713,8 @@ h2 {
     overflow: hidden; }
     @media all and (min-width: 760px) {
       .page-id-14 .photos .photo {
-        width: 33%; } }
+        width: 33%;
+        height: unset; } }
 
 .page-id-170 .season-header-container {
   width: 100%;
