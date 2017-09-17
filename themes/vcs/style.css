@@ -1478,6 +1478,9 @@ h2 {
   font-family: 'Libre Baskerville';
   font-size: 1.5rem;
   margin: 1rem 0; }
+  @media all and (min-width: 760px) {
+    .page-id-14 h3 {
+      font-size: 2rem; } }
 
 .page-id-14 h2 {
   margin: 1rem 0; }
@@ -1514,6 +1517,9 @@ h2 {
   @media all and (min-width: 760px) {
     .page-id-14 .about-text-container {
       text-align: center; } }
+  @media all and (min-width: 760px) {
+    .page-id-14 .about-text-container hr {
+      display: none; } }
 
 @media all and (min-width: 760px) {
   .page-id-14 .about .mobile-about {
@@ -1659,12 +1665,15 @@ h2 {
   height: 75vw; }
   @media all and (min-width: 760px) {
     .page-id-14 #our-choir-photo-carousel {
-      height: 300px; } }
+      height: unset; } }
 
 .page-id-14 .awards {
   background-color: #5DADAF;
   padding: 1rem 0;
   text-align: center; }
+  @media all and (min-width: 760px) {
+    .page-id-14 .awards {
+      background-color: unset; } }
   .page-id-14 .awards h2,
   .page-id-14 .awards p {
     margin: 0; }
@@ -1702,6 +1711,9 @@ h2 {
     height: 75vw;
     width: 75vw;
     overflow: hidden; }
+    @media all and (min-width: 760px) {
+      .page-id-14 .photos .photo {
+        width: 33%; } }
 
 .page-id-170 .season-header-container {
   width: 100%;

@@ -46,11 +46,7 @@
     $(document).ready(function(){
 
         ///////photos
-        $('#our-choir-photo-carousel').flickity({
-            setGallerySize: false,
-            wrapAround: true,
-            pageDots: false
-        });
+
         $('.zone-seating-carousel').flickity({
         })
 
@@ -117,21 +113,7 @@ $(window).load(function(){
             $(this).css({'min-height': '100%', 'max-width': 'none',})
         }     
     })
-    $('#photos .photo img').each(function(){
-        var $width = $(this).width(),
-            $height = $(this).height(),
-            $containerWidth = $('#photos .photo').width(),
-            $containerHeight = $('#photos .photo').height(),
-            $calcWidth = $containerWidth - $width,
-            $calcHeight = $containerHeight - $height
-
-            if($calcWidth > $calcHeight){
-                $(this).css({'min-width': '100%'})
-            } 
-            if($calcWidth < $calcHeight){
-                $(this).css({'height': '100%', 'min-height': '100%', 'max-width': 'none',})
-            }   
-    })
+    
 })
 
 $(document).ready(function(){
@@ -193,11 +175,37 @@ $(document).ready(function(){
         $('.member-carousel-modal').flickity({
             imagesLoaded: true
         });
+        $('#our-choir-photo-carousel').flickity({
+            setGallerySize: false,
+            wrapAround: true,
+            pageDots: false
+        });
+
+
+        $('#photos .photo img').each(function(){
+            var $width = $(this).width(),
+                $height = $(this).height(),
+                $containerWidth = $('#photos .photo').width(),
+                $containerHeight = $('#photos .photo').height(),
+                $calcWidth = $containerWidth - $width,
+                $calcHeight = $containerHeight - $height
+    
+                if($calcWidth > $calcHeight){
+                    $(this).css({'min-width': '100%'})
+                } 
+                if($calcWidth < $calcHeight){
+                    $(this).css({'height': '100%', 'min-height': '100%', 'max-width': 'none',})
+                }   
+        })
     }
     if($(window).width() > 760) {
         $('.member-carousel-modal').flickity({
             imagesLoaded: true,
             adaptiveHeight: true
+        });
+        $('#our-choir-photo-carousel').flickity({
+            wrapAround: true,
+            pageDots: false
         });
     }
 })

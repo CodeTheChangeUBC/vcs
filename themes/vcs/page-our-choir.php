@@ -85,7 +85,9 @@ get_header(); ?>
     </section>
     <section id="composer" class="composer">
         <div class="about-content">
-            <img src="<?php the_field('composer_image', get_the_id()); ?>" alt="">
+            <div class="circle-img-container">
+                <img src="<?php the_field('composer_image', get_the_id()); ?>" alt="">
+            </div>
             <div class="about-text-container">
                 <h3><?php the_field('composer_heading', get_the_id()); ?></h3>
                 <p><?php the_field('composer_content', get_the_id()); ?></p>
