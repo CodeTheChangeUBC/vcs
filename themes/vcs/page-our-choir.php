@@ -74,7 +74,7 @@ get_header(); ?>
                             </div>
                             <p class="member-content"><?php echo $post->post_content; ?></p>
                         </div>
-                    <? endforeach; wp_reset_postdata(); ?>
+                    <?php endforeach; wp_reset_postdata(); ?>
                     </div>
                 </div>
             </div>

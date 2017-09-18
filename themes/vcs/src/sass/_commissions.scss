@@ -1,0 +1,57 @@
+.page-id-245 {
+    p {
+        font-weight: 300;
+
+    }
+    h2 {
+        @include media( $desktop-width ){
+            font-size: 2.5rem;
+        }
+    }
+    .commission-copy-container {
+        padding: 0 1rem;
+        @include media( $desktop-width ){
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+    .commissioned-pieces {
+        padding: 0 1rem;
+        @include media( $desktop-width ){
+            max-width: 1200px;
+        }
+        ol {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        li {
+            margin: 1.5rem 0;
+            @include media( $desktop-width ){
+                display: flex;
+                justify-content: center;
+                margin: 0;
+            }
+        }
+        .date {
+            text-align: center;
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 300;
+            @include media( $desktop-width ){
+                flex: 1;
+                text-align: right;
+                margin-right: 5rem;
+                font-size: 1rem;
+            }
+        }
+        .title {
+            margin: 0;
+            @include media( $desktop-width ){
+                flex: 1.5;
+                text-align: left;
+            }
+        }
+    }
+}
