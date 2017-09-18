@@ -38,7 +38,7 @@ get_header(); ?>
                 </div>
                 <p class="concert-location"><?php the_field('concert_location'); ?></p>
             </div>
-            <div class="modal-container">
+            <div class="modal-container hide">
                 <div class="modal-close">
                     <i class="fa fa-times fa-2x" aria-hidden="true"></i>
                 </div>
@@ -129,7 +129,7 @@ get_header(); ?>
                 </div>
                 <p class="concert-location"><?php the_field('concert_location'); ?></p>
             </div>
-            <div class="modal-container">
+            <div class="modal-container hide">
                 <div class="modal-close">
                     <i class="fa fa-times fa-2x" aria-hidden="true"></i>
                 </div>
