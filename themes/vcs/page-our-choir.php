@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-    <h2>About Us</h2>
+    <h2 class="head-head">About Us</h2>
     <section id="about" class="about">
         <div class="about-content">
             <div class="circle-img-container">
