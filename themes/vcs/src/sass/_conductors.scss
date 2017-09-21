@@ -1,0 +1,38 @@
+.page-id-243 {
+    .sidebar {
+        display: none;
+        @include media( $desktop-width ){
+            display: block;
+        }
+    }
+    .conductor-year-container {
+        font-size: 2rem;
+        text-align: center;
+        font-family: "Libre Baskerville"
+    }
+    .conductor-img-overlay {
+        overflow: hidden;
+        border-radius: 50%;
+        height: 90vw;
+        width: 90vw;
+        margin: 0 auto;
+    }
+    .conductor-content-container {
+        padding: 0 1rem;
+        font-weight: 300;
+        h3 {
+            text-align: center;
+            font-family: "Libre Baskerville";
+            font-size: 1.5rem;
+        }
+        p {
+            margin-bottom: 0.5rem;
+        }
+    }
+    .read-more-container {
+        text-align: center;
+        p {
+            margin: 0;
+        }
+    }
+}
