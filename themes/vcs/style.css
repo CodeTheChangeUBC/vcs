@@ -1468,42 +1468,42 @@ h2 {
     width: 50%;
     margin: 1rem auto; } }
 
-.page-id-14 .site-content {
+.page-our-choir .site-content {
   max-width: 1200px;
   margin: 0 auto; }
 
 @media all and (min-width: 760px) {
-  .page-id-14 .head-head {
+  .page-our-choir .head-head {
     display: none; } }
 
 @media all and (min-width: 760px) {
-  .page-id-14 section {
+  .page-our-choir section {
     margin: 2rem 0; } }
 
-.page-id-14 h3 {
+.page-our-choir h3 {
   text-align: center;
   font-family: 'Libre Baskerville';
   font-size: 1.5rem;
   margin: 1rem 0; }
   @media all and (min-width: 760px) {
-    .page-id-14 h3 {
+    .page-our-choir h3 {
       font-size: 2rem; } }
 
-.page-id-14 h2 {
+.page-our-choir h2 {
   margin: 1rem 0; }
 
-.page-id-14 p {
+.page-our-choir p {
   font-weight: 300; }
 
-.page-id-14 .next-slide-container {
+.page-our-choir .next-slide-container {
   display: none; }
   @media all and (min-width: 760px) {
-    .page-id-14 .next-slide-container {
+    .page-our-choir .next-slide-container {
       display: block;
       text-align: center; } }
 
 @media all and (min-width: 760px) {
-  .page-id-14 .circle-img-container {
+  .page-our-choir .circle-img-container {
     width: 400px;
     height: 400px;
     margin: 0 auto;
@@ -1519,31 +1519,31 @@ h2 {
             align-items: center;
     overflow: hidden; } }
 
-.page-id-14 .about-text-container {
+.page-our-choir .about-text-container {
   padding: 0 1rem; }
   @media all and (min-width: 760px) {
-    .page-id-14 .about-text-container {
+    .page-our-choir .about-text-container {
       text-align: center;
       max-width: 1000px;
       margin: 0 auto; } }
   @media all and (min-width: 760px) {
-    .page-id-14 .about-text-container hr {
+    .page-our-choir .about-text-container hr {
       display: none; } }
 
 @media all and (min-width: 760px) {
-  .page-id-14 .about .mobile-about {
+  .page-our-choir .about .mobile-about {
     display: none; } }
 
-.page-id-14 .about .desktop-about {
+.page-our-choir .about .desktop-about {
   display: none; }
   @media all and (min-width: 760px) {
-    .page-id-14 .about .desktop-about {
+    .page-our-choir .about .desktop-about {
       display: block; } }
 
-.page-id-14 .choir .member {
+.page-our-choir .choir .member {
   width: 100%; }
 
-.page-id-14 .choir .choir-img-container {
+.page-our-choir .choir .choir-img-container {
   height: 75vw;
   width: 75vw;
   overflow: hidden;
@@ -1559,28 +1559,28 @@ h2 {
       -ms-flex-align: center;
           align-items: center; }
   @media all and (min-width: 760px) {
-    .page-id-14 .choir .choir-img-container {
+    .page-our-choir .choir .choir-img-container {
       width: 15vw;
       height: 15vw; } }
 
-.page-id-14 .choir #member-carousel {
+.page-our-choir .choir #member-carousel {
   margin-bottom: 2rem; }
   @media all and (min-width: 760px) {
-    .page-id-14 .choir #member-carousel {
+    .page-our-choir .choir #member-carousel {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; } }
 
-.page-id-14 .choir .flickity-page-dots {
+.page-our-choir .choir .flickity-page-dots {
   bottom: -10px; }
 
-.page-id-14 .choir .about-text-container {
+.page-our-choir .choir .about-text-container {
   text-align: center; }
-  .page-id-14 .choir .about-text-container p {
+  .page-our-choir .choir .about-text-container p {
     font-weight: 500;
     font-size: 1.25rem; }
 
-.page-id-14 .choir .member-carousel-container {
+.page-our-choir .choir .member-carousel-container {
   position: fixed;
   height: 100vh;
   width: 100vw;
@@ -1590,10 +1590,10 @@ h2 {
   right: 0;
   background-color: rgba(0, 0, 0, 0.75);
   z-index: 999; }
-  .page-id-14 .choir .member-carousel-container .modal-close {
+  .page-our-choir .choir .member-carousel-container .modal-close {
     text-align: right; }
 
-.page-id-14 .choir .member-modal {
+.page-our-choir .choir .member-modal {
   position: fixed;
   top: 40px;
   overflow: scroll;
@@ -1604,35 +1604,35 @@ h2 {
   -webkit-transform: translate(-50%);
           transform: translate(-50%); }
   @media all and (min-width: 760px) {
-    .page-id-14 .choir .member-modal {
+    .page-our-choir .choir .member-modal {
       width: 75%;
       max-height: 100%;
       height: unset;
       padding-bottom: 5rem; } }
-  .page-id-14 .choir .member-modal .member-name {
+  .page-our-choir .choir .member-modal .member-name {
     text-align: center;
     margin: 0.5rem 0;
     font-weight: 500; }
     @media all and (min-width: 760px) {
-      .page-id-14 .choir .member-modal .member-name {
+      .page-our-choir .choir .member-modal .member-name {
         width: 100%;
         text-align: left;
         font-size: 2rem;
         margin: 0;
         padding-top: 1rem; } }
   @media all and (min-width: 760px) {
-    .page-id-14 .choir .member-modal .modal-img {
+    .page-our-choir .choir .member-modal .modal-img {
       width: 30%; } }
-  .page-id-14 .choir .member-modal .member-content {
+  .page-our-choir .choir .member-modal .member-content {
     padding: 0 1rem; }
     @media all and (min-width: 760px) {
-      .page-id-14 .choir .member-modal .member-content {
+      .page-our-choir .choir .member-modal .member-content {
         width: 70%; } }
 
-.page-id-14 .choir .member-carousel-modal {
+.page-our-choir .choir .member-carousel-modal {
   margin-top: 3rem; }
   @media all and (min-width: 760px) {
-    .page-id-14 .choir .member-carousel-modal .member {
+    .page-our-choir .choir .member-carousel-modal .member {
       width: 100%;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1646,62 +1646,62 @@ h2 {
           -ms-flex-align: center;
               align-items: center;
       padding: 0 5rem; } }
-  .page-id-14 .choir .member-carousel-modal .previous,
-  .page-id-14 .choir .member-carousel-modal .next {
+  .page-our-choir .choir .member-carousel-modal .previous,
+  .page-our-choir .choir .member-carousel-modal .next {
     top: -20px;
     background: none;
     -webkit-box-shadow: none;
             box-shadow: none;
     z-index: 999; }
     @media all and (min-width: 760px) {
-      .page-id-14 .choir .member-carousel-modal .previous,
-      .page-id-14 .choir .member-carousel-modal .next {
+      .page-our-choir .choir .member-carousel-modal .previous,
+      .page-our-choir .choir .member-carousel-modal .next {
         top: initial;
         background: initial;
         -webkit-box-shadow: initial;
                 box-shadow: initial; } }
-  .page-id-14 .choir .member-carousel-modal .flickity-page-dots {
+  .page-our-choir .choir .member-carousel-modal .flickity-page-dots {
     top: -25px; }
     @media all and (min-width: 760px) {
-      .page-id-14 .choir .member-carousel-modal .flickity-page-dots {
+      .page-our-choir .choir .member-carousel-modal .flickity-page-dots {
         top: unset;
         bottom: unset; } }
 
-.page-id-14 #our-choir-photo-carousel {
+.page-our-choir #our-choir-photo-carousel {
   height: 75vw; }
   @media all and (min-width: 760px) {
-    .page-id-14 #our-choir-photo-carousel {
+    .page-our-choir #our-choir-photo-carousel {
       height: 500px; } }
 
-.page-id-14 .awards {
+.page-our-choir .awards {
   background-color: #5DADAF;
   padding: 1rem 0;
   text-align: center; }
   @media all and (min-width: 760px) {
-    .page-id-14 .awards {
+    .page-our-choir .awards {
       background-color: unset; } }
-  .page-id-14 .awards h2,
-  .page-id-14 .awards p {
+  .page-our-choir .awards h2,
+  .page-our-choir .awards p {
     margin: 0; }
-  .page-id-14 .awards .awards-post {
+  .page-our-choir .awards .awards-post {
     margin: 0.5rem 0; }
-  .page-id-14 .awards .award-year {
+  .page-our-choir .awards .award-year {
     font-size: 1.5rem; }
 
-.page-id-14 .press .press-post {
+.page-our-choir .press .press-post {
   margin: 1rem 0;
   text-align: center; }
 
-.page-id-14 .press .press-post p {
+.page-our-choir .press .press-post p {
   margin: 0; }
 
-.page-id-14 .press .press-source {
+.page-our-choir .press .press-source {
   font-weight: 500;
   font-size: 1.1rem; }
 
-.page-id-14 .photos {
+.page-our-choir .photos {
   margin-bottom: 1rem; }
-  .page-id-14 .photos .photo {
+  .page-our-choir .photos .photo {
     width: 75%;
     margin-right: 5px;
     height: 100%;
@@ -1718,11 +1718,11 @@ h2 {
     width: 75vw;
     overflow: hidden; }
     @media all and (min-width: 760px) {
-      .page-id-14 .photos .photo {
+      .page-our-choir .photos .photo {
         width: 33%;
         height: 400px; } }
 
-.page-id-170 .season-header-container {
+.page-season .season-header-container {
   width: 100%;
   position: relative;
   display: -webkit-box;
@@ -1731,10 +1731,10 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  .page-id-170 .season-header-container hr {
+  .page-season .season-header-container hr {
     display: none; }
     @media all and (min-width: 760px) {
-      .page-id-170 .season-header-container hr {
+      .page-season .season-header-container hr {
         display: block;
         position: absolute;
         top: 50%;
@@ -1744,62 +1744,62 @@ h2 {
         height: 5px;
         background-color: #000;
         z-index: -1; } }
-  .page-id-170 .season-header-container h2 {
+  .page-season .season-header-container h2 {
     text-transform: capitalize;
     margin: 0.5rem 0; }
     @media all and (min-width: 760px) {
-      .page-id-170 .season-header-container h2 {
+      .page-season .season-header-container h2 {
         margin: 1rem 0;
         display: inline-block;
         background-color: #fff;
         padding: 0 5rem; } }
 
-.page-id-170 p {
+.page-season p {
   font-weight: 300; }
 
-.page-id-170 .season-copy-container {
+.page-season .season-copy-container {
   padding: 0 1rem; }
   @media all and (min-width: 760px) {
-    .page-id-170 .season-copy-container {
+    .page-season .season-copy-container {
       max-width: 1200px;
       margin: 0 auto; } }
   @media all and (min-width: 760px) {
-    .page-id-170 .season-copy-container .season-copy {
+    .page-season .season-copy-container .season-copy {
       font-size: 2rem;
       text-align: center; } }
-  .page-id-170 .season-copy-container .benefits-heading {
+  .page-season .season-copy-container .benefits-heading {
     text-align: center;
     font-size: 1.4rem; }
     @media all and (min-width: 760px) {
-      .page-id-170 .season-copy-container .benefits-heading {
+      .page-season .season-copy-container .benefits-heading {
         text-align: left;
         font-size: 1.75rem;
         font-weight: 500; } }
-  .page-id-170 .season-copy-container .benefits ul {
+  .page-season .season-copy-container .benefits ul {
     margin: 0;
     padding-left: 1rem;
     list-style: circle; }
     @media all and (min-width: 760px) {
-      .page-id-170 .season-copy-container .benefits ul {
+      .page-season .season-copy-container .benefits ul {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; } }
-  .page-id-170 .season-copy-container .benefits li {
+  .page-season .season-copy-container .benefits li {
     font-weight: 300;
     margin: 0.5rem 0; }
     @media all and (min-width: 760px) {
-      .page-id-170 .season-copy-container .benefits li {
+      .page-season .season-copy-container .benefits li {
         width: 50%;
         font-size: 1.2rem; } }
 
-.page-id-170 .packs {
+.page-season .packs {
   padding: 0 0.5rem; }
   @media all and (min-width: 760px) {
-    .page-id-170 .packs {
+    .page-season .packs {
       margin-top: 1.5rem; } }
-  .page-id-170 .packs .pack-tabs-container {
+  .page-season .packs .pack-tabs-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1808,29 +1808,29 @@ h2 {
             justify-content: space-between;
     text-align: center; }
     @media all and (min-width: 760px) {
-      .page-id-170 .packs .pack-tabs-container {
+      .page-season .packs .pack-tabs-container {
         display: none; } }
-    .page-id-170 .packs .pack-tabs-container .pack-tab {
+    .page-season .packs .pack-tabs-container .pack-tab {
       background-color: grey;
       color: #fff;
       padding: 1.25rem .75rem .75rem .75rem;
       border-bottom: 1px solid #fff;
       width: 33%; }
-      .page-id-170 .packs .pack-tabs-container .pack-tab p {
+      .page-season .packs .pack-tabs-container .pack-tab p {
         margin: 0; }
-    .page-id-170 .packs .pack-tabs-container .pack-selected {
+    .page-season .packs .pack-tabs-container .pack-selected {
       background-color: #000;
       border-bottom: none; }
-    .page-id-170 .packs .pack-tabs-container .pack-number {
+    .page-season .packs .pack-tabs-container .pack-number {
       font-size: 2rem;
       line-height: 1;
       font-family: 'Libre Baskerville'; }
-    .page-id-170 .packs .pack-tabs-container .pack-pack {
+    .page-season .packs .pack-tabs-container .pack-pack {
       font-family: 'Libre Baskerville'; }
-  .page-id-170 .packs .pack-tabs-desktop-container {
+  .page-season .packs .pack-tabs-desktop-container {
     display: none; }
     @media all and (min-width: 760px) {
-      .page-id-170 .packs .pack-tabs-desktop-container {
+      .page-season .packs .pack-tabs-desktop-container {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1838,33 +1838,33 @@ h2 {
             -ms-flex-pack: justify;
                 justify-content: space-between;
         text-align: center; } }
-    .page-id-170 .packs .pack-tabs-desktop-container .desktop-tabs {
+    .page-season .packs .pack-tabs-desktop-container .desktop-tabs {
       width: 33%;
       background-color: #000;
       padding: 2rem 3rem 1rem; }
-    .page-id-170 .packs .pack-tabs-desktop-container .desktop-tabs-content {
+    .page-season .packs .pack-tabs-desktop-container .desktop-tabs-content {
       background-color: #fff;
       border-radius: 50px;
       padding: 1rem 0; }
-      .page-id-170 .packs .pack-tabs-desktop-container .desktop-tabs-content p {
+      .page-season .packs .pack-tabs-desktop-container .desktop-tabs-content p {
         margin: 0;
         line-height: 1; }
-      .page-id-170 .packs .pack-tabs-desktop-container .desktop-tabs-content .pack-number {
+      .page-season .packs .pack-tabs-desktop-container .desktop-tabs-content .pack-number {
         font-size: 1.75rem;
         font-weight: 500; }
-      .page-id-170 .packs .pack-tabs-desktop-container .desktop-tabs-content .pack-discount {
+      .page-season .packs .pack-tabs-desktop-container .desktop-tabs-content .pack-discount {
         font-size: 1.25rem; }
-  .page-id-170 .packs .pack-info-container {
+  .page-season .packs .pack-info-container {
     position: relative; }
     @media all and (min-width: 760px) {
-      .page-id-170 .packs .pack-info-container {
+      .page-season .packs .pack-info-container {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between; } }
-  .page-id-170 .packs .pack-info {
+  .page-season .packs .pack-info {
     padding: 0 1rem;
     display: none;
     -ms-flex-wrap: wrap;
@@ -1874,7 +1874,7 @@ h2 {
     position: absolute;
     width: 100%; }
     @media all and (min-width: 760px) {
-      .page-id-170 .packs .pack-info {
+      .page-season .packs .pack-info {
         position: unset;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1884,142 +1884,142 @@ h2 {
             -ms-flex-align: end;
                 align-items: flex-end;
         padding: 0 3rem; } }
-  .page-id-170 .packs .pack-content {
+  .page-season .packs .pack-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-  .page-id-170 .packs .pack3-info {
+  .page-season .packs .pack3-info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-  .page-id-170 .packs .pack-rows-container {
+  .page-season .packs .pack-rows-container {
     width: 100%; }
-  .page-id-170 .packs .pack-row {
+  .page-season .packs .pack-row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-    .page-id-170 .packs .pack-row p {
+    .page-season .packs .pack-row p {
       margin: 0.5rem 0; }
-    .page-id-170 .packs .pack-row .concert-name {
+    .page-season .packs .pack-row .concert-name {
       width: 60%; }
-    .page-id-170 .packs .pack-row .concert-date {
+    .page-season .packs .pack-row .concert-date {
       width: 40%;
       text-align: right; }
-  .page-id-170 .packs .pack-copy {
+  .page-season .packs .pack-copy {
     width: 100%;
     text-align: center; }
     @media all and (min-width: 760px) {
-      .page-id-170 .packs .pack-copy {
+      .page-season .packs .pack-copy {
         border-top: 1px solid #fff;
         padding-top: 1rem; } }
-  .page-id-170 .packs .zone-pricing-container {
+  .page-season .packs .zone-pricing-container {
     width: 100%;
     margin-bottom: 1rem; }
     @media all and (min-width: 760px) {
-      .page-id-170 .packs .zone-pricing-container {
+      .page-season .packs .zone-pricing-container {
         margin-bottom: 0; } }
-  .page-id-170 .packs .zone,
-  .page-id-170 .packs .zone-price {
+  .page-season .packs .zone,
+  .page-season .packs .zone-price {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
-  .page-id-170 .packs .zone p {
+  .page-season .packs .zone p {
     margin: 0; }
-  .page-id-170 .packs .zone-price {
+  .page-season .packs .zone-price {
     background-color: #fff;
     border-radius: 5px; }
-  .page-id-170 .packs .zone-price p {
+  .page-season .packs .zone-price p {
     text-align: center;
     border-radius: 5px;
     color: #000;
     font-size: 1.25rem;
     padding: 0.25rem 0;
     margin: 0; }
-  .page-id-170 .packs .surcharge {
+  .page-season .packs .surcharge {
     display: none; }
     @media all and (min-width: 760px) {
-      .page-id-170 .packs .surcharge {
+      .page-season .packs .surcharge {
         display: block;
         text-align: center; } }
-    .page-id-170 .packs .surcharge p {
+    .page-season .packs .surcharge p {
       margin-bottom: 0; }
-  .page-id-170 .packs .button-container {
+  .page-season .packs .button-container {
     width: 100%; }
     @media all and (min-width: 760px) {
-      .page-id-170 .packs .button-container {
+      .page-season .packs .button-container {
         padding-top: 1rem;
         border-top: 1px solid #fff; } }
 
-.page-id-170 .zone-seating {
+.page-season .zone-seating {
   padding: 0 1rem;
   margin-bottom: 3rem; }
   @media all and (min-width: 760px) {
-    .page-id-170 .zone-seating {
+    .page-season .zone-seating {
       max-width: 1200px;
       margin: 0 auto 3rem; } }
-  .page-id-170 .zone-seating .zone-seat {
+  .page-season .zone-seating .zone-seat {
     width: 100%; }
-    .page-id-170 .zone-seating .zone-seat .image-container {
+    .page-season .zone-seating .zone-seat .image-container {
       text-align: center; }
-  .page-id-170 .zone-seating .zone-seating-text {
+  .page-season .zone-seating .zone-seating-text {
     text-align: center;
     font-weight: 500; }
     @media all and (min-width: 760px) {
-      .page-id-170 .zone-seating .zone-seating-text {
+      .page-season .zone-seating .zone-seating-text {
         font-size: 2rem; } }
   @media all and (min-width: 760px) {
-    .page-id-170 .zone-seating .zone-copy {
+    .page-season .zone-seating .zone-copy {
       text-align: center; } }
-  .page-id-170 .zone-seating .zone-copy p {
+  .page-season .zone-seating .zone-copy p {
     margin: 0; }
-  .page-id-170 .zone-seating .flickity-page-dots {
+  .page-season .zone-seating .flickity-page-dots {
     z-index: 99;
     width: 65%;
     margin: 0 auto;
     right: 0;
     left: 0; }
-  .page-id-170 .zone-seating .flickity-prev-next-button {
+  .page-season .zone-seating .flickity-prev-next-button {
     bottom: -45px;
     top: initial;
     width: 30px;
     height: 30px; }
   @media all and (min-width: 760px) {
-    .page-id-170 .zone-seating .flickity-prev-next-button.next {
+    .page-season .zone-seating .flickity-prev-next-button.next {
       right: 200px; } }
   @media all and (min-width: 760px) {
-    .page-id-170 .zone-seating .flickity-prev-next-button.previous {
+    .page-season .zone-seating .flickity-prev-next-button.previous {
       left: 200px; } }
 
 @media all and (min-width: 760px) {
-  .page-id-245 .site-content {
+  .page-commissions .site-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; } }
 
-.page-id-245 .sidebar {
+.page-commissions .sidebar {
   display: none; }
   @media all and (min-width: 760px) {
-    .page-id-245 .sidebar {
+    .page-commissions .sidebar {
       -webkit-box-flex: 1;
           -ms-flex: 1;
               flex: 1; } }
 
-.page-id-245 p {
+.page-commissions p {
   font-weight: 300; }
 
 @media all and (min-width: 760px) {
-  .page-id-245 h2 {
+  .page-commissions h2 {
     font-size: 2.5rem; } }
 
 @media all and (min-width: 760px) {
-  .page-id-245 .history-link-container {
+  .page-commissions .history-link-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2030,34 +2030,34 @@ h2 {
     margin-top: 5rem; } }
 
 @media all and (min-width: 760px) {
-  .page-id-245 .history-link-container a {
+  .page-commissions .history-link-container a {
     margin: 0 0 1rem 1rem;
     color: #000;
     text-decoration: none;
     font-weight: 300;
     font-size: 1.25rem; } }
 
-.page-id-245 .commission-copy-container {
+.page-commissions .commission-copy-container {
   padding: 0 1rem; }
   @media all and (min-width: 760px) {
-    .page-id-245 .commission-copy-container {
+    .page-commissions .commission-copy-container {
       max-width: 1200px;
       margin: 0 auto;
       text-align: center; } }
 
-.page-id-245 .commissioned-pieces {
+.page-commissions .commissioned-pieces {
   padding: 0 1rem; }
   @media all and (min-width: 760px) {
-    .page-id-245 .commissioned-pieces {
+    .page-commissions .commissioned-pieces {
       max-width: 1200px; } }
-  .page-id-245 .commissioned-pieces ol {
+  .page-commissions .commissioned-pieces ol {
     padding: 0;
     margin: 0;
     list-style: none; }
-  .page-id-245 .commissioned-pieces li {
+  .page-commissions .commissioned-pieces li {
     margin: 1.5rem 0; }
     @media all and (min-width: 760px) {
-      .page-id-245 .commissioned-pieces li {
+      .page-commissions .commissioned-pieces li {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -2065,60 +2065,60 @@ h2 {
             -ms-flex-pack: center;
                 justify-content: center;
         margin: 0; } }
-  .page-id-245 .commissioned-pieces .date {
+  .page-commissions .commissioned-pieces .date {
     text-align: center;
     margin: 0;
     font-size: 1.5rem;
     font-weight: 300; }
     @media all and (min-width: 760px) {
-      .page-id-245 .commissioned-pieces .date {
+      .page-commissions .commissioned-pieces .date {
         -webkit-box-flex: 1;
             -ms-flex: 1;
                 flex: 1;
         text-align: right;
         margin-right: 5rem;
         font-size: 1rem; } }
-  .page-id-245 .commissioned-pieces .title {
+  .page-commissions .commissioned-pieces .title {
     margin: 0;
     text-align: center; }
     @media all and (min-width: 760px) {
-      .page-id-245 .commissioned-pieces .title {
+      .page-commissions .commissioned-pieces .title {
         -webkit-box-flex: 1.5;
             -ms-flex: 1.5;
                 flex: 1.5;
         text-align: left; } }
 
-.page-id-243 .sidebar {
+.page-conductors .sidebar {
   display: none; }
   @media all and (min-width: 760px) {
-    .page-id-243 .sidebar {
+    .page-conductors .sidebar {
       display: block; } }
 
-.page-id-243 .conductor-year-container {
+.page-conductors .conductor-year-container {
   font-size: 2rem;
   text-align: center;
   font-family: "Libre Baskerville"; }
 
-.page-id-243 .conductor-img-overlay {
+.page-conductors .conductor-img-overlay {
   overflow: hidden;
   border-radius: 50%;
   height: 90vw;
   width: 90vw;
   margin: 0 auto; }
 
-.page-id-243 .conductor-content-container {
+.page-conductors .conductor-content-container {
   padding: 0 1rem;
   font-weight: 300; }
-  .page-id-243 .conductor-content-container h3 {
+  .page-conductors .conductor-content-container h3 {
     text-align: center;
     font-family: "Libre Baskerville";
     font-size: 1.5rem; }
-  .page-id-243 .conductor-content-container p {
+  .page-conductors .conductor-content-container p {
     margin-bottom: 0.5rem; }
 
-.page-id-243 .read-more-container {
+.page-conductors .read-more-container {
   text-align: center; }
-  .page-id-243 .read-more-container p {
+  .page-conductors .read-more-container p {
     margin: 0; }
 
 @media all and (min-width: 760px) {
