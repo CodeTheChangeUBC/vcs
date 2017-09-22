@@ -1,6 +1,6 @@
 (function($) {
 
-    
+
     //mobile nav menu open/close
     $('.nav-icon').on('click', function(){
         $('.mobile-menu-container').css('display', 'flex');
@@ -170,5 +170,16 @@
         $carousel.flickity( 'select', $memberIndex )
         $('body').addClass('no-scroll');
     })
+
+
+
+    //Conductors read more 
+    $('.page-conductors .read-more-container').on('click', function(){
+        console.log('hell')
+        $(this).siblings('.trimmed').addClass('hide')
+        $(this).siblings('.untrimmed').removeClass('hide')
+        $(this).css('display', 'none')
+    })
+
 
 })(jQuery);

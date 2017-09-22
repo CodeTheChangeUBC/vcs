@@ -29,11 +29,12 @@ get_header(); ?>
                 <h3><?php echo $conductor['name']; ?></h3>
                 <?php 
                 $trimmed = wp_trim_words( $conductor['copy'], $num_words = 25, $more = null ); ?>
-                <p><?php echo $trimmed; ?></p>
-            </div>
-            <div class="read-more-container">
-                <p class="read-more">Read More</p>
-                <i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i>
+                <p class="trimmed"><?php echo $trimmed; ?></p>
+                <p class="untrimmed hide"><?php echo $conductor['copy']; ?></p>
+                <div class="read-more-container">
+                    <p class="read-more">Read More</p>
+                    <i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i>
+                </div>
             </div>
         </div>
     <?php endforeach; ?>
