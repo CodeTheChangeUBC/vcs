@@ -142,6 +142,36 @@
                 $(this).css({'height': '100%', 'min-height': '100%', 'max-width': 'none',})
             }   
         })
+        $('.page-history #timeline .timeline-img-container img').each(function(){
+            var $width = $(this).width(),
+                $height = $(this).height(),
+                $containerWidth = $('.page-conductors .conductors-img-overlay').width(),
+                $containerHeight = $('.page-conductors .conductors-img-overlay').height(),
+                $calcWidth = $containerWidth - $width,
+                $calcHeight = $containerHeight - $height
+
+            if($calcWidth > $calcHeight){
+                $(this).css({'min-width': '100%'})
+            } 
+            if($calcWidth < $calcHeight){
+                $(this).css({'height': '100%', 'min-height': '100%', 'max-width': 'none',})
+            }   
+        })
+        $('.page-history #conductor .conductor-img-container img').each(function(){
+            var $width = $(this).width(),
+                $height = $(this).height(),
+                $containerWidth = $('.page-conductors .conductors-img-overlay').width(),
+                $containerHeight = $('.page-conductors .conductors-img-overlay').height(),
+                $calcWidth = $containerWidth - $width,
+                $calcHeight = $containerHeight - $height
+
+            if($calcWidth > $calcHeight){
+                $(this).css({'min-width': '100%'})
+            } 
+            if($calcWidth < $calcHeight){
+                $(this).css({'height': '100%', 'min-height': '100%', 'max-width': 'none',})
+            }   
+        })
     })
 
 
@@ -205,13 +235,21 @@
 
     //Conductors and timeline read more 
     $('.page-conductors .read-more-container').on('click', function(){
-        console.log('hell')
         $(this).siblings('.trimmed').addClass('hide')
         $(this).siblings('.untrimmed').removeClass('hide')
         $(this).css('display', 'none')
     })
     $('.page-timeline .read-more-container').on('click', function(){
-        console.log('hell')
+        $(this).siblings('.trimmed').addClass('hide')
+        $(this).siblings('.untrimmed').removeClass('hide')
+        $(this).css('display', 'none')
+    })
+    $('.page-history #timeline .read-more-container').on('click', function(){
+        $(this).siblings('.trimmed').addClass('hide')
+        $(this).siblings('.untrimmed').removeClass('hide')
+        $(this).css('display', 'none')
+    })
+    $('.page-history #conductor .read-more-container').on('click', function(){
         $(this).siblings('.trimmed').addClass('hide')
         $(this).siblings('.untrimmed').removeClass('hide')
         $(this).css('display', 'none')

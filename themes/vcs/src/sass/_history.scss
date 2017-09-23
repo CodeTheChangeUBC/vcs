@@ -1,0 +1,132 @@
+.page-history {
+    section {
+        margin-bottom: 1rem;
+    }
+    h2 {
+        margin: 0;
+    }
+    .sidebar {
+        display: none;
+        @include media( $desktop-width ){
+            display: block;
+        }
+    }
+    .timeline-year-container {
+        font-size: 1.75rem;
+        text-align: center;
+        font-family: "Libre Baskerville";
+        p {
+            margin-top: 0;
+        }
+    }
+    .timeline-img-overlay {
+        overflow: hidden;
+        border-radius: 50%;
+        height: 90vw;
+        width: 90vw;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .timeline-content-container {
+        padding: 0 1rem;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 2rem;
+        h3 {
+            font-family: "Libre Baskerville";
+            font-size: 1.5rem;
+        }
+        p {
+            text-align: left;
+            margin-bottom: 0.5rem;
+        }
+    }
+    .conductor-year-container {
+        font-size: 1.75rem;
+        text-align: center;
+        font-family: "Libre Baskerville";
+        p {
+            margin-top: 0;
+        }
+    }
+    .conductor-img-overlay {
+        overflow: hidden;
+        border-radius: 50%;
+        height: 90vw;
+        width: 90vw;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .conductor-content-container {
+        padding: 0 1rem;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 2rem;
+        h3 {
+            font-family: "Libre Baskerville";
+            font-size: 1.5rem;
+        }
+        p {
+            text-align: left;
+            margin-bottom: 0.5rem;
+        }
+    }
+    .commission-copy-container {
+        padding: 0 1rem;
+        @include media( $desktop-width ){
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+    .commissioned-pieces {
+        padding: 0 1rem;
+        text-align: center;
+        @include media( $desktop-width ){
+            max-width: 1200px;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        li {
+            margin: 1.5rem 0;
+            @include media( $desktop-width ){
+                display: flex;
+                justify-content: center;
+                margin: 0;
+            }
+        }
+        .date {
+            text-align: center;
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 300;
+            @include media( $desktop-width ){
+                flex: 1;
+                text-align: right;
+                margin-right: 5rem;
+                font-size: 1rem;
+            }
+        }
+        .title {
+            margin: 0;
+            text-align: center;
+            @include media( $desktop-width ){
+                flex: 1.5;
+                text-align: left;
+            }
+        }
+    }
+    .read-more-container {
+        display: inline-block;
+        p {
+            margin: 0;
+        }
+    }
+}

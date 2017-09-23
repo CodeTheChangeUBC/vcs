@@ -1997,6 +1997,145 @@ h2 {
     .page-season .zone-seating .flickity-prev-next-button.previous {
       left: 200px; } }
 
+.page-history section {
+  margin-bottom: 1rem; }
+
+.page-history h2 {
+  margin: 0; }
+
+.page-history .sidebar {
+  display: none; }
+  @media all and (min-width: 760px) {
+    .page-history .sidebar {
+      display: block; } }
+
+.page-history .timeline-year-container {
+  font-size: 1.75rem;
+  text-align: center;
+  font-family: "Libre Baskerville"; }
+  .page-history .timeline-year-container p {
+    margin-top: 0; }
+
+.page-history .timeline-img-overlay {
+  overflow: hidden;
+  border-radius: 50%;
+  height: 90vw;
+  width: 90vw;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.page-history .timeline-content-container {
+  padding: 0 1rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 2rem; }
+  .page-history .timeline-content-container h3 {
+    font-family: "Libre Baskerville";
+    font-size: 1.5rem; }
+  .page-history .timeline-content-container p {
+    text-align: left;
+    margin-bottom: 0.5rem; }
+
+.page-history .conductor-year-container {
+  font-size: 1.75rem;
+  text-align: center;
+  font-family: "Libre Baskerville"; }
+  .page-history .conductor-year-container p {
+    margin-top: 0; }
+
+.page-history .conductor-img-overlay {
+  overflow: hidden;
+  border-radius: 50%;
+  height: 90vw;
+  width: 90vw;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.page-history .conductor-content-container {
+  padding: 0 1rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 2rem; }
+  .page-history .conductor-content-container h3 {
+    font-family: "Libre Baskerville";
+    font-size: 1.5rem; }
+  .page-history .conductor-content-container p {
+    text-align: left;
+    margin-bottom: 0.5rem; }
+
+.page-history .commission-copy-container {
+  padding: 0 1rem; }
+  @media all and (min-width: 760px) {
+    .page-history .commission-copy-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center; } }
+
+.page-history .commissioned-pieces {
+  padding: 0 1rem;
+  text-align: center; }
+  @media all and (min-width: 760px) {
+    .page-history .commissioned-pieces {
+      max-width: 1200px; } }
+  .page-history .commissioned-pieces ul {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+  .page-history .commissioned-pieces li {
+    margin: 1.5rem 0; }
+    @media all and (min-width: 760px) {
+      .page-history .commissioned-pieces li {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin: 0; } }
+  .page-history .commissioned-pieces .date {
+    text-align: center;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 300; }
+    @media all and (min-width: 760px) {
+      .page-history .commissioned-pieces .date {
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+        text-align: right;
+        margin-right: 5rem;
+        font-size: 1rem; } }
+  .page-history .commissioned-pieces .title {
+    margin: 0;
+    text-align: center; }
+    @media all and (min-width: 760px) {
+      .page-history .commissioned-pieces .title {
+        -webkit-box-flex: 1.5;
+            -ms-flex: 1.5;
+                flex: 1.5;
+        text-align: left; } }
+
+.page-history .read-more-container {
+  display: inline-block; }
+  .page-history .read-more-container p {
+    margin: 0; }
+
 @media all and (min-width: 760px) {
   .page-commissions .site-content {
     display: -webkit-box;
@@ -2050,7 +2189,7 @@ h2 {
   @media all and (min-width: 760px) {
     .page-commissions .commissioned-pieces {
       max-width: 1200px; } }
-  .page-commissions .commissioned-pieces ol {
+  .page-commissions .commissioned-pieces ul {
     padding: 0;
     margin: 0;
     list-style: none; }

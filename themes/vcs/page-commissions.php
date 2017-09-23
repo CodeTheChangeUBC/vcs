@@ -13,24 +13,24 @@ get_header(); ?>
         <a href="<?php echo home_url('/commissions'); ?>">Commissions</a>
     </div>
 </div>
-    <div class="content-container">
-        <div class="heading-container">
-            <h2>Commissioned Pieces</h2>
-        </div>
-        <div class="commission-copy-container">
-            <p><?php echo get_field('commissions_copy'); ?></p>
-        </div>
-        <div class="commissioned-pieces">
-            <ol>
-                <?php $pieces = get_field('commissioned_pieces'); 
-                foreach($pieces as $piece) : ?>
-                    <li>
-                        <p class="date"><?php echo $piece['date']; ?></p>
-                        <p class="title"><?php echo $piece['title']; ?></p>
-                    </li>
-                <?php endforeach; wp_reset_postdata(); ?>
-            </ol>
-        </div>
+<div class="content-container">
+    <div class="heading-container">
+        <h2>Commissioned Pieces</h2>
     </div>
+    <div class="commission-copy-container">
+        <p><?php echo get_field('commissions_copy'); ?></p>
+    </div>
+    <div class="commissioned-pieces">
+        <ul>
+            <?php $pieces = get_field('commissioned_pieces'); 
+            foreach($pieces as $piece) : ?>
+                <li>
+                    <p class="date"><?php echo $piece['date']; ?></p>
+                    <p class="title"><?php echo $piece['title']; ?></p>
+                </li>
+            <?php endforeach; wp_reset_postdata(); ?>
+        </ul>
+    </div>
+</div>
 <div class="sidebar"></div>
 <?php get_footer(); ?>
