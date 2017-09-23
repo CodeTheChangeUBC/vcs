@@ -81,7 +81,7 @@
 
 
     //img resize features
-    $(document).ready(function(){
+    $(window).load(function(){
         $('.carousel-img-container img').each(function(){
             var $width = $(this).width(),
                 $height = $(this).height(),
@@ -127,11 +127,11 @@
                 $(this).css({'height': '100%', 'min-height': '100%', 'max-width': 'none',})
             }   
         })
-        $('.page-conductors .conductors-img-container img').each(function(){
+        $('.page-conductors .conductor-img-container img').each(function(){
             var $width = $(this).width(),
                 $height = $(this).height(),
-                $containerWidth = $('.page-conductors .conductors-img-overlay').width(),
-                $containerHeight = $('.page-conductors .conductors-img-overlay').height(),
+                $containerWidth = $('.page-conductors .conductor-img-overlay').width(),
+                $containerHeight = $('.page-conductors .conductor-img-overlay').height(),
                 $calcWidth = $containerWidth - $width,
                 $calcHeight = $containerHeight - $height
 

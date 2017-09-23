@@ -1,6 +1,13 @@
 .page-history {
+    .site-content {
+        position: relative;
+    }
     section {
         margin-bottom: 1rem;
+        @include media( $desktop-width ){
+            width: 60%;
+            margin: 0 auto;
+        }
     }
     h2 {
         margin: 0;
@@ -9,6 +16,54 @@
         display: none;
         @include media( $desktop-width ){
             display: block;
+            width: 20%;
+            position: absolute;
+            top: 100px;
+        }
+        .history-link-container a {
+            display: block;
+            color: #000;
+            text-decoration: none;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+    }
+    hr {
+        display: none;
+        @include media( $desktop-width ) {
+            display: block;
+            height: 5px;
+            background-color: #000;
+        }
+    }
+    .header-container {
+        @include media( $desktop-width ){
+            position: relative;
+        }
+    }
+    .hr-left {
+        @include media( $desktop-width ){
+            position: absolute;
+            top: 50%;
+            bottom: 50%;
+            width: 100vw;
+            right: 80%;
+            margin: 0;
+        }
+    }
+    .hr-right {
+        @include media( $desktop-width ){
+            position: absolute;
+            top: 50%;
+            bottom: 50%;
+            width: 100vw;
+            left: 80%;
+            margin: 0;
+        }
+    }
+    .sidebar-left {
+        @include media( $desktop-width ){
+            left: 15px;
         }
     }
     .timeline-year-container {
@@ -28,6 +83,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @include media( $desktop-width ) {
+            width: 30vw;
+            height: 30vw;
+        }
     }
     .timeline-content-container {
         padding: 0 1rem;
@@ -60,6 +119,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @include media( $desktop-width ){
+            width: 30vw;
+            height: 30vw;
+        }
     }
     .conductor-content-container {
         padding: 0 1rem;
@@ -123,8 +186,21 @@
             }
         }
     }
+    .trimmed {
+        @include media( $desktop-width ) {
+            display: none
+        }
+    }
+    .untrimmed {
+        @include media( $desktop-width ){
+            display: inline;
+        }
+    }
     .read-more-container {
         display: inline-block;
+        @include media( $desktop-width ){
+            display: none;
+        }
         p {
             margin: 0;
         }

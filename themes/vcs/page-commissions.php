@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-<div class="sidebar">
+<div class="sidebar sidebar-left">
     <div class="history-link-container">
         <a href="<?php echo home_url('/timeline'); ?>">Timeline</a>
         <a href="<?php echo home_url('/conductors'); ?>">Conductors</a>
@@ -14,8 +14,8 @@ get_header(); ?>
     </div>
 </div>
 <div class="content-container">
-    <div class="heading-container">
-        <h2>Commissioned Pieces</h2>
+    <div class="header-container">
+        <h2 >Commissioned <br> Pieces</h2>
     </div>
     <div class="commission-copy-container">
         <p><?php echo get_field('commissions_copy'); ?></p>
@@ -32,5 +32,5 @@ get_header(); ?>
         </ul>
     </div>
 </div>
-<div class="sidebar"></div>
+<div class="sidebar sidebar-right"></div>
 <?php get_footer(); ?>

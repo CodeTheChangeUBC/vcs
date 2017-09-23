@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-<div class="sidebar">
+<div class="sidebar sidebar-left">
     <div class="history-link-container">
         <a href="<?php echo home_url('/timeline'); ?>">Timeline</a>
         <a href="<?php echo home_url('/conductors'); ?>">Conductors</a>
@@ -14,7 +14,11 @@ get_header(); ?>
     </div>
 </div>
 <div class="content-container">
-    <h2>Conductors</h2>
+    <div class="header-container">
+        <hr class="hr-left">
+        <h2 >Conductors</h2>
+        <hr class="hr-right">
+    </div>
     <?php $conductors = get_field('conductors');
     foreach( $conductors as $conductor) : ?>
         <div class="conductor">
@@ -40,6 +44,6 @@ get_header(); ?>
         </div>
     <?php endforeach; ?>
 </div>
-<div class="sidebar"></div>
+<div class="sidebar sidebar-right"></div>
 
 <?php get_footer(); ?>

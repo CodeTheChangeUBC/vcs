@@ -6,14 +6,24 @@
  */
 
 get_header(); ?>
-<div class="sidebar"></div>
+<div class="sidebar sidebar-left">
+    <div class="history-link-container">
+        <a href="<?php echo home_url('/timeline'); ?>">Timeline</a>
+        <a href="<?php echo home_url('/conductors'); ?>">Conductors</a>
+        <a href="<?php echo home_url('/commissions'); ?>">Commissions</a>
+    </div>
+</div>
 <section id="timeline">
     <?php 
     $timelineID = get_page_by_path( 'timeline' );
     $timeline = get_field('timelines', $timelineID);
     $first_timeline = $timeline[0];
     ?>
-    <h2>Timeline</h2>
+    <div class="header-container">
+        <hr class="hr-left">
+        <h2 >Timeline</h2>
+        <hr class="hr-right">
+    </div>
     <div class="timeline-year-container">
         <p><?php echo $first_timeline['display_years']; ?></p>
     </div>
@@ -43,7 +53,11 @@ get_header(); ?>
     $conductor = get_field('conductors', $conductorID);
     $first_conductor = $conductor[0];
     ?>
-    <h2>Conductors</h2>
+    <div class="header-container">
+        <hr class="hr-left">
+        <h2 >Conductors</h2>
+        <hr class="hr-right">
+    </div>
     <div class="conductor-year-container">
         <p><?php echo $first_conductor['display_years']; ?></p>
     </div>
@@ -72,7 +86,11 @@ get_header(); ?>
     $commissionsID = get_page_by_path( 'commissions' );
     $piece = get_field('commissioned_pieces', $commissionsID);
     ?> 
-    <h2>Commissioned Pieces</h2>
+    <div class="header-container">
+        <hr class="hr-left">
+        <h2 >Commissioned <br> Pieces</h2>
+        <hr class="hr-right">
+    </div>
     <div class="commission-copy-container">
         <p><?php echo get_field('commissions_copy', $commissionsID); ?></p>
     </div>
@@ -96,5 +114,5 @@ get_header(); ?>
         </div>
     </div>
 </section>
-<div class="sidebar"></div>
+<div class="sidebar sidebar-right"></div>
 <?php get_footer(); ?>

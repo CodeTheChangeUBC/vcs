@@ -1997,8 +1997,15 @@ h2 {
     .page-season .zone-seating .flickity-prev-next-button.previous {
       left: 200px; } }
 
+.page-history .site-content {
+  position: relative; }
+
 .page-history section {
   margin-bottom: 1rem; }
+  @media all and (min-width: 760px) {
+    .page-history section {
+      width: 60%;
+      margin: 0 auto; } }
 
 .page-history h2 {
   margin: 0; }
@@ -2007,7 +2014,50 @@ h2 {
   display: none; }
   @media all and (min-width: 760px) {
     .page-history .sidebar {
-      display: block; } }
+      display: block;
+      width: 20%;
+      position: absolute;
+      top: 100px; } }
+  .page-history .sidebar .history-link-container a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-bottom: 1rem; }
+
+.page-history hr {
+  display: none; }
+  @media all and (min-width: 760px) {
+    .page-history hr {
+      display: block;
+      height: 5px;
+      background-color: #000; } }
+
+@media all and (min-width: 760px) {
+  .page-history .header-container {
+    position: relative; } }
+
+@media all and (min-width: 760px) {
+  .page-history .hr-left {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    width: 100vw;
+    right: 80%;
+    margin: 0; } }
+
+@media all and (min-width: 760px) {
+  .page-history .hr-right {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    width: 100vw;
+    left: 80%;
+    margin: 0; } }
+
+@media all and (min-width: 760px) {
+  .page-history .sidebar-left {
+    left: 15px; } }
 
 .page-history .timeline-year-container {
   font-size: 1.75rem;
@@ -2031,6 +2081,10 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media all and (min-width: 760px) {
+    .page-history .timeline-img-overlay {
+      width: 30vw;
+      height: 30vw; } }
 
 .page-history .timeline-content-container {
   padding: 0 1rem;
@@ -2066,6 +2120,10 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media all and (min-width: 760px) {
+    .page-history .conductor-img-overlay {
+      width: 30vw;
+      height: 30vw; } }
 
 .page-history .conductor-content-container {
   padding: 0 1rem;
@@ -2131,24 +2189,44 @@ h2 {
                 flex: 1.5;
         text-align: left; } }
 
+@media all and (min-width: 760px) {
+  .page-history .trimmed {
+    display: none; } }
+
+@media all and (min-width: 760px) {
+  .page-history .untrimmed {
+    display: inline; } }
+
 .page-history .read-more-container {
   display: inline-block; }
+  @media all and (min-width: 760px) {
+    .page-history .read-more-container {
+      display: none; } }
   .page-history .read-more-container p {
     margin: 0; }
 
-@media all and (min-width: 760px) {
-  .page-commissions .site-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; } }
+.page-commissions .site-content {
+  position: relative; }
+  @media all and (min-width: 760px) {
+    .page-commissions .site-content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
 
 .page-commissions .sidebar {
   display: none; }
   @media all and (min-width: 760px) {
     .page-commissions .sidebar {
-      -webkit-box-flex: 1;
-          -ms-flex: 1;
-              flex: 1; } }
+      display: block;
+      width: 20%;
+      position: absolute;
+      top: 100px; } }
+  .page-commissions .sidebar .history-link-container a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-bottom: 1rem; }
 
 .page-commissions p {
   font-weight: 300; }
@@ -2156,6 +2234,15 @@ h2 {
 @media all and (min-width: 760px) {
   .page-commissions h2 {
     font-size: 2.5rem; } }
+
+@media all and (min-width: 760px) {
+  .page-commissions .sidebar-left {
+    left: 15px; } }
+
+@media all and (min-width: 760px) {
+  .page-commissions .content-container {
+    width: 60%;
+    margin: 0 auto; } }
 
 @media all and (min-width: 760px) {
   .page-commissions .history-link-container {
@@ -2182,7 +2269,8 @@ h2 {
     .page-commissions .commission-copy-container {
       max-width: 1200px;
       margin: 0 auto;
-      text-align: center; } }
+      text-align: center;
+      font-size: 1.25rem; } }
 
 .page-commissions .commissioned-pieces {
   padding: 0 1rem; }
@@ -2227,6 +2315,9 @@ h2 {
                 flex: 1.5;
         text-align: left; } }
 
+.page-conductors .site-content {
+  position: relative; }
+
 .page-conductors h2 {
   margin: 0; }
 
@@ -2234,7 +2325,55 @@ h2 {
   display: none; }
   @media all and (min-width: 760px) {
     .page-conductors .sidebar {
-      display: block; } }
+      display: block;
+      width: 20%;
+      position: absolute;
+      top: 100px; } }
+  .page-conductors .sidebar .history-link-container a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-bottom: 1rem; }
+
+.page-conductors hr {
+  display: none; }
+  @media all and (min-width: 760px) {
+    .page-conductors hr {
+      display: block;
+      height: 5px;
+      background-color: #000; } }
+
+@media all and (min-width: 760px) {
+  .page-conductors .header-container {
+    position: relative; } }
+
+@media all and (min-width: 760px) {
+  .page-conductors .hr-left {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    width: 100vw;
+    right: 80%;
+    margin: 0; } }
+
+@media all and (min-width: 760px) {
+  .page-conductors .hr-right {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    width: 100vw;
+    left: 80%;
+    margin: 0; } }
+
+@media all and (min-width: 760px) {
+  .page-conductors .sidebar-left {
+    left: 15px; } }
+
+@media all and (min-width: 760px) {
+  .page-conductors .content-container {
+    width: 60%;
+    margin: 0 auto; } }
 
 .page-conductors .conductor-year-container {
   font-size: 1.75rem;
@@ -2258,6 +2397,10 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media all and (min-width: 760px) {
+    .page-conductors .conductor-img-overlay {
+      width: 30vw;
+      height: 30vw; } }
 
 .page-conductors .conductor-content-container {
   padding: 0 1rem;
@@ -2276,6 +2419,9 @@ h2 {
   .page-conductors .read-more-container p {
     margin: 0; }
 
+.page-timeline .site-content {
+  position: relative; }
+
 .page-timeline h2 {
   margin: 0; }
 
@@ -2283,7 +2429,55 @@ h2 {
   display: none; }
   @media all and (min-width: 760px) {
     .page-timeline .sidebar {
-      display: block; } }
+      display: block;
+      width: 20%;
+      position: absolute;
+      top: 100px; } }
+  .page-timeline .sidebar .history-link-container a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-bottom: 1rem; }
+
+.page-timeline hr {
+  display: none; }
+  @media all and (min-width: 760px) {
+    .page-timeline hr {
+      display: block;
+      height: 5px;
+      background-color: #000; } }
+
+@media all and (min-width: 760px) {
+  .page-timeline .header-container {
+    position: relative; } }
+
+@media all and (min-width: 760px) {
+  .page-timeline .hr-left {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    width: 100vw;
+    right: 80%;
+    margin: 0; } }
+
+@media all and (min-width: 760px) {
+  .page-timeline .hr-right {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    width: 100vw;
+    left: 80%;
+    margin: 0; } }
+
+@media all and (min-width: 760px) {
+  .page-timeline .sidebar-left {
+    left: 15px; } }
+
+@media all and (min-width: 760px) {
+  .page-timeline .content-container {
+    width: 60%;
+    margin: 0 auto; } }
 
 .page-timeline .timeline-year-container {
   font-size: 1.75rem;
@@ -2307,6 +2501,10 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media all and (min-width: 760px) {
+    .page-timeline .timeline-img-overlay {
+      width: 30vw;
+      height: 30vw; } }
 
 .page-timeline .timeline-content-container {
   padding: 0 1rem;

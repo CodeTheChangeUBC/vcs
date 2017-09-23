@@ -1,5 +1,6 @@
 .page-commissions {
     .site-content {
+        position: relative;
         @include media( $desktop-width ){
             display: flex;
         }
@@ -7,7 +8,17 @@
     .sidebar {
         display: none;
         @include media( $desktop-width ){
-            flex: 1;
+            display: block;
+            width: 20%;
+            position: absolute;
+            top: 100px;
+        }
+        .history-link-container a {
+            display: block;
+            color: #000;
+            text-decoration: none;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
         }
     }
     p {
@@ -16,6 +27,17 @@
     h2 {
         @include media( $desktop-width ){
             font-size: 2.5rem;
+        }
+    }
+    .sidebar-left {
+        @include media( $desktop-width ){
+            left: 15px;
+        }
+    }
+    .content-container {
+        @include media( $desktop-width ){
+            width: 60%;
+            margin: 0 auto;
         }
     }
     .history-link-container {
@@ -40,6 +62,7 @@
             max-width: 1200px;
             margin: 0 auto;
             text-align: center;
+            font-size: 1.25rem;
         }
     }
     .commissioned-pieces {
