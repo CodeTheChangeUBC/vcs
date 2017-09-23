@@ -2534,6 +2534,10 @@ h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -2548,19 +2552,19 @@ h2 {
   padding: 0.75rem 1rem; }
   @media all and (min-width: 760px) {
     #colophon .footer-newsletter-container {
-      -webkit-box-flex: 1.5;
-          -ms-flex: 1.5;
-              flex: 1.5;
       padding: 2rem 0;
-      border-right: 1px solid #fff; } }
+      width: 100%; } }
+  @media all and (min-width: 760px) {
+    #colophon .footer-newsletter-container .mc4wp-form {
+      width: 50%;
+      margin: 0 auto; } }
 
 #colophon .footer-links-container {
   padding: 1rem 0; }
   @media all and (min-width: 760px) {
     #colophon .footer-links-container {
-      -webkit-box-flex: 1;
-          -ms-flex: 1;
-              flex: 1; } }
+      width: 100%;
+      background-color: #888; } }
 
 #colophon .footer-links {
   margin: 1rem 0;
@@ -2569,10 +2573,14 @@ h2 {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
+  @media all and (min-width: 760px) {
+    #colophon .footer-links {
+      width: 50%;
+      margin: 0 auto; } }
   #colophon .footer-links .fa {
-    color: #303030; }
+    color: #252525; }
   #colophon .footer-links a {
-    color: #000;
+    color: #fff;
     text-decoration: none;
     font-weight: 300; }
 
@@ -2588,7 +2596,7 @@ h2 {
 @media all and (min-width: 760px) {
   #colophon .newsletter-email-input {
     width: 50%;
-    margin: 1.5rem auto; } }
+    margin: 1rem auto; } }
 
 #colophon .newsletter-submit-input {
   margin: 0;
