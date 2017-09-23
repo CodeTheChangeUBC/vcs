@@ -2088,6 +2088,9 @@ h2 {
                 flex: 1.5;
         text-align: left; } }
 
+.page-conductors h2 {
+  margin: 0; }
+
 .page-conductors .sidebar {
   display: none; }
   @media all and (min-width: 760px) {
@@ -2095,21 +2098,33 @@ h2 {
       display: block; } }
 
 .page-conductors .conductor-year-container {
-  font-size: 2rem;
+  font-size: 1.75rem;
   text-align: center;
   font-family: "Libre Baskerville"; }
+  .page-conductors .conductor-year-container p {
+    margin-top: 0; }
 
 .page-conductors .conductor-img-overlay {
   overflow: hidden;
   border-radius: 50%;
   height: 90vw;
   width: 90vw;
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .page-conductors .conductor-content-container {
   padding: 0 1rem;
   font-weight: 300;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 2rem; }
   .page-conductors .conductor-content-container h3 {
     font-family: "Libre Baskerville";
     font-size: 1.5rem; }
@@ -2120,6 +2135,55 @@ h2 {
 .page-conductors .read-more-container {
   display: inline-block; }
   .page-conductors .read-more-container p {
+    margin: 0; }
+
+.page-timeline h2 {
+  margin: 0; }
+
+.page-timeline .sidebar {
+  display: none; }
+  @media all and (min-width: 760px) {
+    .page-timeline .sidebar {
+      display: block; } }
+
+.page-timeline .timeline-year-container {
+  font-size: 1.75rem;
+  text-align: center;
+  font-family: "Libre Baskerville"; }
+  .page-timeline .timeline-year-container p {
+    margin-top: 0; }
+
+.page-timeline .timeline-img-overlay {
+  overflow: hidden;
+  border-radius: 50%;
+  height: 90vw;
+  width: 90vw;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.page-timeline .timeline-content-container {
+  padding: 0 1rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 2rem; }
+  .page-timeline .timeline-content-container h3 {
+    font-family: "Libre Baskerville";
+    font-size: 1.5rem; }
+  .page-timeline .timeline-content-container p {
+    text-align: left;
+    margin-bottom: 0.5rem; }
+
+.page-timeline .read-more-container {
+  display: inline-block; }
+  .page-timeline .read-more-container p {
     margin: 0; }
 
 @media all and (min-width: 760px) {
