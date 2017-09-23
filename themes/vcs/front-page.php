@@ -90,6 +90,9 @@ get_header(); ?>
                         <h2><?php echo $slide['slide_heading']; ?></h2>
                         <p><?php echo $slide['slide_copy']; ?></p>
                     </div>
+                    <div class="button-container">
+                        <a class="season-button button-green button" href="<?php echo $slide['slide_button_nav'] ?>"><?php echo $slide['slide_button_text']; ?></a>
+                    </div>
                 </div>
             </div>
         <?php endforeach; ?>
