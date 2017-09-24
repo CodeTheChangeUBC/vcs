@@ -34,6 +34,7 @@
             margin-bottom: 3rem;
             @include media( $desktop-width ){
                 display: flex;
+                justify-content: space-between;
                 flex-wrap: wrap;
                 width: 70%;
                 margin: 0 auto;
@@ -41,8 +42,7 @@
         }
         .composer {
             @include media( $desktop-width ){
-                width: 25%;
-                margin: 0 1rem;
+                width: 23%;
             }
         }
         .img-overlay {
