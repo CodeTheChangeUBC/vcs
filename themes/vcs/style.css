@@ -1728,6 +1728,169 @@ h2 {
         width: 33%;
         height: 400px; } }
 
+.page-our-music .header-container {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .page-our-music .header-container hr {
+    display: none; }
+    @media all and (min-width: 760px) {
+      .page-our-music .header-container hr {
+        display: block;
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        width: 100%;
+        margin: 0;
+        height: 5px;
+        background-color: #000;
+        z-index: -1; } }
+  .page-our-music .header-container h2 {
+    text-transform: capitalize;
+    margin: 0.5rem 0; }
+    @media all and (min-width: 760px) {
+      .page-our-music .header-container h2 {
+        margin: 1rem 0;
+        display: inline-block;
+        background-color: #fff;
+        padding: 0 5rem; } }
+
+.page-our-music .repetoire .repetoire-carousel {
+  margin-bottom: 3rem; }
+  @media all and (min-width: 760px) {
+    .page-our-music .repetoire .repetoire-carousel {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      width: 70%;
+      margin: 0 auto; } }
+
+@media all and (min-width: 760px) {
+  .page-our-music .repetoire .composer {
+    width: 25%;
+    margin: 0 1rem; } }
+
+.page-our-music .repetoire .img-overlay {
+  overflow: hidden;
+  border-radius: 50%;
+  height: 90vw;
+  width: 90vw;
+  margin: 0 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media all and (min-width: 760px) {
+    .page-our-music .repetoire .img-overlay {
+      height: 15vw;
+      width: 15vw;
+      margin: 0; } }
+
+.page-our-music .repetoire .repetoire-copy {
+  padding: 0 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center; }
+
+.page-our-music .repetoire .name {
+  text-align: center;
+  font-size: 1.25rem; }
+
+.page-our-music .repetoire .flickity-prev-next-button {
+  bottom: -60px;
+  top: unset; }
+
+.page-our-music .repetoire .flickity-page-dots {
+  width: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%); }
+
+.page-our-music .listen {
+  margin: 5rem 0; }
+  .page-our-music .listen .tracks-carousel {
+    margin-top: 3rem; }
+    @media all and (min-width: 760px) {
+      .page-our-music .listen .tracks-carousel {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        width: 75%;
+        margin: 0 auto; } }
+  @media all and (min-width: 760px) {
+    .page-our-music .listen .track {
+      width: 33%; } }
+  .page-our-music .listen .flickity-prev-next-button {
+    top: -20px; }
+  .page-our-music .listen .flickity-page-dots {
+    top: -25px;
+    width: 70%;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    bottom: unset; }
+  .page-our-music .listen .bandcamp p {
+    margin: 0;
+    text-align: center; }
+
+.page-our-music .watch .video-carousel {
+  margin-top: 3rem; }
+  @media all and (min-width: 760px) {
+    .page-our-music .watch .video-carousel {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      width: 75%;
+      margin: 0 auto; } }
+
+@media all and (min-width: 760px) {
+  .page-our-music .watch .video {
+    width: 30%; } }
+
+.page-our-music .watch .video iframe {
+  height: 250px; }
+
+.page-our-music .watch .flickity-prev-next-button {
+  top: -25px; }
+
+.page-our-music .watch .flickity-page-dots {
+  top: -30px;
+  width: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  bottom: unset; }
+
+.page-our-music .flickity-prev-next-button {
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
+.page-our-music .conductor,
+.page-our-music .track,
+.page-our-music .video {
+  width: 100%;
+  text-align: center; }
+
 .page-season .season-header-container {
   width: 100%;
   position: relative;

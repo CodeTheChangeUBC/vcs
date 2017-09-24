@@ -66,6 +66,14 @@
                 pageDots: false
             });
         }
+        if($(window).width() < 760 ) {
+            $('.page-our-music .repetoire-carousel').flickity({
+            });
+            $('.page-our-music .tracks-carousel').flickity({
+            });
+            $('.page-our-music .video-carousel').flickity({
+            });
+        }
     });
 
 
