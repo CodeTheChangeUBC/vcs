@@ -1767,9 +1767,6 @@ h2 {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
       width: 70%;
@@ -1777,7 +1774,8 @@ h2 {
 
 @media all and (min-width: 760px) {
   .page-our-music .repetoire .composer {
-    width: 23%; } }
+    width: 23%;
+    margin: 0 1%; } }
 
 .page-our-music .repetoire .img-overlay {
   overflow: hidden;
@@ -1858,15 +1856,13 @@ h2 {
       display: flex;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
       width: 75%;
       margin: 0 auto; } }
 
 @media all and (min-width: 760px) {
   .page-our-music .watch .video {
-    width: 30%; } }
+    width: 30%;
+    margin: 0 1.5%; } }
 
 .page-our-music .watch .video iframe {
   height: 250px; }
