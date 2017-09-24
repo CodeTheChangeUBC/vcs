@@ -1,9 +1,46 @@
 .page-faq {
+    .header-container {
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        hr {
+            display: none;
+            @include media( $desktop-width ){
+                display: block;
+                position: absolute;
+                top: 50%;
+                bottom: 50%;
+                width: 100%;
+                margin: 0;
+                height: 5px;
+                background-color: #000;
+                z-index: -1;
+            }
+        }
+        h2 {
+            text-transform: capitalize;
+            margin: 0.5rem 0;
+            @include media( $desktop-width ){
+                margin: 1rem 0;
+                display: inline-block;
+                background-color: #fff;
+                padding: 0 5rem;
+            }
+        }
+    }
     .faq {
         padding: 0 1rem;
     }
+    .qa {
+        @include media( $desktop-width ){
+            font-size: 1.25rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    }
     .question {
-        margin-bottom: 0;
+        margin-bottom: 0;   
     }
     .answer {
         margin-top: 0;

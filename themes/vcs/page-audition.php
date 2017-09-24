@@ -7,7 +7,10 @@
 
 get_header(); ?>
 <div class="audition">
-    <h2>Auditions</h2>
+    <div class="header-container">
+        <hr>
+        <h2>Auditions</h2>
+    </div>
     <?php $blocks = get_field('info_blocks');
     foreach( $blocks as $block ) :?>
         <div class="block">
@@ -16,10 +19,8 @@ get_header(); ?>
                     <img src="<?php echo $block['image']; ?>" alt="">
                 </div>
             </div>
-            <div class="heading-container">
-                <h3><?php echo $block['heading']; ?></h3>
-            </div>
             <div class="copy-container">
+                <h3><?php echo $block['heading']; ?></h3>
                 <p><?php echo $block['copy']; ?></p>
             </div>
         </div>

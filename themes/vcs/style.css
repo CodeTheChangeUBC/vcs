@@ -2531,6 +2531,18 @@ h2 {
 
 .page-contact .site-content {
   min-height: unset; }
+  @media all and (min-width: 760px) {
+    .page-contact .site-content {
+      min-height: 100vh;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
 
 .page-contact .contact {
   text-align: center;
@@ -2542,8 +2554,52 @@ h2 {
 .page-contact .email {
   font-size: 0.85rem; }
 
+@media all and (min-width: 760px) {
+  .page-contact .address,
+  .page-contact .tel,
+  .page-contact .email {
+    font-size: 1.25rem; } }
+
+.page-faq .header-container {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .page-faq .header-container hr {
+    display: none; }
+    @media all and (min-width: 760px) {
+      .page-faq .header-container hr {
+        display: block;
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        width: 100%;
+        margin: 0;
+        height: 5px;
+        background-color: #000;
+        z-index: -1; } }
+  .page-faq .header-container h2 {
+    text-transform: capitalize;
+    margin: 0.5rem 0; }
+    @media all and (min-width: 760px) {
+      .page-faq .header-container h2 {
+        margin: 1rem 0;
+        display: inline-block;
+        background-color: #fff;
+        padding: 0 5rem; } }
+
 .page-faq .faq {
   padding: 0 1rem; }
+
+@media all and (min-width: 760px) {
+  .page-faq .qa {
+    font-size: 1.25rem;
+    max-width: 1200px;
+    margin: 0 auto; } }
 
 .page-faq .question {
   margin-bottom: 0; }
@@ -2557,8 +2613,43 @@ h2 {
 .page-faq p span {
   font-weight: 500; }
 
+.page-audition .header-container {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .page-audition .header-container hr {
+    display: none; }
+    @media all and (min-width: 760px) {
+      .page-audition .header-container hr {
+        display: block;
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        width: 100%;
+        margin: 0;
+        height: 5px;
+        background-color: #000;
+        z-index: -1; } }
+  .page-audition .header-container h2 {
+    text-transform: capitalize;
+    margin: 0.5rem 0; }
+    @media all and (min-width: 760px) {
+      .page-audition .header-container h2 {
+        margin: 1rem 0;
+        display: inline-block;
+        background-color: #fff;
+        padding: 0 5rem; } }
+
 .page-audition .audition {
   padding: 0 1rem; }
+  @media all and (min-width: 760px) {
+    .page-audition .audition {
+      padding: 0; } }
 
 .page-audition h3 {
   text-align: center;
@@ -2566,6 +2657,48 @@ h2 {
   font-weight: 300;
   font-size: 1.5rem;
   margin-bottom: 0.5rem; }
+  @media all and (min-width: 760px) {
+    .page-audition h3 {
+      text-align: left; } }
+
+@media all and (min-width: 760px) {
+  .page-audition .block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
+@media all and (min-width: 760px) {
+  .page-audition .block:nth-child(odd) .img-container {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
+  .page-audition .block:nth-child(odd) .content-container {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; } }
+
+@media all and (min-width: 760px) {
+  .page-audition .block:nth-child(3n+0) {
+    background-color: rgba(93, 173, 175, 0.5); } }
+
+@media all and (min-width: 760px) {
+  .page-audition .block:nth-child(3n+1) {
+    background-color: rgba(103, 59, 114, 0.5); } }
+
+@media all and (min-width: 760px) {
+  .page-audition .block:nth-child(3n+2) {
+    background-color: rgba(196, 68, 61, 0.5); } }
+
+@media all and (min-width: 760px) {
+  .page-audition .img-container {
+    width: 30vw;
+    max-width: 550px; } }
 
 .page-audition .img-overlay {
   overflow: hidden;
@@ -2582,6 +2715,15 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media all and (min-width: 760px) {
+    .page-audition .img-overlay {
+      width: 20vw;
+      height: 20vw; } }
+
+@media all and (min-width: 760px) {
+  .page-audition .copy-container {
+    width: 40vw;
+    max-width: 700px; } }
 
 .page-audition .copy-container p {
   margin-top: 0;

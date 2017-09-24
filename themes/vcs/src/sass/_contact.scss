@@ -1,6 +1,12 @@
 .page-contact {
     .site-content {
         min-height: unset;
+        @include media( $desktop-width ){
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
     .contact {
         text-align: center;
@@ -11,5 +17,12 @@
     }
     .email {
         font-size: 0.85rem;
+    }
+    .address,
+    .tel,
+    .email {
+        @include media( $desktop-width ){
+            font-size: 1.25rem;
+        }
     }
 }

@@ -7,7 +7,10 @@
 
 get_header(); ?>
 <div class="faq">
-    <h2>FAQs</h2>
+    <div class="header-container">
+        <hr>
+        <h2>FAQs</h2>
+    </div>
     <?php $faqs = get_field('faqs');
     foreach( $faqs as $faq ) : ?>
         <div class="qa">
