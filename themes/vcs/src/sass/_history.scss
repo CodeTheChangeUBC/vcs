@@ -6,7 +6,7 @@
         margin-bottom: 1rem;
         @include media( $desktop-width ){
             width: 60%;
-            margin: 0 auto;
+            margin: 0 auto 5rem;
         }
     }
     h2 {

@@ -2011,7 +2011,7 @@ h2 {
   @media all and (min-width: 760px) {
     .page-history section {
       width: 60%;
-      margin: 0 auto; } }
+      margin: 0 auto 5rem; } }
 
 .page-history h2 {
   margin: 0; }
@@ -2529,6 +2529,64 @@ h2 {
   .page-timeline .read-more-container p {
     margin: 0; }
 
+.page-contact .site-content {
+  min-height: unset; }
+
+.page-contact .contact {
+  text-align: center;
+  padding: 0 1rem; }
+
+.page-contact h2 {
+  margin: 0; }
+
+.page-contact .email {
+  font-size: 0.85rem; }
+
+.page-faq .faq {
+  padding: 0 1rem; }
+
+.page-faq .question {
+  margin-bottom: 0; }
+
+.page-faq .answer {
+  margin-top: 0; }
+
+.page-faq p {
+  font-weight: 300; }
+
+.page-faq p span {
+  font-weight: 500; }
+
+.page-audition .audition {
+  padding: 0 1rem; }
+
+.page-audition h3 {
+  text-align: center;
+  font-family: 'Libre Baskerville';
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem; }
+
+.page-audition .img-overlay {
+  overflow: hidden;
+  border-radius: 50%;
+  height: 90vw;
+  width: 90vw;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.page-audition .copy-container p {
+  margin-top: 0;
+  font-weight: 300; }
+
 @media all and (min-width: 760px) {
   #colophon {
     display: -webkit-box;
@@ -2564,7 +2622,7 @@ h2 {
   @media all and (min-width: 760px) {
     #colophon .footer-links-container {
       width: 100%;
-      background-color: #888; } }
+      background-color: #fff; } }
 
 #colophon .footer-links {
   margin: 1rem 0;
@@ -2580,7 +2638,7 @@ h2 {
   #colophon .footer-links .fa {
     color: #252525; }
   #colophon .footer-links a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     font-weight: 300; }
 

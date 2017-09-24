@@ -172,6 +172,21 @@
                 $(this).css({'height': '100%', 'min-height': '100%', 'max-width': 'none',})
             }   
         })
+        $('.page-audition .img-container img').each(function(){
+            var $width = $(this).width(),
+                $height = $(this).height(),
+                $containerWidth = $('.page-conductors .conductors-img-overlay').width(),
+                $containerHeight = $('.page-conductors .conductors-img-overlay').height(),
+                $calcWidth = $containerWidth - $width,
+                $calcHeight = $containerHeight - $height
+
+            if($calcWidth > $calcHeight){
+                $(this).css({'min-width': '100%'})
+            } 
+            if($calcWidth < $calcHeight){
+                $(this).css({'height': '100%', 'min-height': '100%', 'max-width': 'none',})
+            }   
+        })
     })
 
 
