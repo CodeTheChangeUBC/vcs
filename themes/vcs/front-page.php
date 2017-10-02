@@ -72,8 +72,8 @@ get_header(); ?>
     </div>
 </section>
 <section class="buy-donate">
-    <a class="buy-tickets button-green button" href="">Buy Tickets</a>
-    <a class="donate button-red button" href="">Donate</a>
+    <a class="button-green button" href="">Buy Tickets</a>
+    <a class="button-red button" href="">Donate</a>
 </section>
 <section class="desktop">
     <div class="home-carousel">

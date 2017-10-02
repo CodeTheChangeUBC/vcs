@@ -718,7 +718,7 @@ h2 {
     height: 100%;
     position: relative;
     text-align: center;
-    margin-bottom: 0.5rem; }
+    margin-bottom: 1rem; }
   #masthead .nav-icon {
     position: absolute;
     display: -webkit-box;
@@ -741,6 +741,8 @@ h2 {
         width: 20%;
         max-width: 250px;
         margin: .5rem; } }
+    #masthead .nav-logo .none {
+      display: block; }
   #masthead .nav-logo h2 {
     margin: 0; }
   #masthead .mobile-menu-container {
@@ -825,7 +827,7 @@ h2 {
       display: none; }
       @media all and (min-width: 820px) {
         #masthead .main-menu-container .menu-menu-1-container {
-          width: 80%;
+          width: 90%;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -873,6 +875,12 @@ h2 {
     #masthead .buy-donate-container .button {
       margin: 0 1rem;
       color: #fff; }
+
+.home .site-content {
+  min-height: unset; }
+
+.home #page {
+  min-height: 100vh; }
 
 .home section {
   margin-bottom: 3rem; }
@@ -1000,12 +1008,34 @@ h2 {
       justify-content: space-around;
   margin: 3rem 0; }
   .home .buy-donate .button {
-    width: 40%;
+    width: 45%;
     text-align: center;
     padding: .4rem .7rem; }
   @media all and (min-width: 760px) {
     .home .buy-donate {
       display: none; } }
+  .home .buy-donate a {
+    border-radius: 5px;
+    text-decoration: none; }
+
+.home .buy-donate-footer {
+  display: none; }
+  @media all and (min-width: 760px) {
+    .home .buy-donate-footer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      margin-top: 1rem; } }
+  .home .buy-donate-footer .button {
+    width: 40%;
+    text-align: center;
+    padding: .4rem .7rem;
+    margin-bottom: 0.5rem; }
+  .home .buy-donate-footer a {
+    border-radius: 5px;
+    text-decoration: none; }
 
 @media all and (min-width: 760px) {
   .home .slide {
@@ -1122,6 +1152,7 @@ h2 {
   overflow: hidden;
   width: 100%;
   max-height: 300px;
+  max-width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1260,17 +1291,23 @@ h2 {
         background-color: #fff;
         padding: 0 5rem; } }
 
-@media all and (min-width: 760px) {
+@media all and (min-width: 500px) {
   .post-type-archive-concerts .concerts,
   .post-type-archive-concerts .community {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; } }
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
 
 .post-type-archive-concerts .concert {
   margin-bottom: 4rem; }
+  @media all and (min-width: 500px) {
+    .post-type-archive-concerts .concert {
+      width: 49.5%; } }
   @media all and (min-width: 760px) {
     .post-type-archive-concerts .concert {
       width: 33%; } }
@@ -1298,7 +1335,7 @@ h2 {
           justify-content: space-between; }
   @media all and (min-width: 760px) {
     .post-type-archive-concerts .price-date {
-      font-size: 2rem; } }
+      font-size: 1.25rem; } }
   .post-type-archive-concerts .price-date p {
     margin: 0; }
 
@@ -1508,22 +1545,26 @@ h2 {
       display: block;
       text-align: center; } }
 
-@media all and (min-width: 760px) {
-  .page-our-choir .circle-img-container {
-    width: 400px;
-    height: 400px;
-    margin: 0 auto;
-    border-radius: 50%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    overflow: hidden; } }
+.page-our-choir .circle-img-container {
+  text-align: center;
+  height: 50vh;
+  max-height: 500px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media all and (min-width: 760px) {
+    .page-our-choir .circle-img-container {
+      width: 400px;
+      height: 400px;
+      margin: 0 auto;
+      border-radius: 50%; } }
 
 .page-our-choir .about-text-container {
   padding: 0 1rem; }
@@ -2708,18 +2749,18 @@ h2 {
 .page-contact .contact {
   text-align: center;
   padding: 0 1rem; }
+  .page-contact .contact p {
+    margin-top: 0;
+    margin-bottom: 1rem; }
+    @media all and (min-width: 760px) {
+      .page-contact .contact p {
+        font-size: 1.25rem; } }
 
 .page-contact h2 {
   margin: 0; }
 
 .page-contact .email {
   font-size: 0.85rem; }
-
-@media all and (min-width: 760px) {
-  .page-contact .address,
-  .page-contact .tel,
-  .page-contact .email {
-    font-size: 1.25rem; } }
 
 .page-faq .header-container {
   width: 100%;
@@ -2895,18 +2936,14 @@ h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: #ddd;
-    border-top: 1px solid #fff; } }
+    border-top: 1px solid #fff;
+    background-color: #bbbbbb; } }
 
 #colophon .footer-newsletter-container {
   background-color: #DDDDDD;
@@ -2914,18 +2951,17 @@ h2 {
   @media all and (min-width: 760px) {
     #colophon .footer-newsletter-container {
       padding: 2rem 0;
-      width: 100%; } }
+      width: 59.2%;
+      background-color: #ddd; } }
   @media all and (min-width: 760px) {
     #colophon .footer-newsletter-container .mc4wp-form {
-      width: 50%;
       margin: 0 auto; } }
 
 #colophon .footer-links-container {
   padding: 1rem 0; }
   @media all and (min-width: 760px) {
     #colophon .footer-links-container {
-      width: 100%;
-      background-color: #fff; } }
+      width: 40.8%; } }
 
 #colophon .footer-links {
   margin: 1rem 0;
@@ -2936,7 +2972,7 @@ h2 {
       justify-content: space-around; }
   @media all and (min-width: 760px) {
     #colophon .footer-links {
-      width: 50%;
+      width: 100%;
       margin: 0 auto; } }
   #colophon .footer-links .fa {
     color: #252525; }

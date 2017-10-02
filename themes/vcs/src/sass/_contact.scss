@@ -11,18 +11,18 @@
     .contact {
         text-align: center;
         padding: 0 1rem;
+        p {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            @include media( $desktop-width ){
+                font-size: 1.25rem;
+            }
+        }
     }
     h2 {
         margin: 0;
     }
     .email {
         font-size: 0.85rem;
-    }
-    .address,
-    .tel,
-    .email {
-        @include media( $desktop-width ){
-            font-size: 1.25rem;
-        }
     }
 }

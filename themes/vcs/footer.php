@@ -36,6 +36,10 @@
 								<a href="<?php echo home_url('/faq'); ?>">FAQ</a>
 								<a href="<?php echo home_url('/contact'); ?>">Contact</a>
 							</div>
+							<div class="buy-donate-footer desktop-buy-donate-footer">
+								<a class="button-green button" href="">Buy Tickets</a>
+    							<a class="button-red button" href="">Donate</a>
+							</div>
 						</div>
 			</footer><!-- #colophon -->
 		</div><!-- #page -->

@@ -36,15 +36,18 @@
         }
     }
     .circle-img-container {
+        text-align: center;
+        height: 50vh;
+        max-height: 500px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         @include media( $desktop-width ){
             width: 400px;
             height: 400px;
             margin: 0 auto;
             border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
         }
     }
     .about-text-container {

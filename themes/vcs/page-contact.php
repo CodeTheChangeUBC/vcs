@@ -8,8 +8,8 @@
 get_header(); ?>
 <div class="contact">
     <h2>Contact Us</h2>
-    <p class="address">1254 West 7th Avenue <br> Vancouver, BC V6H 1B6</p>
-    <p class="tel">604 730 8856</p>
-    <p class="email">michelle@vancouvercontatasingers.com</p>
+    <p class="address"><?php echo get_field('contact_address'); ?></p>
+    <p class="tel"><?php echo get_field('contact_tel'); ?></p>
+    <p class="email"><?php echo get_field('contact_email'); ?></p>
 </div>
 <?php get_footer(); ?>

@@ -1,22 +1,21 @@
 #colophon {
     @include media( $desktop-width ) {
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #ddd;
         border-top: 1px solid #fff;
+        background-color: #bbbbbb
     }
     .footer-newsletter-container {
         background-color: #DDDDDD;
         padding: 0.75rem 1rem;
         @include media($desktop-width) {
             padding: 2rem 0;
-            width: 100%
+            width: 59.2%;
+            background-color: #ddd;
         }
         .mc4wp-form {
             @include media( $desktop-width ){
-                width: 50%;
                 margin: 0 auto;
             }
         }
@@ -24,8 +23,7 @@
     .footer-links-container {
         padding: 1rem 0;
         @include media ($desktop-width) {
-            width: 100%;
-            background-color: #fff;
+            width: 40.8%;
         }
     }
     .footer-links {
@@ -33,7 +31,7 @@
         display:flex;
         justify-content: space-around;
         @include media( $desktop-width ){
-            width: 50%;
+            width: 100%;
             margin: 0 auto;
         }
         .fa {
