@@ -34,7 +34,6 @@
         @include media( $concert-tablet ){
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
         }
     }
     .concert {
@@ -44,6 +43,7 @@
         }
         @include media( $desktop-width ){
             width: 33%;
+            margin: 0 0.15%;
         }
     }
     .concert-img {

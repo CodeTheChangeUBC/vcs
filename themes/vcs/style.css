@@ -1298,10 +1298,7 @@ h2 {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; } }
+        flex-wrap: wrap; } }
 
 .post-type-archive-concerts .concert {
   margin-bottom: 4rem; }
@@ -1310,7 +1307,8 @@ h2 {
       width: 49.5%; } }
   @media all and (min-width: 760px) {
     .post-type-archive-concerts .concert {
-      width: 33%; } }
+      width: 33%;
+      margin: 0 0.15%; } }
 
 @media all and (min-width: 760px) {
   .post-type-archive-concerts .concert-img {
