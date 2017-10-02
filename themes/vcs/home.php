@@ -25,7 +25,7 @@ get_header(); ?>
         <div class="blog-post">
             <p class="blog-date"><?php echo get_the_date('F j Y'); ?></p>
             <a href="<?php echo get_permalink(); ?>" class="blog-image-container">
-                <div>
+                <div class="img-cont">
                     <?php if( get_the_post_thumbnail_url() ) : ?>
                         <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
                     <?php endif; ?>

@@ -26,9 +26,11 @@ get_header(); ?>
                 <p><?php echo $conductor['display_years']; ?></p>
             </div>
             <div class="conductor-img-container">
-                <div class="conductor-img-overlay">
-                    <img src="<?php echo $conductor['img']; ?>" alt="">
-                </div>
+                <a href="<?php echo $conductor['url']; ?>">
+                    <div class="conductor-img-overlay">
+                        <img src="<?php echo $conductor['img']; ?>" alt="">
+                    </div>
+                </a>
             </div>
             <div class="conductor-content-container">
                 <h3><?php echo $conductor['name']; ?></h3>

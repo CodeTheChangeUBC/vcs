@@ -239,6 +239,21 @@
                 $(this).css({'width': 'auto', 'height': '100%', 'max-width': 'none',})
             }   
         })
+        $('.blog .blog-image-container img').each(function(){
+            var $width = $(this).width(),
+                $height = $(this).height(),
+                $containerWidth = $('.blog .blog-image-container').width(),
+                $containerHeight = $('.blog .blog-image-container').height(),
+                $calcWidth = $containerWidth - $width,
+                $calcHeight = $containerHeight - $height
+
+            if($calcWidth > $calcHeight){
+                $(this).css({'min-width': '100%'})
+            } 
+            if($calcWidth < $calcHeight){
+                $(this).css({'height': '100%', 'min-height': '100%', 'max-width': 'none',})
+            }   
+        })
     })
 
 

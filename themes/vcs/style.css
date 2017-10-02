@@ -1018,25 +1018,6 @@ h2 {
     border-radius: 5px;
     text-decoration: none; }
 
-.home .buy-donate-footer {
-  display: none; }
-  @media all and (min-width: 760px) {
-    .home .buy-donate-footer {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-      margin-top: 1rem; } }
-  .home .buy-donate-footer .button {
-    width: 40%;
-    text-align: center;
-    padding: .4rem .7rem;
-    margin-bottom: 0.5rem; }
-  .home .buy-donate-footer a {
-    border-radius: 5px;
-    text-decoration: none; }
-
 @media all and (min-width: 760px) {
   .home .slide {
     display: -webkit-box;
@@ -1167,6 +1148,8 @@ h2 {
       width: 250px;
       height: 250px;
       border: 1px solid #adadad; } }
+  .blog .blog-image-container .img-cont {
+    height: 100%; }
 
 .blog .blog-content {
   padding: 0 1rem;
@@ -3014,3 +2997,22 @@ h2 {
 @media all and (min-width: 760px) {
   #colophon .mc4wp-form-fields {
     text-align: center; } }
+
+#colophon .buy-donate-footer {
+  display: none; }
+  @media all and (min-width: 760px) {
+    #colophon .buy-donate-footer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      margin-top: 1rem; } }
+  #colophon .buy-donate-footer .button {
+    width: 40%;
+    text-align: center;
+    padding: .4rem .7rem;
+    margin-bottom: 0.5rem; }
+  #colophon .buy-donate-footer a {
+    border-radius: 5px;
+    text-decoration: none; }
