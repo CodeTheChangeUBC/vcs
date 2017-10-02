@@ -1314,7 +1314,9 @@ h2 {
 
 @media all and (min-width: 760px) {
   .post-type-archive-concerts .concert-img {
-    text-align: center; } }
+    text-align: center;
+    height: 450px;
+    overflow: hidden; } }
 
 .post-type-archive-concerts .concert-content,
 .post-type-archive-concerts .concert-content2 {

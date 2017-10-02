@@ -209,17 +209,6 @@
                 $(this).css({'height': '100%', 'min-height': '100%', 'max-width': 'none',})
             }   
         })
-        $('.page-our-choir .choir-img-container img').each(function(){
-            var $width = $(this).width(),
-                $height = $(this).height()
-
-            if($width > $height){
-                $(this).css({'min-height': '100%', 'height': '100&', 'max-width': 'none'})
-            } 
-            if($width < $height){
-                $(this).css({'min-width': '100%'})
-            }   
-        })
         $('.page-our-choir .circle-img-container img').each(function(){
             var $width = $(this).width(),
                 $height = $(this).height(),
@@ -233,6 +222,21 @@
             } 
             if($calcWidth < $calcHeight){
                 $(this).css({'width': '100%', 'min-height': '100%', 'max-width': 'none',})
+            }   
+        })
+        $('.post-type-archive-concerts .concert-img img').each(function(){
+            var $width = $(this).width(),
+                $height = $(this).height(),
+                $containerWidth = $('.post-type-archive-concerts .concert-img').width(),
+                $containerHeight = $('.post-type-archive-concerts .concert-img').height(),
+                $calcWidth = $containerWidth - $width,
+                $calcHeight = $containerHeight - $height
+
+            if($calcWidth > $calcHeight){
+                $(this).css({'min-width': '100%'})
+            } 
+            if($calcWidth < $calcHeight){
+                $(this).css({'width': 'auto', 'height': '100%', 'max-width': 'none',})
             }   
         })
     })

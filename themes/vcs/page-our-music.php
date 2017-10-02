@@ -13,7 +13,7 @@ get_header(); ?>
             <h2>Our Repetoire</h2>
         </div>
         <div class="repetoire-copy">
-            <p>Vancouver Cantata Singers also perform contemporary music, working frequently with local Canadian composers. Below are some of our favourited composers:</p>
+            <p><?php echo get_field('repetoire_copy'); ?></p>
         </div>
         <div class="repetoire-carousel">
             <?php $composers = get_field('composers');

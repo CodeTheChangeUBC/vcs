@@ -49,6 +49,8 @@
     .concert-img {
         @include media($desktop-width){
             text-align: center;
+            height: 450px;
+            overflow: hidden;
         }
     }
     .concert-content,
