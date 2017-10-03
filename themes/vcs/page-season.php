@@ -95,7 +95,7 @@ get_header(); ?>
                     </div>
                 </div>
                 <div class="button-container">
-                    <a href="https://www.eventbrite.com/e/test-concert-tickets-<?php the_field('3pack_eventbrite_season_code'); ?>" class="button-green button" >Buy 3 Pack</a>
+                    <a href="<?php the_field('3pack_eventbrite_season_code'); ?>" class="button-green button" >Buy 3 Pack</a>
                 </div>
             </div>
         </div>
