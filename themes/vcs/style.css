@@ -1880,7 +1880,7 @@ h2 {
       display: flex;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-      width: 75%;
+      max-width: 1200px;
       margin: 0 auto; } }
 
 @media all and (min-width: 760px) {
@@ -2389,7 +2389,8 @@ h2 {
     display: inline; } }
 
 .page-history .read-more-container {
-  display: inline-block; }
+  display: inline-block;
+  cursor: pointer; }
   @media all and (min-width: 760px) {
     .page-history .read-more-container {
       display: none; } }
@@ -2606,7 +2607,8 @@ h2 {
     margin-bottom: 0.5rem; }
 
 .page-conductors .read-more-container {
-  display: inline-block; }
+  display: inline-block;
+  cursor: pointer; }
   .page-conductors .read-more-container p {
     margin: 0; }
 
@@ -2710,7 +2712,8 @@ h2 {
     margin-bottom: 0.5rem; }
 
 .page-timeline .read-more-container {
-  display: inline-block; }
+  display: inline-block;
+  cursor: pointer; }
   .page-timeline .read-more-container p {
     margin: 0; }
 

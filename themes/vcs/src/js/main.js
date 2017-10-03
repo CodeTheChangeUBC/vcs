@@ -337,5 +337,16 @@
         $(this).css('display', 'none')
     })
 
+    //smooth scroll
+    $('.sidebar-right a[href^="#"]').on('click', function(event) {
+        event.preventDefault();
+
+        var target = this.hash,
+            $target = $(target);
+
+        $('html, body').animate({
+            'scrollTop': $target.offset().top
+        }, 900)
+    });
 
 })(jQuery);

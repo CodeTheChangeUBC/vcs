@@ -198,6 +198,7 @@
     }
     .read-more-container {
         display: inline-block;
+        cursor: pointer;
         @include media( $desktop-width ){
             display: none;
         }

@@ -20,9 +20,11 @@ get_header(); ?>
             foreach( $composers as $composer ) : ?>
                 <div class="composer">
                     <div class="img-container">
-                        <div class="img-overlay">
-                            <img src="<?php echo $composer['img']; ?>" alt="">
-                        </div>
+                        <a href="<?php echo $composer['url'];?>">
+                            <div class="img-overlay">
+                                <img src="<?php echo $composer['img']; ?>" alt="">
+                            </div>
+                        </a>
                     </div>
                     <p class="name"><?php echo $composer['name']; ?></p>
                 </div>

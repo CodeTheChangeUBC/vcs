@@ -44,6 +44,15 @@ get_header(); ?>
         </div>
     <?php endforeach; ?>
 </div>
-<div class="sidebar sidebar-right"></div>
+<div class="sidebar sidebar-right">
+    <div class="date-sidebar-container">
+        <?php $i = 0; 
+        foreach($timelines as $timeline) : ?>
+            <a href="<?php echo 'date'.++$i; ?>">
+                <p><?php echo $timeline['sidebar_year']; ?></p>
+            </a>
+        <?php endforeach; ?>
+    </div>
+</div>
 
 <?php get_footer(); ?>
