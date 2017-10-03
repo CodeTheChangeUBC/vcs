@@ -132,7 +132,7 @@ get_header(); ?>
                     </div>
                 </div>
                 <div class="button-container">
-                    <a href="https://www.eventbrite.com/e/test-concert-tickets-<?php the_field('4pack_eventbrite_season_code'); ?>" class="button-green button" >Buy 4 Pack</a>
+                    <a href="<?php the_field('4pack_eventbrite_season_code'); ?>" class="button-green button" >Buy 4 Pack</a>
                 </div>
             </div>
         </div>
@@ -169,7 +169,7 @@ get_header(); ?>
                     </div>
                 </div>
                 <div class="button-container">
-                    <a href="https://www.eventbrite.com/e/test-concert-tickets-<?php the_field('5pack_eventbrite_season_code'); ?>" class="button-green button" >Buy 5 Pack</a>
+                    <a href="<?php the_field('5pack_eventbrite_season_code'); ?>" class="button-green button" >Buy 5 Pack</a>
                 </div>
             </div>
         </div>
