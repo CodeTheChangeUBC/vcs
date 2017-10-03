@@ -12,4 +12,5 @@ get_header(); ?>
     <p class="tel"><?php echo get_field('contact_tel'); ?></p>
     <p class="email"><?php echo get_field('contact_email'); ?></p>
 </div>
+
 <?php get_footer(); ?>
