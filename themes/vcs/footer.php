@@ -37,8 +37,8 @@
 								<a href="<?php echo home_url('/contact'); ?>">Contact</a>
 							</div>
 							<div class="buy-donate-footer desktop-buy-donate-footer">
-								<a class="button-green button" href="">Buy Tickets</a>
-    							<a class="button-red button" href="">Donate</a>
+								<a class="button-green button" href="<?php echo esc_url( home_url( '/concerts	' ) ); ?>">Buy Tickets</a>
+    							<a class="button-red button" href=https://www.canadahelps.org/dn/20355>Donate</a>
 							</div>
 						</div>
 			</footer><!-- #colophon -->

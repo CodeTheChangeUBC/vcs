@@ -119,12 +119,20 @@ get_header(); ?>
         <div class="about-content">
             <div class="about-text-container">
                 <h2>Press</h2>
-                <?php while ( have_rows('press') ) : the_row(); ?>
+                <?php $pressPost = get_field('press');
+                foreach( $pressPost as $press ) : ?>
                     <div class="press-post">
-                        <p class="press-source"><?php the_sub_field('source'); ?></p>
-                        <p class="press-title"><?php the_sub_field('title'); ?></p>
+                        <?php if($press['source_link']) : ?>
+                            <a href="<?php echo $press['source_link']; ?>" class="source">
+                                <p class="press-source"><?php echo $press['source']; ?></p>
+                                <p class="press-title"><?php echo $press['title']; ?></p>
+                            </a>
+                        <?php else : ?>
+                            <p class="press-source"><?php echo $press['source']; ?></p>
+                            <p class="press-title"><?php echo $press['title']; ?></p>
+                        <?php endif; ?>
                     </div>
-                <?php endwhile; wp_reset_postdata(); ?>
+                <?php endforeach; wp_reset_postdata(); ?>
                 <hr>
             </div>
         </div>

@@ -14,7 +14,7 @@
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 	<?php wp_head(); ?>
-	<script src="//load.sumome.com/" data-sumo-site-id="cc508e2d28941d9930a42924375d3659f67f61d52e39ace0279733ed3c0fe681" async="async"></script>
+	<script src="//load.sumome.com/" data-sumo-site-id="506680007853f2003e7ed60099f0a000f3f5f20071f64c009b16cf007fdcd500" async="async"></script>
 	</head>
 
 	<body <?php body_class(); ?>>
@@ -47,9 +47,9 @@
 								<i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i>
 							</div>
 							<div class="mobile-links ">
-								<a href="#">Auditions</a>
-								<a href="#">FAQ</a>
-								<a href="#">Contact</a>
+								<a href="<?php echo esc_url( home_url( '/audition	' ) ); ?>">Auditions</a>
+								<a href="<?php echo esc_url( home_url( '/faq	' ) ); ?>">FAQ</a>
+								<a href="<?php echo esc_url( home_url( '/contact	' ) ); ?>">Contact</a>
 							</div>
 						</div>
 					</div>
