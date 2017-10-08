@@ -2435,6 +2435,10 @@ h2 {
     left: 15px; } }
 
 @media all and (min-width: 760px) {
+  .page-commissions .sidebar-right {
+    right: 15px; } }
+
+@media all and (min-width: 760px) {
   .page-commissions .content-container {
     width: 60%;
     margin: 0 auto; } }
@@ -2563,7 +2567,19 @@ h2 {
 
 @media all and (min-width: 760px) {
   .page-conductors .sidebar-left {
-    left: 15px; } }
+    left: 35px; } }
+
+@media all and (min-width: 760px) {
+  .page-conductors .sidebar-right {
+    right: 35px;
+    text-align: right; } }
+
+.page-conductors .date-sidebar-container a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-bottom: 1rem; }
 
 @media all and (min-width: 760px) {
   .page-conductors .content-container {
@@ -2668,7 +2684,19 @@ h2 {
 
 @media all and (min-width: 760px) {
   .page-timeline .sidebar-left {
-    left: 15px; } }
+    left: 35px; } }
+
+@media all and (min-width: 760px) {
+  .page-timeline .sidebar-right {
+    right: 35px;
+    text-align: right; } }
+
+.page-timeline .date-sidebar-container a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-bottom: 1rem; }
 
 @media all and (min-width: 760px) {
   .page-timeline .content-container {

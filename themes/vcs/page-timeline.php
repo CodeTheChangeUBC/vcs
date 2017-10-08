@@ -21,7 +21,7 @@ get_header(); ?>
     </div>
     <?php $timelines = get_field('timelines');
     foreach( $timelines as $timeline) : ?>
-        <div class="timeline">
+        <div class="timeline" id="<?php echo $timeline['sidebar_year']; ?>">
             <div class="timeline-year-container">
                 <p><?php echo $timeline['display_years']; ?></p>
             </div>
@@ -46,11 +46,8 @@ get_header(); ?>
 </div>
 <div class="sidebar sidebar-right">
     <div class="date-sidebar-container">
-        <?php $i = 0; 
-        foreach($timelines as $timeline) : ?>
-            <a href="<?php echo 'date'.++$i; ?>">
-                <p><?php echo $timeline['sidebar_year']; ?></p>
-            </a>
+        <?php foreach($timelines as $timeline) : ?>
+            <a href="<?php echo '#'.$timeline['sidebar_year']; ?>"><?php echo $timeline['sidebar_year']; ?></a>
         <?php endforeach; ?>
     </div>
 </div>

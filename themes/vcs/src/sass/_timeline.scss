@@ -56,8 +56,21 @@
     }
     .sidebar-left {
         @include media( $desktop-width ){
-            left: 15px;
+            left: 35px;
         }
+    }
+    .sidebar-right {
+        @include media( $desktop-width ){
+            right: 35px;
+            text-align: right;
+        }
+    }
+    .date-sidebar-container a {
+        display: block;
+        color: #000;
+        text-decoration: none;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
     }
     .content-container {
         @include media( $desktop-width ){

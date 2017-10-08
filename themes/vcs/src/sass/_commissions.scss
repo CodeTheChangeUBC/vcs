@@ -34,6 +34,11 @@
             left: 15px;
         }
     }
+    .sidebar-right {
+        @include media( $desktop-width ){
+            right: 15px;
+        }
+    }
     .content-container {
         @include media( $desktop-width ){
             width: 60%;

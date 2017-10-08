@@ -21,7 +21,7 @@ get_header(); ?>
     </div>
     <?php $conductors = get_field('conductors');
     foreach( $conductors as $conductor) : ?>
-        <div class="conductor">
+        <div class="conductor" id="<?php echo $conductor['sidebar_year']; ?>">
             <div class="conductor-year-container">
                 <p><?php echo $conductor['display_years']; ?></p>
             </div>
@@ -46,6 +46,13 @@ get_header(); ?>
         </div>
     <?php endforeach; ?>
 </div>
-<div class="sidebar sidebar-right"></div>
+<div class="sidebar sidebar-right">
+    <div class="date-sidebar-container">
+        <?php $i = 0; 
+        foreach($conductors as $conductor) : ?>
+            <a href="<?php echo '#'.$conductor['sidebar_year']; ?>"><?php echo $conductor['sidebar_year']; ?></a>
+        <?php endforeach; ?>
+    </div>
+</div>
 
 <?php get_footer(); ?>
