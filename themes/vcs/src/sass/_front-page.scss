@@ -105,9 +105,6 @@
         }
     }
     .blog {
-        .blog-post {
-            padding: 0 1rem;
-        }
         .blog-image-container {
             margin: 0 auto;
             overflow: hidden;
@@ -115,6 +112,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            width: 100vw;
+            height: 100vw;
         }
     }
     .blog-title {
