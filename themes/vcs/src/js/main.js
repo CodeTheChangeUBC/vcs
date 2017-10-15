@@ -221,7 +221,7 @@
                 $(this).css({'min-width': '100%'})
             } 
             if($calcWidth < $calcHeight){
-                $(this).css({'width': '100%', 'min-height': '100%', 'max-width': 'none',})
+                $(this).css({'width': 'auto%', 'height': '100%', 'max-width': 'none',})
             }   
         })
         $('.post-type-archive-concerts .concert-img img').each(function(){
@@ -315,7 +315,7 @@
 
 
 
-    //Conductors and timeline read more 
+    //trimmed
     $('.page-conductors .read-more-container').on('click', function(){
         $(this).siblings('.trimmed').addClass('hide')
         $(this).siblings('.untrimmed').removeClass('hide')
@@ -332,6 +332,11 @@
         $(this).css('display', 'none')
     })
     $('.page-history #conductor .read-more-container').on('click', function(){
+        $(this).siblings('.trimmed').addClass('hide')
+        $(this).siblings('.untrimmed').removeClass('hide')
+        $(this).css('display', 'none')
+    })
+    $('.page-our-choir .read-more-container').on('click', function(){
         $(this).siblings('.trimmed').addClass('hide')
         $(this).siblings('.untrimmed').removeClass('hide')
         $(this).css('display', 'none')

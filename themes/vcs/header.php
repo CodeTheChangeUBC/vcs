@@ -40,11 +40,21 @@
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'mobile-menu' ) ); ?>
 						<div class="mobile-menu-footer">
 							<div class="mobile-links">
-								<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+							<a href="https://www.facebook.com/vancouvercantatasingers/">
+								<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>	
+							</a>
+							<a href="https://twitter.com/CantataSingers?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
 								<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+							</a>								
+							<a href="https://www.instagram.com/cantatasingers/">
 								<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+							</a>
+							<a href="https://www.youtube.com/user/VanCantataSingers">
 								<i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i>
+							</a>
+							<a href="https://plus.google.com/108740396287902586915">
 								<i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i>
+							</a>
 							</div>
 							<div class="mobile-links ">
 								<a href="<?php echo esc_url( home_url( '/audition	' ) ); ?>">Auditions</a>

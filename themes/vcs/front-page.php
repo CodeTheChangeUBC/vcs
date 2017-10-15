@@ -17,7 +17,6 @@ get_header(); ?>
     <div class="button-container">
         <a class="season-button button-green button" href="<?php echo home_url('/season'); ?>">Buy Season Pass</a>
     </div>
-    
 </section>
 <section class="concert">
     <h2>Concerts</h2>
@@ -72,8 +71,8 @@ get_header(); ?>
     </div>
 </section>
 <section class="buy-donate">
-    <a class="button-green button" href="">Buy Tickets</a>
-    <a class="button-red button" href="">Donate</a>
+    <a class="button-green button" href="<?php echo home_url('concerts'); ?>">Buy Tickets</a>
+    <a class="button-red button" href="https://www.canadahelps.org/dn/20355">Donate</a>
 </section>
 <section class="desktop">
     <div class="home-carousel">

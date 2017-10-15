@@ -18,22 +18,22 @@ get_header(); ?>
                 <p class="desktop-about"><?php the_field('about_content_desktop', get_the_id()); ?></p>
             </div>
         </div>
-        <div class="next-slide-container">
-            <i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i>
-        </div>
     </section>
     <section id="director" class="director">
-        <div class="about-content">
+        <div class="director-content">
             <div class="circle-img-container">
                 <img src="<?php the_field('director_image', get_the_id()); ?>" alt="">
             </div>
-            <div class="about-text-container">
+            <div class="director-text-container">
                 <h3><?php the_field('director_title', get_the_id()); ?></h3>
-                <p><?php the_field('director_content', get_the_id()); ?></p>
+                <p class="trimmed"><?php $trimmedDirectorCopy = wp_trim_words( get_field('director_content', get_the_id()), $num_words = 40, $more = null );
+                echo $trimmedDirectorCopy ?></p>
+                <p class="untrimmed hide"><?php echo the_field('director_content', get_the_id()); ?></p>
+                <div class="read-more-container">
+                    <p class="read-more">Read More</p>
+                    <i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i>
+                </div>
             </div>
-        </div>
-        <div class="next-slide-container">
-            <i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i>
         </div>
     </section>
     <section id="choir" class="choir">
@@ -84,17 +84,20 @@ get_header(); ?>
         </div>
     </section>
     <section id="composer" class="composer">
-        <div class="about-content">
+        <div class="composer-content">
             <div class="circle-img-container">
                 <img src="<?php the_field('composer_image', get_the_id()); ?>" alt="">
             </div>
-            <div class="about-text-container">
+            <div class="composer-text-container">
                 <h3><?php the_field('composer_heading', get_the_id()); ?></h3>
-                <p><?php the_field('composer_content', get_the_id()); ?></p>
+                <p class="trimmed"><?php $trimmedComposerCopy = wp_trim_words( get_field('composer_content', get_the_id()), $num_words = 40, $more = null );
+                echo $trimmedComposerCopy ?></p>
+                <p class="untrimmed hide"><?php echo the_field('composer_content', get_the_id()); ?></p>
+                <div class="read-more-container">
+                    <p class="read-more">Read More</p>
+                    <i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i>
+                </div>
             </div>
-        </div>
-        <div class="next-slide-container">
-            <i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i>
         </div>
     </section>
     <section id="awards" class="awards">
@@ -154,5 +157,25 @@ get_header(); ?>
                 <?php endif; ?>
             </div>
         </div>
+    </section>
+    <section class="staff">
+        <div class="staff-content">
+            <h2>Staff and Directors</h2>
+            <div class="staff-img">
+                <div class="circle-img-container">
+                    <img src="<?php echo get_field('staff_image'); ?>" alt="">
+                </div>
+                <h3><?php echo get_field('staff_heading'); ?></h3>
+                <p class="trimmed"><?php $trimmedStaffCopy = wp_trim_words( get_field('staff_copy'), $num_words = 40, $more = null );
+                echo $trimmedStaffCopy ?></p>
+                <p class="untrimmed hide"><?php echo get_field('staff_copy'); ?></p>
+                <div class="read-more-container">
+                    <p class="read-more">Read More</p>
+                    <i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="staff-list">
+                <?php echo get_field('director_list'); ?>
+            </div>
     </section>
 <?php get_footer(); ?>

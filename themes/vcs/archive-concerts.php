@@ -27,8 +27,10 @@ get_header(); ?>
     foreach ( $concerts as $post ) : ?>
         <div class="concert">
             <div class="concert-img">
-                <?php 
-                the_post_thumbnail(); ?>
+                <div class="concert-hover">
+                    <p>Click to Buy Tickets</p>
+                </div>
+                <?php the_post_thumbnail(); ?>
             </div>
             <div class="concert-content">
                 <p class="concert-title"><?php the_title(); ?></p>
@@ -118,8 +120,10 @@ get_header(); ?>
     foreach ( $community_concerts as $post ) : ?>
         <div class="concert">
             <div class="concert-img">
-                <?php 
-                the_post_thumbnail(); ?>
+                <div class="concert-hover">
+                    <p>Click to Buy Tickets</p>
+                </div>
+                <?php the_post_thumbnail(); ?>
             </div>
             <div class="concert-content">
                 <p class="concert-title"><?php the_title(); ?></p>
