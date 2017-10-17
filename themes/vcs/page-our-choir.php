@@ -166,9 +166,9 @@ get_header(); ?>
                     <img src="<?php echo get_field('staff_image'); ?>" alt="">
                 </div>
                 <h3><?php echo get_field('staff_heading'); ?></h3>
-                <p class="trimmed"><?php $trimmedStaffCopy = wp_trim_words( get_field('staff_copy'), $num_words = 40, $more = null );
+                <p class="trimmed"><?php $trimmedStaffCopy = wp_trim_words( get_field('staff_text'), $num_words = 40, $more = null );
                 echo $trimmedStaffCopy ?></p>
-                <p class="untrimmed hide"><?php echo get_field('staff_copy'); ?></p>
+                <p class="untrimmed hide"><?php echo get_field('staff_text'); ?></p>
                 <div class="read-more-container">
                     <p class="read-more">Read More</p>
                     <i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i>
