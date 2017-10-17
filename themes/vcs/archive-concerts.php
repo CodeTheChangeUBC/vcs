@@ -86,10 +86,6 @@ get_header(); ?>
                             </div>
                             <p class="concert-location"><?php the_field('concert_location'); ?></p>
                         </div>
-                        <div class="buy-tickets2">
-                            <a target="_blank" class="buy-tickets button button-green" href="<?php echo the_field('ticket_url'); ?>">Buy Tickets</a>
-                            <a target="_blank" class="season button button-green" href="<?php echo home_url('/season'); ?>">Buy Season Pass</a>
-                        </div>
                     </div>
                 </div>
             </div>
