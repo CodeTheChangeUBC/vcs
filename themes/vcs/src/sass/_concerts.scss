@@ -73,6 +73,7 @@
         align-content: center;
         justify-content: center;
         transition: all .3s ease;
+        z-index: 1;
         p {
             color: #fff;
             position: absolute;
@@ -120,6 +121,7 @@
         left: 0;
         right: 0;
         background-color: rgba(0, 0, 0, 0.75);
+        z-index: 999;
     }
     .concert-modal-container,
     .community-modal {
@@ -233,8 +235,7 @@
                 font-size: 1.1rem;
             }
         }
-        .buy-tickets,
-        .buy-tickets2 {
+        .buy-tickets {
             text-align: center;
             margin: 1rem 0;
             @include media( $desktop-width ){
@@ -252,12 +253,6 @@
                 @include media( $desktop-width ){
                     width: 45%;
                 }
-            }
-        }
-        .buy-tickets2 {
-            @include media( $desktop-width ){
-                width: 50%;
-                margin: 1rem auto;
             }
         }
     }

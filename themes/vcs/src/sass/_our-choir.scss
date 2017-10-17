@@ -105,6 +105,7 @@
             @include media( $desktop-width ){
                 display: flex;
                 flex-wrap: wrap;
+                justify-content: center;
             }
         }
         .flickity-page-dots {
