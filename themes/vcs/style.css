@@ -1480,9 +1480,11 @@ h2 {
   .post-type-archive-concerts .concert-modal-container .concert-details p {
     font-weight: 300; }
 
-@media all and (min-width: 760px) {
-  .post-type-archive-concerts .concert-modal-container .concert-map {
-    width: 100%; } }
+.post-type-archive-concerts .concert-modal-container .concert-map {
+  margin-top: 1rem; }
+  @media all and (min-width: 760px) {
+    .post-type-archive-concerts .concert-modal-container .concert-map {
+      width: 100%; } }
 
 .post-type-archive-concerts .concert-modal-container .concert-map iframe {
   width: 100%; }

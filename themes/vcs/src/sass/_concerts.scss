@@ -212,6 +212,7 @@
             }
         }
         .concert-map {
+            margin-top: 1rem;
             @include media( $desktop-width ){
                 width: 100%;
             }
