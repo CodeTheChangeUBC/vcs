@@ -743,7 +743,10 @@ h2 {
         min-width: 125px;
         width: 20%;
         max-width: 250px;
-        margin: .5rem; } }
+        margin: 1rem .5rem .5rem .5rem; } }
+    @media all and (min-width: 1260px) {
+      #masthead .nav-logo {
+        margin: 1rem .5rem .5rem 2%; } }
     #masthead .nav-logo .none {
       display: block; }
   #masthead .nav-logo h2 {
@@ -863,7 +866,7 @@ h2 {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        width: 30%; } }
+        width: 32%; } }
     #masthead .buy-donate-container .button-container {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -2270,7 +2273,8 @@ h2 {
       left: 200px; } }
 
 .page-history .site-content {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .page-history section {
   margin-bottom: 1rem; }

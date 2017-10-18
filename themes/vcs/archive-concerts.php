@@ -59,7 +59,10 @@ get_header(); ?>
                                 <p class="concert-location"><?php the_field('concert_location'); ?></p>
                             </div>
                             <div class="buy-tickets">
-                                <a target="_blank" class="buy-tickets button button-green" href="<?php echo the_field('ticket_url'); ?>">Buy Tickets</a>
+                            <?php  $buyButton = get_field('ticket_url');
+                                if($buyButton) : ?>
+                                    <a target="_blank" class="buy-tickets button button-green" href="<?php echo the_field('ticket_url'); ?>">Buy Tickets</a>
+                                <?php endif; ?>
                                 <a target="_blank" class="season button button-green" href="<?php echo home_url('/season'); ?>">Buy Season Pass</a>
                             </div>
                             <div class="performance">
@@ -148,7 +151,10 @@ get_header(); ?>
                                 <p class="concert-location"><?php the_field('concert_location'); ?></p>
                             </div>
                             <div class="buy-tickets">
-                                <a target="_blank" class="buy-tickets button button-green" href="<?php echo the_field('ticket_url'); ?>">Buy Tickets</a>
+                                <?php
+                                if($buyButton) : ?>
+                                    <a target="_blank" class="buy-tickets button button-green" href="<?php echo the_field('ticket_url'); ?>">Buy Tickets</a>
+                                <?php endif; ?>
                                 <a target="_blank" class="season button button-green" href="<?php echo home_url('/season'); ?>">Buy Season Pass</a>
                             </div>
                             <div class="performance">

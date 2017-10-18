@@ -28,7 +28,10 @@
             min-width: 125px;
             width: 20%;
             max-width: 250px;
-            margin: .5rem;
+            margin: 1rem .5rem .5rem .5rem;
+        }
+        @include media( $header-nav1 ){
+            margin: 1rem .5rem .5rem 2%;
         }
         .none {
             display: block;
@@ -141,7 +144,7 @@
         @include media( $header-nav1 ){
             display: flex;
             align-items: center;
-            width: 30%;
+            width: 32%;
         }
         .button-container {
             display: flex;
