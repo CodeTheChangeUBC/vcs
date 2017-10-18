@@ -1307,7 +1307,7 @@ h2 {
   @media all and (min-width: 760px) {
     .post-type-archive-concerts .concert-img {
       text-align: center;
-      height: 450px; } }
+      max-height: 450px; } }
 
 .post-type-archive-concerts .concert-hover {
   cursor: pointer;
@@ -1383,6 +1383,19 @@ h2 {
   background-color: rgba(0, 0, 0, 0.75);
   z-index: 999; }
 
+.post-type-archive-concerts .concert-modal-container .concert-img {
+  text-align: center; }
+  @media all and (min-width: 760px) {
+    .post-type-archive-concerts .concert-modal-container .concert-img {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center; } }
+
 .post-type-archive-concerts .concert-modal-container,
 .post-type-archive-concerts .community-modal {
   position: fixed;
@@ -1418,12 +1431,6 @@ h2 {
   position: fixed;
   top: 7px;
   right: 15px; }
-  @media all and (min-width: 760px) {
-    .post-type-archive-concerts .modal-close {
-      top: 20px;
-      right: 100px; } }
-  .post-type-archive-concerts .modal-close i {
-    color: #fff; }
 
 .post-type-archive-concerts .concert-modal-container .concert-title {
   text-align: center;

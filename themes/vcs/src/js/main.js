@@ -294,7 +294,6 @@
 
     //modal functions
     $('.modal-close').on('click', function(){
-        console.log('close clicked')
         $('.modal-container').addClass('hide')
         $('body').removeClass('no-scroll')
     })

@@ -55,7 +55,7 @@
         cursor: pointer;
         @include media($desktop-width){
             text-align: center;
-            height: 450px;
+            max-height: 450px;
         }
     }
     .concert-hover {
@@ -123,6 +123,16 @@
         background-color: rgba(0, 0, 0, 0.75);
         z-index: 999;
     }
+    .concert-modal-container {
+        .concert-img {
+            text-align: center;
+            @include media( $desktop-width ){
+                display: flex;
+                justify-content: center;
+                align-content: center;
+            }
+        }
+    }
     .concert-modal-container,
     .community-modal {
         position: fixed;
@@ -137,8 +147,8 @@
             height: 85%;
             width: 90%;
             top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     }
     .concert-modal {
@@ -153,13 +163,6 @@
         position: fixed;
         top: 7px;
         right: 15px;
-        @include media( $desktop-width ){
-            top: 20px;
-            right: 100px;
-        }
-        i {
-            color: #fff;
-        }
     }
     .concert-modal-container {
         .concert-title {

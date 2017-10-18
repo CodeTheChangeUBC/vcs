@@ -28,7 +28,7 @@ get_header(); ?>
         <div class="concert">
             <div class="concert-img">
                 <div class="concert-hover">
-                    <p>Click to Buy Tickets</p>
+                    <p>Click for more info</p>
                 </div>
                 <?php the_post_thumbnail(); ?>
             </div>
@@ -41,10 +41,10 @@ get_header(); ?>
                 <p class="concert-location"><?php the_field('concert_location'); ?></p>
             </div>
             <div class="modal-container hide">
-                <div class="modal-close">
-                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
-                </div>
                 <div class="concert-modal-container">
+                    <div class="modal-close">
+                        <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                    </div>
                     <div class="concert-modal">
                         <p class="concert-title"><?php the_title(); ?></p>
                         <div class="concert-img">
@@ -120,7 +120,7 @@ get_header(); ?>
         <div class="concert">
             <div class="concert-img">
                 <div class="concert-hover">
-                    <p>Click to Buy Tickets</p>
+                    <p>Click for more info</p>
                 </div>
                 <?php the_post_thumbnail(); ?>
             </div>
@@ -133,10 +133,10 @@ get_header(); ?>
                 <p class="concert-location"><?php the_field('concert_location'); ?></p>
             </div>
             <div class="modal-container hide">
-                <div class="modal-close">
-                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
-                </div>
                 <div class="concert-modal-container">
+                    <div class="modal-close">
+                        <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                    </div>
                     <div class="concert-modal">
                         <p class="concert-title"><?php the_title(); ?></p>
                         <div class="concert-img">
