@@ -3038,6 +3038,62 @@ h2 {
   margin-top: 0;
   font-weight: 300; }
 
+.page-support-us h1, .page-support-us h2, .page-support-us h3 {
+  text-align: unset; }
+
+.page-support-us a {
+  color: #5dadaf; }
+
+.page-support-us .support-header-container {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .page-support-us .support-header-container .heading {
+    text-align: center;
+    font-weight: 300;
+    margin: 1rem 0;
+    display: inline-block;
+    background-color: #fff;
+    padding: 0 5rem; }
+  .page-support-us .support-header-container hr {
+    display: block;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    width: 100%;
+    margin: 0;
+    height: 5px;
+    background-color: #000;
+    z-index: -1; }
+
+.page-support-us .column-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto 2rem; }
+
+.page-support-us .column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0 1rem;
+  height: 100%;
+  width: 100%; }
+
+.page-support-us .row-content {
+  max-width: 1400px;
+  margin: 0 auto 2rem; }
+
+.page-support-us .bottom-row {
+  padding: 2rem 5rem;
+  background-color: lightgrey; }
+
 @media all and (min-width: 760px) {
   #colophon {
     display: -webkit-box;

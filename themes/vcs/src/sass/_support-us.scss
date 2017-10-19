@@ -1,0 +1,53 @@
+.page-support-us {
+    h1, h2, h3 {
+        text-align: unset;
+    }
+    a {
+        color: #5dadaf;
+    }
+    .support-header-container {
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        .heading {
+            text-align: center;
+            font-weight: 300;
+            margin: 1rem 0;
+            display: inline-block;
+            background-color: #fff;
+            padding: 0 5rem;
+        }
+        hr {
+                display: block;
+                position: absolute;
+                top: 50%;
+                bottom: 50%;
+                width: 100%;
+                margin: 0;
+                height: 5px;
+                background-color: #000;
+                z-index: -1;
+        }
+    }
+    .column-container {
+        display: flex;
+        max-width: 1400px;
+        margin: 0 auto 2rem;
+    }
+    .column {
+        flex: 1;
+        margin: 0 1rem;
+        height: 100%;
+        width: 100%;
+    }
+    .row-content {
+        max-width: 1400px;
+        margin: 0 auto 2rem;
+    }
+    .bottom-row {
+        padding: 2rem 5rem;
+        background-color: lightgrey;
+    }
+}
+
