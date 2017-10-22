@@ -1,6 +1,7 @@
 .page-support-us {
     h1, h2, h3 {
         text-align: unset;
+        font-family: Libre Baskerville;
     }
     a {
         color: #5dadaf;
@@ -12,13 +13,17 @@
         justify-content: center;
         .heading {
             text-align: center;
-            font-weight: 300;
+            font-weight: 500;
             margin: 1rem 0;
             display: inline-block;
             background-color: #fff;
-            padding: 0 5rem;
+            @include media( $desktop-width ){
+                padding: 0 5rem;
+            }
         }
         hr {
+            display: none;
+            @include media( $desktop-width ){
                 display: block;
                 position: absolute;
                 top: 50%;
@@ -28,26 +33,37 @@
                 height: 5px;
                 background-color: #000;
                 z-index: -1;
+            }
         }
     }
     .column-container {
-        display: flex;
-        max-width: 1400px;
-        margin: 0 auto 2rem;
+        @include media( $desktop-width ){
+            display: flex;
+            max-width: 1400px;
+            margin: 0 auto 2rem;
+        }
+        
     }
     .column {
-        flex: 1;
-        margin: 0 1rem;
-        height: 100%;
-        width: 100%;
+        padding: 0 1rem;
+        @include media( $desktop-width ){
+            padding: 0;
+            flex: 1;
+            margin: 0 1rem;
+            height: 100%;
+            width: 100%;
+        }
     }
     .row-content {
         max-width: 1400px;
         margin: 0 auto 2rem;
     }
     .bottom-row {
-        padding: 2rem 5rem;
         background-color: lightgrey;
+        padding: 1rem;
+        @include media( $desktop-width ) {
+            padding: 2rem 5rem;
+        }
     }
 }
 

@@ -4,7 +4,7 @@
         justify-content: center;
         align-items: center;
         border-top: 1px solid #fff;
-        background-color: #bbbbbb
+        background-color: #ddd
     }
     .footer-newsletter-container {
         background-color: #DDDDDD;
@@ -12,7 +12,8 @@
         @include media($desktop-width) {
             padding: 2rem 0;
             flex: 1.5;
-            background-color: #ddd;
+            background-color: #bbb;
+            border-right: 1px solid #fff;
         }
         .mc4wp-form {
             @include media( $desktop-width ){
@@ -32,7 +33,7 @@
         justify-content: space-around;
         @include media( $desktop-width ){
             width: 100%;
-            margin: 0 auto;
+            margin: 1rem auto;
         }
         .fa {
             color: #252525;

@@ -3039,7 +3039,8 @@ h2 {
   font-weight: 300; }
 
 .page-support-us h1, .page-support-us h2, .page-support-us h3 {
-  text-align: unset; }
+  text-align: unset;
+  font-family: Libre Baskerville; }
 
 .page-support-us a {
   color: #5dadaf; }
@@ -3055,44 +3056,57 @@ h2 {
           justify-content: center; }
   .page-support-us .support-header-container .heading {
     text-align: center;
-    font-weight: 300;
+    font-weight: 500;
     margin: 1rem 0;
     display: inline-block;
-    background-color: #fff;
-    padding: 0 5rem; }
+    background-color: #fff; }
+    @media all and (min-width: 760px) {
+      .page-support-us .support-header-container .heading {
+        padding: 0 5rem; } }
   .page-support-us .support-header-container hr {
-    display: block;
-    position: absolute;
-    top: 50%;
-    bottom: 50%;
-    width: 100%;
-    margin: 0;
-    height: 5px;
-    background-color: #000;
-    z-index: -1; }
+    display: none; }
+    @media all and (min-width: 760px) {
+      .page-support-us .support-header-container hr {
+        display: block;
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        width: 100%;
+        margin: 0;
+        height: 5px;
+        background-color: #000;
+        z-index: -1; } }
 
-.page-support-us .column-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 1400px;
-  margin: 0 auto 2rem; }
+@media all and (min-width: 760px) {
+  .page-support-us .column-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto 2rem; } }
 
 .page-support-us .column {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  margin: 0 1rem;
-  height: 100%;
-  width: 100%; }
+  padding: 0 1rem; }
+  @media all and (min-width: 760px) {
+    .page-support-us .column {
+      padding: 0;
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      margin: 0 1rem;
+      height: 100%;
+      width: 100%; } }
 
 .page-support-us .row-content {
   max-width: 1400px;
   margin: 0 auto 2rem; }
 
 .page-support-us .bottom-row {
-  padding: 2rem 5rem;
-  background-color: lightgrey; }
+  background-color: lightgrey;
+  padding: 1rem; }
+  @media all and (min-width: 760px) {
+    .page-support-us .bottom-row {
+      padding: 2rem 5rem; } }
 
 @media all and (min-width: 760px) {
   #colophon {
@@ -3106,7 +3120,7 @@ h2 {
         -ms-flex-align: center;
             align-items: center;
     border-top: 1px solid #fff;
-    background-color: #bbbbbb; } }
+    background-color: #ddd; } }
 
 #colophon .footer-newsletter-container {
   background-color: #DDDDDD;
@@ -3117,7 +3131,8 @@ h2 {
       -webkit-box-flex: 1.5;
           -ms-flex: 1.5;
               flex: 1.5;
-      background-color: #ddd; } }
+      background-color: #bbb;
+      border-right: 1px solid #fff; } }
   @media all and (min-width: 760px) {
     #colophon .footer-newsletter-container .mc4wp-form {
       margin: 0 auto; } }
@@ -3140,7 +3155,7 @@ h2 {
   @media all and (min-width: 760px) {
     #colophon .footer-links {
       width: 100%;
-      margin: 0 auto; } }
+      margin: 1rem auto; } }
   #colophon .footer-links .fa {
     color: #252525; }
   #colophon .footer-links a {
