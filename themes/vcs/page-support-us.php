@@ -6,10 +6,17 @@
  */
 get_header(); ?>
 <div class="support-us">
+
     <div class="support-header-container">
         <h1 class="heading">Support Us</h1>
         <hr>
     </div>
+    <?php $supportImage = get_field('support_image');
+    if($supportImage) : ?>
+        <div class="image-container">
+            <img src="<?php echo $supportImage; ?>" alt="">
+        </div>
+    <?php endif ?>
     <div class="column-container">
         <div class="column">
             <?php echo get_field('column1_content'); ?>

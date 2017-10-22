@@ -3045,6 +3045,24 @@ h2 {
 .page-support-us a {
   color: #5dadaf; }
 
+.page-support-us .image-container {
+  text-align: center;
+  height: 100%;
+  max-height: 500px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .page-support-us .image-container img {
+    width: 100%;
+    max-width: 1400px; }
+
 .page-support-us .support-header-container {
   width: 100%;
   position: relative;
