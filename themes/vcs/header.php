@@ -14,7 +14,7 @@
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 	<?php wp_head(); ?>
-	<script src="//load.sumome.com/" data-sumo-site-id="506680007853f2003e7ed60099f0a000f3f5f20071f64c009b16cf007fdcd500" async="async"></script>
+
 	</head>
 
 	<body <?php body_class(); ?>>

@@ -72,7 +72,7 @@
         margin: 0 auto 2rem;
     }
     .bottom-row {
-        background-color: lightgrey;
+        border: 1px solid #dcdcdc;
         padding: 1rem;
         @include media( $desktop-width ) {
             padding: 2rem 5rem;

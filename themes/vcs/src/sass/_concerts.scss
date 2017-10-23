@@ -50,11 +50,15 @@
     }
     .concert-img {
         overflow: hidden;
-        height: 300px;
         position: relative;
         cursor: pointer;
+        height: 300px;
+        @include media($concert-tablet){
+            height: 350px;
+        }
         @include media($desktop-width){
             text-align: center;
+            height: 60%;
             max-height: 450px;
         }
     }

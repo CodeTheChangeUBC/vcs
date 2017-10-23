@@ -76,7 +76,7 @@ get_header(); ?>
                         <div class="concert-map">
                             <?php $location = get_field('concert_map');
                             if( !empty($location) ): ?>
-                                <iframe src="//www.google.com/maps/embed/v1/place?q=<?php echo $location['lat'].',+'.$location['lng']; ?>
+                                <iframe src="https://www.google.com/maps/embed/v1/place?q=<?php echo $location['lat'].',+'.$location['lng']; ?>
                                     &zoom=14
                                     &key=AIzaSyAp5N7aQOYPPaZO2IIvT8k8jjm-TMGtywg">
                                 </iframe>   
@@ -168,7 +168,7 @@ get_header(); ?>
                         <div class="concert-map">
                             <?php $location = get_field('concert_map');
                             if( !empty($location) ): ?>
-                                <iframe src="//www.google.com/maps/embed/v1/place?q=<?php echo $location['lat'].',+'.$location['lng']; ?>
+                                <iframe src="https://www.google.com/maps/embed/v1/place?q=<?php echo $location['lat'].',+'.$location['lng']; ?>
                                     &zoom=14
                                     &key=AIzaSyAp5N7aQOYPPaZO2IIvT8k8jjm-TMGtywg">
                                 </iframe>   
