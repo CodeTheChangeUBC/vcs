@@ -25,7 +25,8 @@
         .season-copy {
             text-align: center;
             margin: 1rem 0;
-            p, h2 {
+            p,
+            h2 {
                 margin: 0;
             }
             p {
@@ -38,7 +39,7 @@
         .concert-copy {
             padding: 0 1rem;
             p {
-                margin-bottom: .5rem;
+                margin-bottom: 0.5rem;
             }
             .concert-excerpt {
                 font-weight: 300;
@@ -69,12 +70,12 @@
             }
             .concert-post-head {
                 position: relative;
-                height: 200px;
+                height: 300px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 overflow: hidden;
-                @include media( $mobile-large ){
+                @include media( $mobile-large ) {
                     height: 400px;
                 }
                 img {
@@ -122,7 +123,6 @@
     .blog-excerpt {
         font-weight: 300;
         margin: 0;
-
     }
     .buy-donate {
         display: flex;
@@ -131,7 +131,7 @@
         .button {
             width: 45%;
             text-align: center;
-            padding: .4rem .7rem;
+            padding: 0.4rem 0.7rem;
         }
         @include media( $desktop-width ) {
             display: none;

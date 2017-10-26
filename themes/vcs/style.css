@@ -907,7 +907,8 @@ h2 {
 .home .season-pass .season-copy {
   text-align: center;
   margin: 1rem 0; }
-  .home .season-pass .season-copy p, .home .season-pass .season-copy h2 {
+  .home .season-pass .season-copy p,
+  .home .season-pass .season-copy h2 {
     margin: 0; }
   .home .season-pass .season-copy p {
     font-size: 1.5rem;
@@ -916,7 +917,7 @@ h2 {
 .home .concert .concert-copy {
   padding: 0 1rem; }
   .home .concert .concert-copy p {
-    margin-bottom: .5rem; }
+    margin-bottom: 0.5rem; }
   .home .concert .concert-copy .concert-excerpt {
     font-weight: 300;
     margin: 0; }
@@ -946,7 +947,7 @@ h2 {
     z-index: 1; }
   .home .concert #concert-carousel .concert-post-head {
     position: relative;
-    height: 200px;
+    height: 300px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1015,7 +1016,7 @@ h2 {
   .home .buy-donate .button {
     width: 45%;
     text-align: center;
-    padding: .4rem .7rem; }
+    padding: 0.4rem 0.7rem; }
   @media all and (min-width: 760px) {
     .home .buy-donate {
       display: none; } }
@@ -1150,11 +1151,14 @@ h2 {
           align-items: center; }
   @media all and (min-width: 760px) {
     .blog .blog-image-container {
-      width: 250px;
+      width: 100%;
       height: 250px;
       border: 1px solid #adadad; } }
   .blog .blog-image-container .img-cont {
-    height: 100%; }
+    height: 300px; }
+    @media all and (min-width: 760px) {
+      .blog .blog-image-container .img-cont {
+        height: 275px; } }
 
 .blog .blog-content {
   padding: 0 1rem;
@@ -1168,7 +1172,7 @@ h2 {
     font-weight: 500;
     text-decoration: none;
     color: #000;
-    font-family: 'Libre Baskerville'; }
+    font-family: "Libre Baskerville"; }
   .blog .blog-content .desktop-date {
     display: none; }
     @media all and (min-width: 760px) {
@@ -1557,7 +1561,7 @@ h2 {
 
 .page-our-choir h3 {
   text-align: center;
-  font-family: 'Libre Baskerville';
+  font-family: "Libre Baskerville";
   font-size: 1.5rem;
   margin: 1rem 0; }
   @media all and (min-width: 760px) {
@@ -1768,7 +1772,7 @@ h2 {
       height: 500px; } }
 
 .page-our-choir .awards {
-  background-color: #5DADAF;
+  background-color: #5dadaf;
   padding: 1rem 0;
   text-align: center; }
   @media all and (min-width: 760px) {
@@ -1821,9 +1825,6 @@ h2 {
 
 .page-our-choir .staff .staff-content {
   text-align: center; }
-
-.page-our-choir .staff h3 {
-  font-size: 1.75rem; }
 
 .page-our-choir .staff .circle-img-container {
   text-align: center;

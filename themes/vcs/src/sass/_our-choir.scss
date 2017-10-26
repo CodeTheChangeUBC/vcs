@@ -4,21 +4,21 @@
         margin: 0 auto;
     }
     .head-head {
-        @include media( $desktop-width ){
+        @include media( $desktop-width ) {
             display: none;
         }
     }
     section {
-        @include media( $desktop-width ){
+        @include media( $desktop-width ) {
             margin: 2rem 0;
         }
     }
     h3 {
         text-align: center;
-        font-family: 'Libre Baskerville';
+        font-family: "Libre Baskerville";
         font-size: 1.5rem;
         margin: 1rem 0;
-        @include media( $desktop-width ){
+        @include media( $desktop-width ) {
             font-size: 2rem;
         }
     }
@@ -30,7 +30,7 @@
     }
     .next-slide-container {
         display: none;
-        @include media( $desktop-width ){
+        @include media( $desktop-width ) {
             display: block;
             text-align: center;
         }
@@ -43,7 +43,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        @include media( $desktop-width ){
+        @include media( $desktop-width ) {
             width: 400px;
             height: 400px;
             margin: 0 auto;
@@ -55,26 +55,26 @@
     .composer-text-container {
         padding: 0 1rem;
         text-align: center;
-        @include media( $desktop-width ){
+        @include media( $desktop-width ) {
             text-align: center;
             max-width: 1000px;
             margin: 0 auto;
         }
-        hr{
-            @include media( $desktop-width ){
+        hr {
+            @include media( $desktop-width ) {
                 display: none;
             }
         }
     }
     .about {
         .mobile-about {
-            @include media( $desktop-width ){
+            @include media( $desktop-width ) {
                 display: none;
-            } 
+            }
         }
         .desktop-about {
             display: none;
-            @include media( $desktop-width ){
+            @include media( $desktop-width ) {
                 display: block;
             }
         }
@@ -82,7 +82,7 @@
     .choir {
         .member {
             width: 100%;
-            @include media($desktop-width){
+            @include media($desktop-width) {
                 width: 25%;
             }
         }
@@ -95,14 +95,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            @include media( $desktop-width ){
+            @include media( $desktop-width ) {
                 width: 15vw;
                 height: 15vw;
             }
         }
         #member-carousel {
             margin-bottom: 2rem;
-            @include media( $desktop-width ){
+            @include media( $desktop-width ) {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
@@ -126,7 +126,7 @@
             bottom: 0;
             left: 0;
             right: 0;
-            background-color: rgba(0,0,0,.75);
+            background-color: rgba(0, 0, 0, 0.75);
             z-index: 999;
             .modal-close {
                 text-align: right;
@@ -141,7 +141,7 @@
             width: 95%;
             left: 50%;
             transform: translate(-50%);
-            @include media( $desktop-width ){
+            @include media( $desktop-width ) {
                 width: 75%;
                 max-height: 100%;
                 height: unset;
@@ -151,7 +151,7 @@
                 text-align: center;
                 margin: 0.5rem 0;
                 font-weight: 500;
-                @include media( $desktop-width ){
+                @include media( $desktop-width ) {
                     width: 100%;
                     text-align: left;
                     font-size: 2rem;
@@ -160,15 +160,15 @@
                 }
             }
             .modal-img {
-                @include media( $desktop-width ){
+                @include media( $desktop-width ) {
                     width: 30%;
                 }
             }
             .member-content {
                 padding: 0 1rem;
-                @include media( $desktop-width ){
+                @include media( $desktop-width ) {
                     width: 70%;
-                } 
+                }
             }
         }
         .member-carousel-modal {
@@ -189,16 +189,15 @@
                 background: none;
                 box-shadow: none;
                 z-index: 999;
-                @include media( $desktop-width ){
+                @include media( $desktop-width ) {
                     top: initial;
                     background: initial;
                     box-shadow: initial;
-                    
                 }
             }
             .flickity-page-dots {
                 top: -25px;
-                @include media( $desktop-width ){
+                @include media( $desktop-width ) {
                     top: unset;
                     bottom: unset;
                 }
@@ -207,17 +206,17 @@
     }
     #our-choir-photo-carousel {
         height: 75vw;
-        @include media( $desktop-width ){
+        @include media( $desktop-width ) {
             height: 500px;
         }
     }
     .awards {
-        background-color: #5DADAF;
+        background-color: #5dadaf;
         padding: 1rem 0;
         text-align: center;
-        @include media( $desktop-width ){
+        @include media( $desktop-width ) {
             background-color: unset;
-        } 
+        }
         h2,
         p {
             margin: 0;
@@ -257,18 +256,15 @@
             height: 75vw;
             width: 75vw;
             overflow: hidden;
-            @include media( $desktop-width ){
+            @include media( $desktop-width ) {
                 width: 33%;
-                height: 400px
+                height: 400px;
             }
         }
     }
     .staff {
         .staff-content {
             text-align: center;
-        }
-        h3 {
-            font-size: 1.75rem;
         }
         .circle-img-container {
             text-align: center;
@@ -278,7 +274,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            @include media( $desktop-width ){
+            @include media( $desktop-width ) {
                 width: 300px;
                 height: 300px;
                 margin: 0 auto;
