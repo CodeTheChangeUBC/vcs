@@ -1440,6 +1440,12 @@ h2 {
   position: fixed;
   top: 7px;
   right: 15px; }
+  @media all and (min-width: 760px) {
+    .post-type-archive-concerts .modal-close {
+      top: 15px;
+      right: 60px; } }
+  .post-type-archive-concerts .modal-close i {
+    color: #fff; }
 
 .post-type-archive-concerts .concert-modal-container .concert-title {
   text-align: center;

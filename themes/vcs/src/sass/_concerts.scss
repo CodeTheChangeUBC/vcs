@@ -167,6 +167,13 @@
         position: fixed;
         top: 7px;
         right: 15px;
+        @include media( $desktop-width ){
+            top: 15px;
+            right: 60px;
+        }
+        i {
+            color: #fff;
+        }
     }
     .concert-modal-container {
         .concert-title {
