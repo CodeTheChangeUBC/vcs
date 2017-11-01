@@ -1014,6 +1014,7 @@ h2 {
       justify-content: space-around;
   margin: 3rem 0; }
   .home .buy-donate .button {
+    color: #fff;
     width: 45%;
     text-align: center;
     padding: 0.4rem 0.7rem; }
