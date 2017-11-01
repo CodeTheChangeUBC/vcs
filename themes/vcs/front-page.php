@@ -21,26 +21,22 @@ get_header(); ?>
 <section class="concert">
     <h2>Concerts</h2>
     <div id="concert-carousel" class="owl-carousel owl-theme">
-        <?php $args = array (
-            'post_type' => 'concerts',
-            'order' => 'DCS',
-            'post_status' => 'publish',
-            'posts_per_page' => -1
-        );
-        $concerts_list = get_posts( $args );
-        foreach( $concerts_list as $post) :?>
-            <div class="concert-post">
-                <div class="concert-post-head">
-                    <img src="<?php echo get_the_post_thumbnail_url(null,'medium'); ?>" alt="">
-                    <p class="concert-title"><?php the_title(); ?></p>
-                    <p class="concert-date"><?php the_field('concert_date'); ?></p>
-                </div>
-                <div class="concert-copy">
-                    <p class="concert-location"><?php the_field('concert_location'); ?></p>
-                    <p class="concert-excerpt"><?php echo $post->post_excerpt; ?></p>
-                </div>
+    <?php $concert_posts = get_field('hp_concert_carousel');
+    foreach($concert_posts as $post) : 
+        setup_postdata($post); ?>
+        <div class="concert-post">
+            <div class="concert-post-head">
+                <img src="<?php echo get_the_post_thumbnail_url($post['hp_concert']->ID); ?>" alt="">
+                <p class="concert-title"><?php echo $post['hp_concert']->post_title; ?></p>
+                <p class="concert-date"><?php the_field('concert_date', $post['hp_concert']->ID); ?></p>
             </div>
-        <?php endforeach; wp_reset_postdata(); ?>
+            <div class="concert-copy">
+                <p class="concert-location"><?php the_field('concert_location', $post['hp_concert']->ID); ?></p>
+                <p class="concert-excerpt"><?php echo the_excerpt($post['hp_concert']->ID); ?></p>
+            </div>
+        </div>
+        <?php endforeach; wp_reset_postdata();?>  
+        
     </div>
     <div class="button-container">
         <a class="concert-view-more button-green button" href="<?php echo home_url('concerts'); ?>">View More</a>

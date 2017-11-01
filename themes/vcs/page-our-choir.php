@@ -165,7 +165,7 @@ get_header(); ?>
                 <div class="circle-img-container">
                     <img src="<?php echo get_field('staff_image'); ?>" alt="">
                 </div>
-                <h2><?php echo get_field('staff_heading'); ?></h2>
+                <h3><?php echo get_field('staff_heading'); ?></h2>
                 <p class="trimmed"><?php $trimmedStaffCopy = wp_trim_words( get_field('staff_text'), $num_words = 40, $more = null );
                 echo $trimmedStaffCopy ?></p>
                 <p class="untrimmed hide"><?php echo get_field('staff_text'); ?></p>

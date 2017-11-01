@@ -63,7 +63,9 @@ get_header(); ?>
                                 if($buyButton) : ?>
                                     <a target="_blank" class="buy-tickets button button-green" href="<?php echo the_field('ticket_url'); ?>">Buy Tickets</a>
                                 <?php endif; ?>
-                                <a target="_blank" class="season button button-green" href="<?php echo home_url('/season'); ?>">Buy Season Pass</a>
+                                <?php if( !get_field('remove_season')) : ?>
+                                    <a target="_blank" class="season button button-green" href="<?php echo home_url('/season'); ?>">Buy Season Pass</a>
+                                <?php endif; ?>
                             </div>
                             <div class="performance">
                                 <p class="perf">Performed by:</p>
@@ -112,7 +114,8 @@ get_header(); ?>
             array(
                 'taxonomy' => 'concert_type',
                 'field' => 'slug',
-                'terms' => 'community'
+                'terms' => 'community',
+                'order' => 'ASC'
             )
         )
     )); 
@@ -155,7 +158,10 @@ get_header(); ?>
                                 if($buyButton) : ?>
                                     <a target="_blank" class="buy-tickets button button-green" href="<?php echo the_field('ticket_url'); ?>">Buy Tickets</a>
                                 <?php endif; ?>
-                                <a target="_blank" class="season button button-green" href="<?php echo home_url('/season'); ?>">Buy Season Pass</a>
+                                <?php
+                                if( !get_field('remove_season')) : ?>
+                                    <a target="_blank" class="season button button-green" href="<?php echo home_url('/season'); ?>">Buy Season Pass</a>
+                                <?php endif; ?>
                             </div>
                             <div class="performance">
                                 <p class="perf">Performed by:</p>

@@ -754,7 +754,7 @@ h2 {
   #masthead .mobile-menu-container {
     position: fixed;
     width: 85%;
-    height: 100vh;
+    height: 100%;
     text-align: left;
     display: none;
     -webkit-box-orient: vertical;
@@ -1824,6 +1824,7 @@ h2 {
         height: 400px; } }
 
 .page-our-choir .staff .staff-content {
+  margin: 3rem 0;
   text-align: center; }
 
 .page-our-choir .staff .circle-img-container {

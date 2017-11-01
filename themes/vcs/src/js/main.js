@@ -91,12 +91,20 @@
             if ($calcWidth > $calcHeight) {
                 $(this).css({
                     "min-width": "100%",
-                    height: "100%",
+                    "width": "auto",
+                    "height": "100%",
                     "max-width": "none"
                 });
             }
             if ($calcWidth < $calcHeight) {
-                $(this).css({ "min-height": "100%", "max-width": "none" });
+                $(this).css({ 
+                    "height": "100%", 
+                    "max-width": "none",
+                    "width": "auto",
+                    "left": "50%",
+                    "top": "50%", 
+                    "transform": "translate(-50%, -50%)",
+                });
             }
         });
         $(".carousel-img-container img").each(function() {
