@@ -1827,6 +1827,9 @@ h2 {
   margin: 3rem 0;
   text-align: center; }
 
+.page-our-choir .staff .staff-img h3 {
+  font-size: 1rem; }
+
 .page-our-choir .staff .circle-img-container {
   text-align: center;
   height: 50vh;
