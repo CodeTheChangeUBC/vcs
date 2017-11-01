@@ -154,7 +154,7 @@ get_header(); ?>
                                 <p class="concert-location"><?php the_field('concert_location'); ?></p>
                             </div>
                             <div class="buy-tickets">
-                                <?php
+                                <?php $buyButton = get_field('ticket_url');
                                 if($buyButton) : ?>
                                     <a target="_blank" class="buy-tickets button button-green" href="<?php echo the_field('ticket_url'); ?>">Buy Tickets</a>
                                 <?php endif; ?>
