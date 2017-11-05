@@ -1456,11 +1456,11 @@ h2 {
       width: 100%;
       margin-top: 3rem; } }
 
-@media all and (min-width: 760px) {
+@media all and (min-width: 900px) {
   .post-type-archive-concerts .concert-modal-container .concert-img {
     width: 40%; } }
 
-@media all and (min-width: 760px) {
+@media all and (min-width: 900px) {
   .post-type-archive-concerts .concert-modal-container .concert-content-container {
     width: 60%;
     padding-left: 2rem;
