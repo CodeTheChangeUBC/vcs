@@ -91,19 +91,19 @@
             if ($calcWidth > $calcHeight) {
                 $(this).css({
                     "min-width": "100%",
-                    "width": "auto",
-                    "height": "100%",
+                    width: "auto",
+                    height: "100%",
                     "max-width": "none"
                 });
             }
             if ($calcWidth < $calcHeight) {
-                $(this).css({ 
-                    "height": "100%", 
+                $(this).css({
+                    height: "100%",
                     "max-width": "none",
-                    "width": "auto",
-                    "left": "50%",
-                    "top": "50%", 
-                    "transform": "translate(-50%, -50%)",
+                    width: "auto",
+                    left: "50%",
+                    top: "50%",
+                    transform: "translate(-50%, -50%)"
                 });
             }
         });
@@ -323,9 +323,7 @@
             }
             if ($calcWidth < $calcHeight) {
                 $(this).css({
-                    width: "auto",
-                    height: "100%",
-                    "max-width": "none"
+                    height: "100%"
                 });
             }
         });
