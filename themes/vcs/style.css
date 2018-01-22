@@ -1216,7 +1216,6 @@ h2 {
 
 @media all and (min-width: 760px) {
   .single-post .img-container {
-    max-height: 550px;
     overflow: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1227,10 +1226,6 @@ h2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; } }
-
-@media all and (min-width: 760px) {
-  .single-post .img-container img {
-    width: 100%; } }
 
 .single-post .post-content {
   padding: 0 1rem;
@@ -1608,6 +1603,11 @@ h2 {
       height: 400px;
       margin: 0 auto;
       border-radius: 50%; } }
+  .page-the-choir .circle-img-container img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+    width: 100%; }
 
 .page-the-choir .about-text-container,
 .page-the-choir .director-text-container,
@@ -1857,6 +1857,11 @@ h2 {
       height: 300px;
       margin: 0 auto;
       border-radius: 50%; } }
+  .page-the-choir .staff .circle-img-container img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+    width: 100%; }
 
 .page-the-choir .read-more {
   margin: 0; }

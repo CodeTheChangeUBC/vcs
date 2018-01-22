@@ -4,7 +4,7 @@
     }
     .post-head {
         padding: 0 1rem;
-        @include media( $desktop-width ){
+        @include media( $desktop-width) {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0;
@@ -20,17 +20,11 @@
         }
     }
     .img-container {
-        @include media( $desktop-width ){
-            max-height: 550px;
+        @include media( $desktop-width) {
             overflow: hidden;
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-        img {
-            @include media( $desktop-width ){
-                width: 100%;
-            }
         }
     }
     .post-content {
@@ -40,19 +34,19 @@
         ul {
             margin: 0;
             padding: 0 0 0 1rem;
-            @include media( $desktop-width ){
+            @include media( $desktop-width) {
                 max-width: 1200px;
                 margin: 0 auto;
             }
         }
         p {
-            @include media( $desktop-width ){
+            @include media( $desktop-width) {
                 max-width: 1200px;
                 margin: 0 auto;
             }
         }
         img {
-            @include media( $desktop-width ){
+            @include media( $desktop-width) {
                 width: 100%;
             }
         }

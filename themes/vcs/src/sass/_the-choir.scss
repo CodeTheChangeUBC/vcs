@@ -49,6 +49,11 @@
             margin: 0 auto;
             border-radius: 50%;
         }
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
     }
     .about-text-container,
     .director-text-container,
@@ -285,6 +290,11 @@
                 height: 300px;
                 margin: 0 auto;
                 border-radius: 50%;
+            }
+            img {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
             }
         }
     }
