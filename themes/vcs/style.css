@@ -1554,41 +1554,41 @@ h2 {
       .post-type-archive-concerts .concert-modal-container .buy-tickets .button {
         width: 45%; } }
 
-.page-our-choir .site-content {
+.page-the-choir .site-content {
   max-width: 1200px;
   margin: 0 auto; }
 
 @media all and (min-width: 760px) {
-  .page-our-choir .head-head {
+  .page-the-choir .head-head {
     display: none; } }
 
 @media all and (min-width: 760px) {
-  .page-our-choir section {
+  .page-the-choir section {
     margin: 2rem 0; } }
 
-.page-our-choir h3 {
+.page-the-choir h3 {
   text-align: center;
   font-family: "Libre Baskerville";
   font-size: 1.5rem;
   margin: 1rem 0; }
   @media all and (min-width: 760px) {
-    .page-our-choir h3 {
+    .page-the-choir h3 {
       font-size: 2rem; } }
 
-.page-our-choir h2 {
+.page-the-choir h2 {
   margin: 1rem 0; }
 
-.page-our-choir p {
+.page-the-choir p {
   font-weight: 300; }
 
-.page-our-choir .next-slide-container {
+.page-the-choir .next-slide-container {
   display: none; }
   @media all and (min-width: 760px) {
-    .page-our-choir .next-slide-container {
+    .page-the-choir .next-slide-container {
       display: block;
       text-align: center; } }
 
-.page-our-choir .circle-img-container {
+.page-the-choir .circle-img-container {
   text-align: center;
   height: 50vh;
   max-height: 500px;
@@ -1603,47 +1603,47 @@ h2 {
       -ms-flex-align: center;
           align-items: center; }
   @media all and (min-width: 760px) {
-    .page-our-choir .circle-img-container {
+    .page-the-choir .circle-img-container {
       width: 400px;
       height: 400px;
       margin: 0 auto;
       border-radius: 50%; } }
 
-.page-our-choir .about-text-container,
-.page-our-choir .director-text-container,
-.page-our-choir .composer-text-container {
+.page-the-choir .about-text-container,
+.page-the-choir .director-text-container,
+.page-the-choir .composer-text-container {
   padding: 0 1rem;
   text-align: center; }
   @media all and (min-width: 760px) {
-    .page-our-choir .about-text-container,
-    .page-our-choir .director-text-container,
-    .page-our-choir .composer-text-container {
+    .page-the-choir .about-text-container,
+    .page-the-choir .director-text-container,
+    .page-the-choir .composer-text-container {
       text-align: center;
       max-width: 1000px;
       margin: 0 auto; } }
   @media all and (min-width: 760px) {
-    .page-our-choir .about-text-container hr,
-    .page-our-choir .director-text-container hr,
-    .page-our-choir .composer-text-container hr {
+    .page-the-choir .about-text-container hr,
+    .page-the-choir .director-text-container hr,
+    .page-the-choir .composer-text-container hr {
       display: none; } }
 
 @media all and (min-width: 760px) {
-  .page-our-choir .about .mobile-about {
+  .page-the-choir .about .mobile-about {
     display: none; } }
 
-.page-our-choir .about .desktop-about {
+.page-the-choir .about .desktop-about {
   display: none; }
   @media all and (min-width: 760px) {
-    .page-our-choir .about .desktop-about {
+    .page-the-choir .about .desktop-about {
       display: block; } }
 
-.page-our-choir .choir .member {
+.page-the-choir .choir .member {
   width: 100%; }
   @media all and (min-width: 760px) {
-    .page-our-choir .choir .member {
+    .page-the-choir .choir .member {
       width: 25%; } }
 
-.page-our-choir .choir .choir-img-container {
+.page-the-choir .choir .choir-img-container {
   height: 75vw;
   width: 75vw;
   overflow: hidden;
@@ -1659,14 +1659,14 @@ h2 {
       -ms-flex-align: center;
           align-items: center; }
   @media all and (min-width: 760px) {
-    .page-our-choir .choir .choir-img-container {
+    .page-the-choir .choir .choir-img-container {
       width: 15vw;
       height: 15vw; } }
 
-.page-our-choir .choir #member-carousel {
+.page-the-choir .choir #member-carousel {
   margin-bottom: 2rem; }
   @media all and (min-width: 760px) {
-    .page-our-choir .choir #member-carousel {
+    .page-the-choir .choir #member-carousel {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1676,16 +1676,16 @@ h2 {
           -ms-flex-pack: center;
               justify-content: center; } }
 
-.page-our-choir .choir .flickity-page-dots {
+.page-the-choir .choir .flickity-page-dots {
   bottom: -10px; }
 
-.page-our-choir .choir .about-text-container {
+.page-the-choir .choir .about-text-container {
   text-align: center; }
-  .page-our-choir .choir .about-text-container p {
+  .page-the-choir .choir .about-text-container p {
     font-weight: 500;
     font-size: 1.25rem; }
 
-.page-our-choir .choir .member-carousel-container {
+.page-the-choir .choir .member-carousel-container {
   position: fixed;
   height: 100vh;
   width: 100vw;
@@ -1695,10 +1695,10 @@ h2 {
   right: 0;
   background-color: rgba(0, 0, 0, 0.75);
   z-index: 999; }
-  .page-our-choir .choir .member-carousel-container .modal-close {
+  .page-the-choir .choir .member-carousel-container .modal-close {
     text-align: right; }
 
-.page-our-choir .choir .member-modal {
+.page-the-choir .choir .member-modal {
   position: fixed;
   top: 40px;
   overflow: scroll;
@@ -1709,35 +1709,35 @@ h2 {
   -webkit-transform: translate(-50%);
           transform: translate(-50%); }
   @media all and (min-width: 760px) {
-    .page-our-choir .choir .member-modal {
+    .page-the-choir .choir .member-modal {
       width: 75%;
       max-height: 100%;
       height: unset;
       padding-bottom: 5rem; } }
-  .page-our-choir .choir .member-modal .member-name {
+  .page-the-choir .choir .member-modal .member-name {
     text-align: center;
     margin: 0.5rem 0;
     font-weight: 500; }
     @media all and (min-width: 760px) {
-      .page-our-choir .choir .member-modal .member-name {
+      .page-the-choir .choir .member-modal .member-name {
         width: 100%;
         text-align: left;
         font-size: 2rem;
         margin: 0;
         padding-top: 1rem; } }
   @media all and (min-width: 760px) {
-    .page-our-choir .choir .member-modal .modal-img {
+    .page-the-choir .choir .member-modal .modal-img {
       width: 30%; } }
-  .page-our-choir .choir .member-modal .member-content {
+  .page-the-choir .choir .member-modal .member-content {
     padding: 0 1rem; }
     @media all and (min-width: 760px) {
-      .page-our-choir .choir .member-modal .member-content {
+      .page-the-choir .choir .member-modal .member-content {
         width: 70%; } }
 
-.page-our-choir .choir .member-carousel-modal {
+.page-the-choir .choir .member-carousel-modal {
   margin-top: 3rem; }
   @media all and (min-width: 760px) {
-    .page-our-choir .choir .member-carousel-modal .member {
+    .page-the-choir .choir .member-carousel-modal .member {
       width: 100%;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1751,65 +1751,65 @@ h2 {
           -ms-flex-align: center;
               align-items: center;
       padding: 0 5rem; } }
-  .page-our-choir .choir .member-carousel-modal .previous,
-  .page-our-choir .choir .member-carousel-modal .next {
+  .page-the-choir .choir .member-carousel-modal .previous,
+  .page-the-choir .choir .member-carousel-modal .next {
     top: -20px;
     background: none;
     -webkit-box-shadow: none;
             box-shadow: none;
     z-index: 999; }
     @media all and (min-width: 760px) {
-      .page-our-choir .choir .member-carousel-modal .previous,
-      .page-our-choir .choir .member-carousel-modal .next {
+      .page-the-choir .choir .member-carousel-modal .previous,
+      .page-the-choir .choir .member-carousel-modal .next {
         top: initial;
         background: initial;
         -webkit-box-shadow: initial;
                 box-shadow: initial; } }
-  .page-our-choir .choir .member-carousel-modal .flickity-page-dots {
+  .page-the-choir .choir .member-carousel-modal .flickity-page-dots {
     top: -25px; }
     @media all and (min-width: 760px) {
-      .page-our-choir .choir .member-carousel-modal .flickity-page-dots {
+      .page-the-choir .choir .member-carousel-modal .flickity-page-dots {
         top: unset;
         bottom: unset; } }
 
-.page-our-choir #our-choir-photo-carousel {
+.page-the-choir #our-choir-photo-carousel {
   height: 75vw; }
   @media all and (min-width: 760px) {
-    .page-our-choir #our-choir-photo-carousel {
+    .page-the-choir #our-choir-photo-carousel {
       height: 500px; } }
 
-.page-our-choir .awards {
+.page-the-choir .awards {
   background-color: #5dadaf;
   padding: 1rem 0;
   text-align: center; }
   @media all and (min-width: 760px) {
-    .page-our-choir .awards {
+    .page-the-choir .awards {
       background-color: unset; } }
-  .page-our-choir .awards h2,
-  .page-our-choir .awards p {
+  .page-the-choir .awards h2,
+  .page-the-choir .awards p {
     margin: 0; }
-  .page-our-choir .awards .awards-post {
+  .page-the-choir .awards .awards-post {
     margin: 0.5rem 0; }
-  .page-our-choir .awards .award-year {
+  .page-the-choir .awards .award-year {
     font-size: 1.5rem; }
 
-.page-our-choir .press .press-post {
+.page-the-choir .press .press-post {
   margin: 1rem 0;
   text-align: center; }
 
-.page-our-choir .press .source {
+.page-the-choir .press .source {
   text-decoration: none; }
 
-.page-our-choir .press .press-post p {
+.page-the-choir .press .press-post p {
   margin: 0; }
 
-.page-our-choir .press .press-source {
+.page-the-choir .press .press-source {
   font-weight: 500;
   font-size: 1.1rem; }
 
-.page-our-choir .photos {
+.page-the-choir .photos {
   margin-bottom: 1rem; }
-  .page-our-choir .photos .photo {
+  .page-the-choir .photos .photo {
     width: 75%;
     margin-right: 5px;
     height: 100%;
@@ -1826,18 +1826,18 @@ h2 {
     width: 75vw;
     overflow: hidden; }
     @media all and (min-width: 760px) {
-      .page-our-choir .photos .photo {
+      .page-the-choir .photos .photo {
         width: 33%;
         height: 400px; } }
 
-.page-our-choir .staff .staff-content {
+.page-the-choir .staff .staff-content {
   margin: 3rem 0;
   text-align: center; }
 
-.page-our-choir .staff .staff-img h3 {
+.page-the-choir .staff .staff-img h3 {
   font-size: 1rem; }
 
-.page-our-choir .staff .circle-img-container {
+.page-the-choir .staff .circle-img-container {
   text-align: center;
   height: 50vh;
   max-height: 500px;
@@ -1852,13 +1852,13 @@ h2 {
       -ms-flex-align: center;
           align-items: center; }
   @media all and (min-width: 760px) {
-    .page-our-choir .staff .circle-img-container {
+    .page-the-choir .staff .circle-img-container {
       width: 300px;
       height: 300px;
       margin: 0 auto;
       border-radius: 50%; } }
 
-.page-our-choir .read-more {
+.page-the-choir .read-more {
   margin: 0; }
 
 .page-our-music .header-container {
