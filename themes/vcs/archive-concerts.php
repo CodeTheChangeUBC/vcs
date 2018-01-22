@@ -97,9 +97,11 @@ get_header(); ?>
         </div>
     <?php endforeach; wp_reset_postdata()?>
 </section>
-<div class="button-container">
-    <a target="_blank" class="season-button button-green button" href="<?php echo home_url('/season'); ?>">Buy Season Pass</a>
-</div>
+<?php if(get_field('show_tickets', get_page_by_path('season')) === true) : ?>
+    <div class="button-container">
+        <a target="_blank" class="season-button button-green button" href="<?php echo home_url('/season'); ?>">Buy Season Pass</a>
+    </div>
+<?php endif; ?>
 <section class="community">
     <div class="concert-header-container">
         <hr>
