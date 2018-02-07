@@ -36,53 +36,57 @@ get_header(); ?>
             </div>
         </div>
     </section>
-    <section id="choir" class="choir">
-        <div class="about-content">
-            <h2>The Choir</h2>
-            <div id="member-carousel">
-                <?php $args = array (
-                    'post_type' => 'members',
-                    'post_status' => 'publish',
-                    'posts_per_page' => -1
-                );
-                $members = get_posts( $args );
-                foreach( $members as $post ) : ?>
-                    <div class="member">
-                        <div class="choir-img-container">
-                            <?php the_post_thumbnail('small'); ?>
-                        </div>
-                        <div class="about-text-container">
-                            <p><?php the_title(); ?></p>
-                        </div>
-                    </div>
-                <?php endforeach; ?>
-            </div>
-            <div class="member-carousel-container modal-container hide">
-                
-                <div class="member-modal">
-                    <div class="modal-close">
-                        <i class="fa fa-times fa-2x" aria-hidden="true"></i>
-                    </div>
-                    <div class="member-carousel-modal">
-                    <?php foreach( $members as $post ) : ?>
+    <?php 
+    $args = array (
+        'post_type' => 'members',
+        'post_status' => 'publish',
+        'posts_per_page' => -1
+    );
+    $members = get_posts( $args );
+    if( $members ) : ?>
+        <section id="choir" class="choir">
+            <div class="about-content">
+                <h2>The Choir</h2>
+                <div id="member-carousel">
+                    <?php 
+                    foreach( $members as $post ) : ?>
                         <div class="member">
-                            <p class="member-name"><?php the_title(); ?></p>
-                            <div class="modal-img">
-                                <div class="choir-img-container">
-                                    <?php the_post_thumbnail(); ?>
-                                </div>
+                            <div class="choir-img-container">
+                                <?php the_post_thumbnail('small'); ?>
                             </div>
-                            <p class="member-content"><?php echo $post->post_content; ?></p>
+                            <div class="about-text-container">
+                                <p><?php the_title(); ?></p>
+                            </div>
                         </div>
-                    <?php endforeach; wp_reset_postdata(); ?>
+                    <?php endforeach; ?>
+                </div>
+                <div class="member-carousel-container modal-container hide">
+                    
+                    <div class="member-modal">
+                        <div class="modal-close">
+                            <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="member-carousel-modal">
+                        <?php foreach( $members as $post ) : ?>
+                            <div class="member">
+                                <p class="member-name"><?php the_title(); ?></p>
+                                <div class="modal-img">
+                                    <div class="choir-img-container">
+                                        <?php the_post_thumbnail(); ?>
+                                    </div>
+                                </div>
+                                <p class="member-content"><?php echo $post->post_content; ?></p>
+                            </div>
+                        <?php endforeach; wp_reset_postdata(); ?>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="next-slide-container">
-            <i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i>
-        </div>
-    </section>
+            <div class="next-slide-container">
+                <i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i>
+            </div>
+        </section>
+    <?php endif; ?>
     <section id="composer" class="composer">
         <div class="composer-content">
             <div class="circle-img-container">
