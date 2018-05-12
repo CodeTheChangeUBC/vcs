@@ -46,19 +46,19 @@ get_header(); ?>
             <div class="desktop-tabs" >
                 <div class="desktop-tabs-content" >
                     <p class="pack-number">3 Pack</p>
-                    <p class="pack-discount">save 20%</p>
+                    <p class="pack-discount"><?php echo get_field('discount_3pack'); ?></p>
                 </div>
             </div>
             <div class="desktop-tabs" >
                 <div class="desktop-tabs-content" >
                     <p class="pack-number">4 pack</p>
-                    <p class="pack-discount">save 25%</p>
+                    <p class="pack-discount"><?php echo get_field('discount_4pack'); ?></p>
                 </div>
             </div>
             <div class="desktop-tabs" >
                 <div class="desktop-tabs-content" >
                     <p class="pack-number">5 pack</p>
-                    <p class="pack-discount">save 30%</p>
+                    <p class="pack-discount"><?php echo get_field('discount_5pack'); ?></p>
                 </div>
             </div>
         </div>
