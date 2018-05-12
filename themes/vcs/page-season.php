@@ -29,17 +29,17 @@ get_header(); ?>
             <div class="pack3-tab pack-tab pack-selected">
                 <p class="pack-number">3</p>
                 <p class="pack-pack">pack</p>
-                <p class="discount">save 20%</p>
+                <p class="discount"><?php echo get_field('discount_3pack'); ?></p>
             </div>
             <div class="pack4-tab pack-tab">
                 <p class="pack-number">4</p>
                 <p class="pack-pack">pack</p>
-                <p class="discount">save 25%</p>
+                <p class="discount"><?php echo get_field('discount_4pack'); ?></p>
             </div>
             <div class="pack5-tab pack-tab">
                 <p class="pack-number">5</p>
                 <p class="pack-pack">pack</p>
-                <p class="discount">save 30%</p>
+                <p class="discount"><?php echo get_field('discount_5pack'); ?></p>
             </div>
         </div>
         <div class="pack-tabs-desktop-container">
